@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hep.local/schemas/hep-drill-1.0.json",
+  "title": "Exercice HEP à réponse libre",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "source_batch_id",
+    "family",
+    "mechanism_id",
+    "detail_id",
+    "tense_id",
+    "prompt",
+    "accepted_answers",
+    "display_answer",
+    "application_note",
+    "pedagogy_dict_version"
+  ],
+  "properties": {
+    "schema_version": { "const": "hep-drill/1.0" },
+    "id": { "type": "string", "pattern": "^hep-d1-[0-9]{8}-[0-9]{4}$" },
+    "source_batch_id": { "type": "string", "pattern": "^hep-db1-[0-9]{8}-[0-9]{4}$" },
+    "family": { "type": "string", "pattern": "^[a-z][a-z0-9_]{1,63}$" },
+    "mechanism_id": { "type": "string", "pattern": "^[a-z][a-z0-9_]{1,63}$" },
+    "detail_id": {
+      "oneOf": [
+        { "type": "null" },
+        { "type": "string", "pattern": "^[a-z][a-z0-9_]{1,63}$" }
+      ]
+    },
+    "tense_id": {
+      "oneOf": [
+        { "type": "null" },
+        { "type": "string", "pattern": "^[a-z][a-z0-9_]{1,63}$" }
+      ]
+    },
+    "prompt": { "type": "string", "minLength": 8, "maxLength": 320 },
+    "accepted_answers": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 8,
+      "items": { "type": "string", "minLength": 1, "maxLength": 80 }
+    },
+    "display_answer": { "type": "string", "minLength": 1, "maxLength": 80 },
+    "application_note": { "type": "string", "minLength": 12, "maxLength": 360 },
+    "pedagogy_dict_version": { "const": "hep-pedagogy-dict/2.0" }
+  }
+}

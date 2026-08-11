@@ -1,0 +1,26 @@
+{
+  "schema_version": "hep-drill-blind-review-input/1.0",
+  "source_batch_id": "hep-db1-20260810-0001",
+  "items": [
+    {"drill_id": "hep-d1-20260810-0001", "family": "orthographe_lexicale", "mechanism_id": "graphie_lexicale_usage", "detail_id": "core", "tense_id": null, "prompt": "Le comité garantit l’___ de la procédure (impartial)."},
+    {"drill_id": "hep-d1-20260810-0002", "family": "pronoms_relatifs", "mechanism_id": "regime_a_auquel", "detail_id": "core", "tense_id": null, "prompt": "Le règlement ___ tous les membres doivent se conformer sera appliqué dès demain."},
+    {"drill_id": "hep-d1-20260810-0003", "family": "pronoms_relatifs", "mechanism_id": "possession_dont", "detail_id": "core", "tense_id": null, "prompt": "La chercheuse ___ les travaux ont inspiré cette méthode donnera une conférence."},
+    {"drill_id": "hep-d1-20260810-0004", "family": "adjectif_verbal_participe_present", "mechanism_id": "accord_adjectif_invariabilite_participe", "detail_id": "adjectif", "tense_id": null, "prompt": "Les explications sont ___ (éclairer) et faciles à suivre."},
+    {"drill_id": "hep-d1-20260810-0005", "family": "orthographe_lexicale", "mechanism_id": "graphie_lexicale_usage", "detail_id": "core", "tense_id": null, "prompt": "Le rapport confirme la ___ du dispositif (fiable)."},
+    {"drill_id": "hep-d1-20260810-0006", "family": "pronoms_relatifs", "mechanism_id": "regime_a_auquel", "detail_id": "core", "tense_id": null, "prompt": "La proposition ___ le conseil s’est finalement rallié sera soumise au vote."},
+    {"drill_id": "hep-d1-20260810-0007", "family": "pronoms_relatifs", "mechanism_id": "possession_dont", "detail_id": "core", "tense_id": null, "prompt": "Nous avons visité un village ___ les maisons sont bâties en pierre."},
+    {"drill_id": "hep-d1-20260810-0008", "family": "adjectif_verbal_participe_present", "mechanism_id": "accord_adjectif_invariabilite_participe", "detail_id": "participe", "tense_id": null, "prompt": "Les étudiantes, ___ (consulter) leurs notes, ont repéré une erreur."},
+    {"drill_id": "hep-d1-20260810-0009", "family": "orthographe_lexicale", "mechanism_id": "graphie_lexicale_usage", "detail_id": "core", "tense_id": null, "prompt": "Elle a réagi avec une grande ___ (spontané)."},
+    {"drill_id": "hep-d1-20260810-0010", "family": "pronoms_relatifs", "mechanism_id": "regime_a_auquel", "detail_id": "core", "tense_id": null, "prompt": "Les principes ___ cette association demeure attachée guident toutes ses décisions."},
+    {"drill_id": "hep-d1-20260810-0011", "family": "pronoms_relatifs", "mechanism_id": "possession_dont", "detail_id": "core", "tense_id": null, "prompt": "Le candidat ___ le dossier était incomplet fournira les pièces manquantes demain."},
+    {"drill_id": "hep-d1-20260810-0012", "family": "adjectif_verbal_participe_present", "mechanism_id": "accord_adjectif_invariabilite_participe", "detail_id": "adjectif", "tense_id": null, "prompt": "Le jury a salué des propositions particulièrement ___ (innover)."},
+    {"drill_id": "hep-d1-20260810-0013", "family": "orthographe_lexicale", "mechanism_id": "graphie_lexicale_usage", "detail_id": "core", "tense_id": null, "prompt": "Cette mesure améliore l’___ du service (efficace)."},
+    {"drill_id": "hep-d1-20260810-0014", "family": "pronoms_relatifs", "mechanism_id": "regime_a_auquel", "detail_id": "core", "tense_id": null, "prompt": "Les normes ___ les installations doivent satisfaire ont été renforcées."},
+    {"drill_id": "hep-d1-20260810-0015", "family": "pronoms_relatifs", "mechanism_id": "possession_dont", "detail_id": "core", "tense_id": null, "prompt": "Voici les dossiers ___ les annexes doivent encore être signées."},
+    {"drill_id": "hep-d1-20260810-0016", "family": "adjectif_verbal_participe_present", "mechanism_id": "accord_adjectif_invariabilite_participe", "detail_id": "participe", "tense_id": null, "prompt": "Le comité a adopté ces mesures, ___ (encourager) ainsi de nouvelles pratiques."},
+    {"drill_id": "hep-d1-20260810-0017", "family": "orthographe_lexicale", "mechanism_id": "graphie_lexicale_usage", "detail_id": "core", "tense_id": null, "prompt": "Le mandat prévoit l’___ complète du groupe (autonome)."},
+    {"drill_id": "hep-d1-20260810-0018", "family": "pronoms_relatifs", "mechanism_id": "regime_a_auquel", "detail_id": "core", "tense_id": null, "prompt": "L’objectif ___ nous souhaitons parvenir exige encore plusieurs mois de travail."},
+    {"drill_id": "hep-d1-20260810-0019", "family": "pronoms_relatifs", "mechanism_id": "possession_dont", "detail_id": "core", "tense_id": null, "prompt": "L’équipe ___ les résultats ont progressé recevra un soutien supplémentaire."},
+    {"drill_id": "hep-d1-20260810-0020", "family": "adjectif_verbal_participe_present", "mechanism_id": "accord_adjectif_invariabilite_participe", "detail_id": "adjectif", "tense_id": null, "prompt": "Ces mesures se sont révélées ___ (rassurer) pour le personnel."}
+  ]
+}

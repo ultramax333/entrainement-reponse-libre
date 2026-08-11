@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hep.local/schemas/hep-drill-feedback-1.0.json",
+  "title": "Séance HEP à réponse libre",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "session_id",
+    "started_at",
+    "completed_at",
+    "bank_release",
+    "attempts"
+  ],
+  "properties": {
+    "schema_version": { "const": "hep-drill-feedback/1.0" },
+    "session_id": { "type": "string", "pattern": "^hep-ds1-[A-Za-z0-9_-]{8,80}$" },
+    "started_at": { "type": "string", "format": "date-time" },
+    "completed_at": { "type": "string", "format": "date-time" },
+    "bank_release": { "type": "string", "pattern": "^drills-[A-Za-z0-9_-]{4,80}$" },
+    "attempts": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 500,
+      "items": { "$ref": "#/$defs/attempt" }
+    }
+  },
+  "$defs": {
+    "attempt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "drill_id",
+        "family",
+        "mechanism_id",
+        "detail_id",
+        "tense_id",
+        "correct",
+        "answered_at"
+      ],
+      "properties": {
+        "drill_id": { "type": "string", "pattern": "^hep-d1-[0-9]{8}-[0-9]{4}$" },
+        "family": { "type": "string", "pattern": "^[a-z][a-z0-9_]{1,63}$" },
+        "mechanism_id": { "type": "string", "pattern": "^[a-z][a-z0-9_]{1,63}$" },
+        "detail_id": {
+          "oneOf": [
+            { "type": "null" },
+            { "type": "string", "pattern": "^[a-z][a-z0-9_]{1,63}$" }
+          ]
+        },
+        "tense_id": {
+          "oneOf": [
+            { "type": "null" },
+            { "type": "string", "pattern": "^[a-z][a-z0-9_]{1,63}$" }
+          ]
+        },
+        "correct": { "type": "boolean" },
+        "answered_at": { "type": "string", "format": "date-time" }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "hep-drill-pilot-review/1.0",
+  "source_batch_id": "hep-db1-20260810-0001",
+  "review_model": "gpt-5.6-sol",
+  "reasoning": "high",
+  "review_mode": "exhaustive_second_pass",
+  "independence_limitation": "Revue exhaustive effectuée dans le même fil que la génération; aucun contexte de modèle séparé n’était disponible.",
+  "criteria": [
+    "réponse résolue",
+    "chemin canonique",
+    "unicité de la réponse",
+    "français suisse",
+    "naturalité",
+    "absence d’indice grammatical prématuré",
+    "note d’application ciblée",
+    "absence de proximité QCM",
+    "contrôles locaux"
+  ],
+  "reviews": [
+    {"drill_id": "hep-d1-20260810-0001", "derived_answer": "impartialité", "verdict": "PASS", "defects": []},
+    {"drill_id": "hep-d1-20260810-0002", "derived_answer": "auquel", "verdict": "PASS", "defects": []},
+    {"drill_id": "hep-d1-20260810-0003", "derived_answer": "dont", "verdict": "PASS", "defects": []},
+    {"drill_id": "hep-d1-20260810-0004", "derived_answer": "éclairantes", "verdict": "PASS", "defects": []},
+    {"drill_id": "hep-d1-20260810-0005", "derived_answer": "fiabilité", "verdict": "PASS", "defects": []},
+    {"drill_id": "hep-d1-20260810-0006", "derived_answer": "à laquelle", "verdict": "PASS", "defects": []},
+    {"drill_id": "hep-d1-20260810-0007", "derived_answer": "dont", "verdict": "PASS", "defects": []},
+    {"drill_id": "hep-d1-20260810-0008", "derived_answer": "consultant", "verdict": "PASS", "defects": []},
+    {"drill_id": "hep-d1-20260810-0009", "derived_answer": "spontanéité", "verdict": "PASS", "defects": []},
+    {"drill_id": "hep-d1-20260810-0010", "derived_answer": "auxquels", "verdict": "PASS", "defects": []},
+    {"drill_id": "hep-d1-20260810-0011", "derived_answer": "dont", "verdict": "PASS", "defects": []},
+    {"drill_id": "hep-d1-20260810-0012", "derived_answer": "innovantes", "verdict": "PASS", "defects": []},
+    {"drill_id": "hep-d1-20260810-0013", "derived_answer": "efficacité", "verdict": "PASS", "defects": []},
+    {"drill_id": "hep-d1-20260810-0014", "derived_answer": "auxquelles", "verdict": "PASS", "defects": []},
+    {"drill_id": "hep-d1-20260810-0015", "derived_answer": "dont", "verdict": "PASS", "defects": []},
+    {"drill_id": "hep-d1-20260810-0016", "derived_answer": "encourageant", "verdict": "PASS", "defects": []},
+    {"drill_id": "hep-d1-20260810-0017", "derived_answer": "autonomie", "verdict": "PASS", "defects": []},
+    {"drill_id": "hep-d1-20260810-0018", "derived_answer": "auquel", "verdict": "PASS", "defects": []},
+    {"drill_id": "hep-d1-20260810-0019", "derived_answer": "dont", "verdict": "PASS", "defects": []},
+    {"drill_id": "hep-d1-20260810-0020", "derived_answer": "rassurantes", "verdict": "PASS", "defects": []}
+  ],
+  "targeted_review_simulation": {
+    "selection_rule": "Revoir les mécanismes syntaxiques ou morphologiques complexes; omettre seulement les cinq transformations lexicales sans alerte.",
+    "selected_ids": [
+      "hep-d1-20260810-0002", "hep-d1-20260810-0003", "hep-d1-20260810-0004",
+      "hep-d1-20260810-0006", "hep-d1-20260810-0007", "hep-d1-20260810-0008",
+      "hep-d1-20260810-0010", "hep-d1-20260810-0011", "hep-d1-20260810-0012",
+      "hep-d1-20260810-0014", "hep-d1-20260810-0015", "hep-d1-20260810-0016",
+      "hep-d1-20260810-0018", "hep-d1-20260810-0019", "hep-d1-20260810-0020"
+    ],
+    "selected_count": 15,
+    "exhaustive_only_defects": 0
+  },
+  "summary": {
+    "total": 20,
+    "pass": 20,
+    "revise": 0,
+    "reject": 0
+  }
+}

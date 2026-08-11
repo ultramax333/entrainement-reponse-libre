@@ -1,0 +1,26 @@
+{
+  "schema_version": "hep-drill-choice-options/1.0",
+  "source_batch_id": "hep-db1-20260810-0001",
+  "options": [
+    {"drill_id": "hep-d1-20260810-0001", "choices": ["impartialité", "impartialitée", "inpartialité", "impartialiter"]},
+    {"drill_id": "hep-d1-20260810-0002", "choices": ["auquel", "au quel", "à lequel", "auxquels"]},
+    {"drill_id": "hep-d1-20260810-0003", "choices": ["dont", "donc", "d’on", "don"]},
+    {"drill_id": "hep-d1-20260810-0004", "choices": ["éclairantes", "éclairants", "éclairant", "éclairentes"]},
+    {"drill_id": "hep-d1-20260810-0005", "choices": ["fiabilité", "fiabilitée", "fiableté", "fiablité"]},
+    {"drill_id": "hep-d1-20260810-0006", "choices": ["à laquelle", "auquel", "à la quelle", "auxquelles"]},
+    {"drill_id": "hep-d1-20260810-0007", "choices": ["dont", "donc", "d’on", "don"]},
+    {"drill_id": "hep-d1-20260810-0008", "choices": ["consultant", "consultante", "consultants", "consultantes"]},
+    {"drill_id": "hep-d1-20260810-0009", "choices": ["spontanéité", "spontaneité", "spontanéitée", "spontannéité"]},
+    {"drill_id": "hep-d1-20260810-0010", "choices": ["auxquels", "auxquelles", "auquel", "aux quels"]},
+    {"drill_id": "hep-d1-20260810-0011", "choices": ["dont", "donc", "d’on", "don"]},
+    {"drill_id": "hep-d1-20260810-0012", "choices": ["innovantes", "innovants", "innovant", "inovantes"]},
+    {"drill_id": "hep-d1-20260810-0013", "choices": ["efficacité", "efficassité", "efficacitée", "éfficacité"]},
+    {"drill_id": "hep-d1-20260810-0014", "choices": ["auxquelles", "auxquels", "à lesquelles", "aux quelles"]},
+    {"drill_id": "hep-d1-20260810-0015", "choices": ["dont", "donc", "d’on", "don"]},
+    {"drill_id": "hep-d1-20260810-0016", "choices": ["encourageant", "encourageante", "encouragent", "encourageants"]},
+    {"drill_id": "hep-d1-20260810-0017", "choices": ["autonomie", "autonommie", "autonimie", "autonomitée"]},
+    {"drill_id": "hep-d1-20260810-0018", "choices": ["auquel", "auxquels", "au quel", "à lequel"]},
+    {"drill_id": "hep-d1-20260810-0019", "choices": ["dont", "donc", "d’on", "don"]},
+    {"drill_id": "hep-d1-20260810-0020", "choices": ["rassurantes", "rassurants", "rassurant", "rassurente"]}
+  ]
+}

@@ -1,0 +1,6 @@
+.tmp/
+__pycache__/
+data/bridge_audit.json
+data/drill_plan.json
+data/prompt_context.json
+data/*_report.json

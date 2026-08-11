@@ -1,0 +1,233 @@
+{
+  "schema_version": "hep-drill-independent-review/1.0",
+  "source_batch_id": "hep-db1-20260810-0001",
+  "review_protocol": {
+    "blind_derivation_completed_before_key_access": true,
+    "items_reviewed_exhaustively": 20,
+    "application_notes_checked": 20,
+    "locale": "fr-CH",
+    "local_checker_treatment": "REPORT_ONLY"
+  },
+  "items": [
+    {
+      "drill_id": "hep-d1-20260810-0001",
+      "derived_answer": "impartialité",
+      "announced_answer": "impartialité",
+      "answer_match": true,
+      "verdict": "PASS",
+      "defects": [],
+      "rationale": "La graphie nominale est attestée, la phrase est naturelle et la note d’application est exacte."
+    },
+    {
+      "drill_id": "hep-d1-20260810-0002",
+      "derived_answer": "auquel",
+      "announced_answer": "auquel",
+      "answer_match": true,
+      "verdict": "PASS",
+      "defects": [],
+      "rationale": "Se conformer régit à ; l’antécédent masculin singulier impose auquel, correctement expliqué."
+    },
+    {
+      "drill_id": "hep-d1-20260810-0003",
+      "derived_answer": "dont",
+      "announced_answer": "dont",
+      "answer_match": true,
+      "verdict": "PASS",
+      "defects": [],
+      "rationale": "Les travaux de la chercheuse établissent sans ambiguïté le lien possessif repris par dont."
+    },
+    {
+      "drill_id": "hep-d1-20260810-0004",
+      "derived_answer": "éclairantes",
+      "announced_answer": "éclairantes",
+      "answer_match": true,
+      "verdict": "PASS",
+      "defects": [],
+      "rationale": "La forme attribue une propriété aux explications et s’accorde clairement au féminin pluriel."
+    },
+    {
+      "drill_id": "hep-d1-20260810-0005",
+      "derived_answer": "fiabilité",
+      "announced_answer": "fiabilité",
+      "answer_match": true,
+      "verdict": "PASS",
+      "defects": [],
+      "rationale": "Fiabilité est la graphie attendue ; contexte, niveau et note d’application sont adéquats."
+    },
+    {
+      "drill_id": "hep-d1-20260810-0006",
+      "derived_answer": "à laquelle",
+      "announced_answer": "à laquelle",
+      "answer_match": true,
+      "verdict": "PASS",
+      "defects": [],
+      "rationale": "Se rallier à et l’antécédent féminin singulier conduisent uniquement à à laquelle."
+    },
+    {
+      "drill_id": "hep-d1-20260810-0007",
+      "derived_answer": "dont",
+      "announced_answer": "dont",
+      "answer_match": true,
+      "verdict": "PASS",
+      "defects": [],
+      "rationale": "Les maisons du village forment un complément possessif naturel et la note le décrit correctement."
+    },
+    {
+      "drill_id": "hep-d1-20260810-0008",
+      "derived_answer": "consultant",
+      "announced_answer": "consultant",
+      "answer_match": true,
+      "verdict": "PASS",
+      "defects": [],
+      "rationale": "Consultant régit le complément direct leurs notes : la lecture verbale est univoque, la forme reste invariable et la note d’application l’explique exactement."
+    },
+    {
+      "drill_id": "hep-d1-20260810-0009",
+      "derived_answer": "spontanéité",
+      "announced_answer": "spontanéité",
+      "answer_match": true,
+      "verdict": "PASS",
+      "defects": [],
+      "rationale": "La réponse est unique, les deux accents sont significatifs et la note les explicite avec justesse."
+    },
+    {
+      "drill_id": "hep-d1-20260810-0010",
+      "derived_answer": "auxquels",
+      "announced_answer": "auxquels",
+      "answer_match": true,
+      "verdict": "PASS",
+      "defects": [],
+      "rationale": "Demeurer attaché à et principes au masculin pluriel imposent auxquels."
+    },
+    {
+      "drill_id": "hep-d1-20260810-0011",
+      "derived_answer": "dont",
+      "announced_answer": "dont",
+      "answer_match": true,
+      "verdict": "PASS",
+      "defects": [],
+      "rationale": "Le dossier du candidat établit un lien possessif net ; phrase et explication sont naturelles."
+    },
+    {
+      "drill_id": "hep-d1-20260810-0012",
+      "derived_answer": "innovantes",
+      "announced_answer": "innovantes",
+      "answer_match": true,
+      "verdict": "PASS",
+      "defects": [],
+      "rationale": "Innovantes qualifie les propositions et l’accord féminin pluriel est sans concurrence plausible."
+    },
+    {
+      "drill_id": "hep-d1-20260810-0013",
+      "derived_answer": "efficacité",
+      "announced_answer": "efficacité",
+      "answer_match": true,
+      "verdict": "PASS",
+      "defects": [],
+      "rationale": "Efficacité est la graphie lexicale correcte ; la phrase et la note sont précises."
+    },
+    {
+      "drill_id": "hep-d1-20260810-0014",
+      "derived_answer": "auxquelles",
+      "announced_answer": "auxquelles",
+      "answer_match": true,
+      "verdict": "PASS",
+      "defects": [],
+      "rationale": "Satisfaire à et normes au féminin pluriel imposent auxquelles, comme l’indique la note."
+    },
+    {
+      "drill_id": "hep-d1-20260810-0015",
+      "derived_answer": "dont",
+      "announced_answer": "dont",
+      "answer_match": true,
+      "verdict": "PASS",
+      "defects": [],
+      "rationale": "Les annexes des dossiers constituent un complément possessif clair et unique."
+    },
+    {
+      "drill_id": "hep-d1-20260810-0016",
+      "derived_answer": "encourageant",
+      "announced_answer": "encourageant",
+      "answer_match": true,
+      "verdict": "PASS",
+      "defects": [],
+      "rationale": "Le complément verbal de nouvelles pratiques impose le participe présent invariable ; la note est exacte."
+    },
+    {
+      "drill_id": "hep-d1-20260810-0017",
+      "derived_answer": "autonomie",
+      "announced_answer": "autonomie",
+      "answer_match": true,
+      "verdict": "PASS",
+      "defects": [],
+      "rationale": "Autonomie est la forme nominale attestée et l’indication orthographique de la note est correcte."
+    },
+    {
+      "drill_id": "hep-d1-20260810-0018",
+      "derived_answer": "auquel",
+      "announced_answer": "auquel",
+      "answer_match": true,
+      "verdict": "PASS",
+      "defects": [],
+      "rationale": "Parvenir à et objectif au masculin singulier conduisent uniquement à auquel."
+    },
+    {
+      "drill_id": "hep-d1-20260810-0019",
+      "derived_answer": "dont",
+      "announced_answer": "dont",
+      "answer_match": true,
+      "verdict": "PASS",
+      "defects": [],
+      "rationale": "Les résultats de l’équipe établissent le lien possessif visé ; phrase et note sont acceptables en français suisse."
+    },
+    {
+      "drill_id": "hep-d1-20260810-0020",
+      "derived_answer": "rassurantes",
+      "announced_answer": "rassurantes",
+      "answer_match": true,
+      "verdict": "PASS",
+      "defects": [],
+      "rationale": "Rassurantes est attribut de mesures et s’accorde sans ambiguïté au féminin pluriel."
+    }
+  ],
+  "summary": {
+    "total": 20,
+    "pass": 20,
+    "revise": 0,
+    "reject": 0,
+    "answer_matches": 20,
+    "answer_mismatches": 0,
+    "application_notes_checked": 20,
+    "application_notes_with_defect": 0,
+    "fr_ch_issues": 0,
+    "automatic_lint_non_pass": 0,
+    "automatic_checker_findings": 0,
+    "independent_defects_missed_by_automatic_controls": []
+  },
+  "targeted_review_simulation": {
+    "selection_basis": [
+      "tout item du mécanisme accord_adjectif_invariabilite_participe",
+      "tout item du mécanisme regime_a_auquel",
+      "toute alerte locale, proximité de signature ou demande explicite du lint"
+    ],
+    "selected_ids": [
+      "hep-d1-20260810-0002",
+      "hep-d1-20260810-0004",
+      "hep-d1-20260810-0006",
+      "hep-d1-20260810-0008",
+      "hep-d1-20260810-0010",
+      "hep-d1-20260810-0012",
+      "hep-d1-20260810-0014",
+      "hep-d1-20260810-0016",
+      "hep-d1-20260810-0018",
+      "hep-d1-20260810-0020"
+    ],
+    "selected_count": 10,
+    "review_volume_reduction": 0.5,
+    "exhaustive_non_pass_ids": [],
+    "detected_non_pass_ids": [],
+    "missed_non_pass_ids": [],
+    "recall_on_exhaustive_non_pass": null,
+    "decision": "La sélection simulée réduit de moitié le volume et inclut les dix exercices à accord ou construction complexe ; après correction, la revue exhaustive ne relève plus aucun défaut."
+  }
+}
