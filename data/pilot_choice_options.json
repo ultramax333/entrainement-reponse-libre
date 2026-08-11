@@ -21,6 +21,26 @@
     {"drill_id": "hep-d1-20260810-0017", "choices": ["autonomie", "autonommie", "autonimie", "autonomitée"]},
     {"drill_id": "hep-d1-20260810-0018", "choices": ["auquel", "auxquels", "au quel", "à lequel"]},
     {"drill_id": "hep-d1-20260810-0019", "choices": ["dont", "donc", "d’on", "don"]},
-    {"drill_id": "hep-d1-20260810-0020", "choices": ["rassurantes", "rassurants", "rassurant", "rassurente"]}
+    {"drill_id": "hep-d1-20260810-0020", "choices": ["rassurantes", "rassurants", "rassurant", "rassurente"]},
+    {"drill_id": "hep-d1-20260811-0021", "choices": ["unanimité", "unanimitée", "unaminité", "unanimiter"]},
+    {"drill_id": "hep-d1-20260811-0022", "choices": ["à laquelle", "auquel", "à la quelle", "auxquelles"]},
+    {"drill_id": "hep-d1-20260811-0023", "choices": ["dont", "donc", "d’on", "don"]},
+    {"drill_id": "hep-d1-20260811-0024", "choices": ["convaincants", "convainquant", "convaincant", "convainquants"]},
+    {"drill_id": "hep-d1-20260811-0025", "choices": ["solidarité", "solidaritée", "soliderité", "solidariter"]},
+    {"drill_id": "hep-d1-20260811-0026", "choices": ["auxquelles", "auxquels", "à lesquelles", "aux quelles"]},
+    {"drill_id": "hep-d1-20260811-0027", "choices": ["dont", "donc", "d’on", "don"]},
+    {"drill_id": "hep-d1-20260811-0028", "choices": ["convainquant", "convaincant", "convainquants", "convaincants"]},
+    {"drill_id": "hep-d1-20260811-0029", "choices": ["confidentialité", "confidentialitée", "confidencialité", "confidentalité"]},
+    {"drill_id": "hep-d1-20260811-0030", "choices": ["auxquels", "auxquelles", "auquel", "aux quels"]},
+    {"drill_id": "hep-d1-20260811-0031", "choices": ["dont", "donc", "d’on", "don"]},
+    {"drill_id": "hep-d1-20260811-0032", "choices": ["blessantes", "blessants", "blessant", "blessentes"]},
+    {"drill_id": "hep-d1-20260811-0033", "choices": ["complexité", "complexitée", "compléxité", "complexiter"]},
+    {"drill_id": "hep-d1-20260811-0034", "choices": ["à laquelle", "auquel", "à la quelle", "auxquelles"]},
+    {"drill_id": "hep-d1-20260811-0035", "choices": ["dont", "donc", "d’on", "don"]},
+    {"drill_id": "hep-d1-20260811-0036", "choices": ["analysant", "analysante", "analysants", "analysantes"]},
+    {"drill_id": "hep-d1-20260811-0037", "choices": ["authenticité", "authenticitée", "autenticité", "authentisité"]},
+    {"drill_id": "hep-d1-20260811-0038", "choices": ["auquel", "auxquels", "au quel", "à lequel"]},
+    {"drill_id": "hep-d1-20260811-0039", "choices": ["dont", "donc", "d’on", "don"]},
+    {"drill_id": "hep-d1-20260811-0040", "choices": ["fatigantes", "fatigants", "fatigant", "fatiguantes"]}
   ]
 }

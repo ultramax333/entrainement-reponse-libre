@@ -9,12 +9,12 @@ Le pipeline local et l’application autonome sont implémentés :
 
 - contrats fermés et normalisation des réponses ;
 - mémoire drill séparée, import idempotent, agrégation et bridge de priorités ;
-- page autonome dans ce dossier, avec banque de 20 exercices validés ;
+- page autonome dans ce dossier, avec banque de 40 exercices contrôlés ;
 - export manuel et file locale de synchronisation ;
 - planification, projection canonique, lint, correcteurs locaux et publication
   atomique sur copie de test;
-- pilote de 20 exercices, revu indépendamment et conservé dans `data/` comme
-  artefact d’audit ;
+- pilote initial de 20 exercices revu indépendamment, puis extension de 20
+  exercices contrôlée localement ;
 - deux à quatre formes courtes par exercice, contrôlées avant la génération de
   `bank.js`.
 
@@ -38,6 +38,12 @@ python -m pytest
 La page locale se lance depuis ce dossier avec un serveur statique, puis s’ouvre
 sur sa racine. `index.html`, `app.js`, `choice-engine.js`, `style.css` et
 `bank.js` forment le site autonome publiable sur GitHub Pages.
+
+Chaque question possède un champ de feedback facultatif. Les commentaires sont
+conservés dans le navigateur, téléchargeables en JSON et sauvegardables ou
+restaurables depuis Google Drive. Le site demande un identifiant client OAuth Web
+public lors de la première configuration ; aucun jeton Google n’est enregistré
+par l’application.
 
 ## Démarrage d’un nouveau fil
 

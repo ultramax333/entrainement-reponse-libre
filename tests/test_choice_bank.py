@@ -17,7 +17,7 @@ def sources() -> tuple[dict, dict]:
 def test_choice_bank_contains_twenty_resolved_questions() -> None:
     candidates, options = sources()
     bank = build_choice_bank(candidates, options)
-    assert len(bank["questions"]) == 20
+    assert len(bank["questions"]) == 40
     assert all(2 <= len(question["choices"]) <= 4 for question in bank["questions"])
     assert all(question["choices"].count(question["answer"]) == 1 for question in bank["questions"])
     assert all("___" not in question["prompt"] for question in bank["questions"])

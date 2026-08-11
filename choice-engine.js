@@ -41,5 +41,42 @@
     );
   }
 
-  return { normalize, isCorrect, score, shuffled, validateBank };
+  function feedbackDocument(bank, feedbacks, now) {
+    const source = feedbacks && typeof feedbacks === 'object' ? feedbacks : {};
+    const questions = new Map(bank.questions.map((question) => [question.id, question]));
+    const rows = Object.entries(source).flatMap(([questionId, item]) => {
+      const question = questions.get(questionId);
+      const comment = normalize(item && item.comment);
+      if (!question || !comment) return [];
+      return [{
+        question_id: questionId,
+        prompt: question.prompt,
+        comment,
+        updated_at: item.updated_at || now,
+      }];
+    });
+    return {
+      schema_version: 'hep-choice-feedback/1.0',
+      bank_release: bank.release,
+      saved_at: now,
+      feedbacks: rows,
+    };
+  }
+
+  function restoreFeedback(document, bank) {
+    if (!document || document.schema_version !== 'hep-choice-feedback/1.0' || !Array.isArray(document.feedbacks)) {
+      throw new Error('Le fichier de sauvegarde n’est pas reconnu.');
+    }
+    const known = new Set(bank.questions.map((question) => question.id));
+    const restored = {};
+    document.feedbacks.forEach((item) => {
+      if (!item || !known.has(item.question_id)) return;
+      const comment = normalize(item.comment);
+      if (!comment) return;
+      restored[item.question_id] = { comment, updated_at: item.updated_at || document.saved_at || null };
+    });
+    return restored;
+  }
+
+  return { feedbackDocument, isCorrect, normalize, restoreFeedback, score, shuffled, validateBank };
 }));

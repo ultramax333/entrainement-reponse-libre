@@ -120,6 +120,49 @@ button {
 }
 
 .next-button:hover, .next-button:focus-visible { background: #173b2a; outline: 3px solid rgba(36, 79, 58, .22); }
+.feedback-entry, .backup-panel {
+  margin-top: 24px;
+  padding-top: 22px;
+  border-top: 1px solid #dce6df;
+}
+
+.feedback-entry label { display: block; margin-bottom: 9px; font-weight: 800; }
+.feedback-entry textarea {
+  width: 100%;
+  resize: vertical;
+  padding: 12px 14px;
+  border: 1px solid #afc5b7;
+  border-radius: 12px;
+  color: #16201d;
+  background: #fff;
+  font: inherit;
+  line-height: 1.45;
+}
+
+.feedback-entry textarea:focus { outline: 3px solid rgba(75, 132, 98, .16); border-color: #3f775a; }
+.oauth-config { margin-top: 14px; }
+.oauth-config label { display: block; margin-bottom: 7px; font-size: .9rem; font-weight: 750; }
+.oauth-config input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #afc5b7;
+  border-radius: 10px;
+  font: inherit;
+}
+.secondary-button {
+  margin-top: 10px;
+  padding: 10px 13px;
+  border: 1px solid #89a895;
+  border-radius: 11px;
+  color: #244f3a;
+  background: #fff;
+  font-weight: 750;
+}
+.secondary-button:disabled { cursor: not-allowed; opacity: .5; }
+.backup-panel h2 { margin: 0 0 8px; font-size: 1.05rem; }
+.backup-copy, .status-line { margin: 0; color: #607068; font-size: .9rem; line-height: 1.45; }
+.status-line { margin-top: 10px; }
+.backup-actions { display: flex; flex-wrap: wrap; gap: 8px; }
 .summary { text-align: center; }
 .summary-text { color: #53625b; line-height: 1.6; }
 .error { color: #8b2823; font-weight: 700; }

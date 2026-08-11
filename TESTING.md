@@ -69,10 +69,10 @@ Pour chaque réponse admise :
 3. conserver les alertes de chaque moteur ;
 4. distinguer erreur, alerte acceptable, indisponibilité et indétermination.
 
-## Pilote de 20 drills
+## Banque de 40 exercices
 
-Le pilote alimente la banque autonome `bank.js`, générée après validation des
-choix orthographiques.
+Le pilote initial et son extension alimentent la banque autonome `bank.js`,
+générée après validation des choix orthographiques.
 
 Critères individuels :
 
