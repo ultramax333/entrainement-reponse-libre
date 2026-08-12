@@ -8,10 +8,15 @@
   const DRIVE = window.HEP_DRIVE_BACKUP;
   const CONFIG = window.HEP_CONFIG || {};
   const STORAGE_KEY = 'hep-choice-feedback/1.0';
+  const MASTERY_STORAGE_KEY = 'hep-choice-mastery/1.0';
+  const QCM_PRIORITY_STORAGE_KEY = 'hep-qcm-review-priorities/1.0';
   const OAUTH_STORAGE_KEY = 'hep-choice-google-client-id/1.0';
   const state = {
-    index: 0, selected: null, attempts: [], orders: {}, feedbacks: {},
-    feedbackStatus: '', backupStatus: '', backupBusy: false,
+    screen: 'menu', selectedMechanism: null, sessionQuestions: null,
+    sessionLabel: '', index: 0, selected: null,
+    attempts: [], orders: {}, feedbacks: {}, feedbackOpen: {},
+    mastery: null, qcmPriorities: null,
+    feedbackStatus: '', backupStatus: '', backupBusy: false, priorityStatus: '',
   };
 
   function element(tag, className, text) {
@@ -22,7 +27,14 @@
   }
 
   function current() {
-    return BANK.questions[state.index] || null;
+    return activeQuestions()[state.index] || null;
+  }
+
+  function activeQuestions() {
+    if (Array.isArray(state.sessionQuestions)) return state.sessionQuestions;
+    return state.selectedMechanism
+      ? BANK.questions.filter((question) => question.mechanism_id === state.selectedMechanism)
+      : BANK.questions;
   }
 
   function resetOrders() {
@@ -39,6 +51,18 @@
     } catch (_) {
       state.feedbacks = {};
     }
+    try {
+      state.mastery = ENGINE.normalizeMastery(JSON.parse(localStorage.getItem(MASTERY_STORAGE_KEY)));
+    } catch (_) {
+      state.mastery = ENGINE.emptyMastery();
+    }
+    try {
+      const imported = JSON.parse(localStorage.getItem(QCM_PRIORITY_STORAGE_KEY));
+      const validation = ENGINE.validatePriorityExport(imported, BANK);
+      state.qcmPriorities = validation.valid ? validation.document : null;
+    } catch (_) {
+      state.qcmPriorities = null;
+    }
     if (!CONFIG.GOOGLE_CLIENT_ID) {
       CONFIG.GOOGLE_CLIENT_ID = localStorage.getItem(OAUTH_STORAGE_KEY) || '';
     }
@@ -46,6 +70,14 @@
 
   function persistFeedbacks() {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state.feedbacks));
+  }
+
+  function persistMastery() {
+    localStorage.setItem(MASTERY_STORAGE_KEY, JSON.stringify(state.mastery));
+  }
+
+  function persistQcmPriorities() {
+    if (state.qcmPriorities) localStorage.setItem(QCM_PRIORITY_STORAGE_KEY, JSON.stringify(state.qcmPriorities));
   }
 
   function saveGoogleClientId(input) {
@@ -125,8 +157,12 @@
   function choose(choice) {
     if (state.selected != null) return;
     const question = current();
+    const correct = ENGINE.isCorrect(choice, question);
+    const answeredAt = new Date().toISOString();
     state.selected = choice;
-    state.attempts.push({ question_id: question.id, correct: ENGINE.isCorrect(choice, question) });
+    state.attempts.push({ question_id: question.id, correct });
+    state.mastery = ENGINE.recordAttempt(state.mastery, question, correct, answeredAt);
+    persistMastery();
     render();
   }
 
@@ -144,8 +180,148 @@
     render();
   }
 
+  function startRule(mechanismId) {
+    state.screen = 'exercise';
+    state.selectedMechanism = mechanismId || null;
+    state.sessionQuestions = null;
+    state.sessionLabel = mechanismId ? '' : 'Toutes les règles';
+    restart();
+  }
+
+  function startPrioritySession() {
+    const questions = ENGINE.buildPrioritySession(BANK, state.mastery, state.qcmPriorities, 20);
+    if (!questions.length) {
+      state.priorityStatus = 'Aucune règle prioritaire pour le moment. Fais quelques exercices ou importe un résumé QCM.';
+      render();
+      return;
+    }
+    state.screen = 'exercise';
+    state.selectedMechanism = null;
+    state.sessionQuestions = questions;
+    state.sessionLabel = 'Mes priorités';
+    restart();
+  }
+
+  function openRuleMenu() {
+    state.screen = 'menu';
+    state.index = 0;
+    state.selected = null;
+    state.attempts = [];
+    state.sessionQuestions = null;
+    state.sessionLabel = '';
+    render();
+  }
+
+  async function importQcmPriorities(file) {
+    if (!file) return;
+    if (file.size > 1024 * 1024) {
+      state.priorityStatus = 'Le fichier dépasse 1 Mo et n’est pas un résumé QCM compact.';
+      render();
+      return;
+    }
+    try {
+      const raw = JSON.parse(await file.text());
+      const result = ENGINE.validatePriorityExport(raw, BANK);
+      if (!result.valid) throw new Error(result.errors.join(' '));
+      if (state.qcmPriorities && state.qcmPriorities.export_id === result.document.export_id) {
+        state.priorityStatus = 'Cet export QCM est déjà importé.';
+        render();
+        return;
+      }
+      state.qcmPriorities = result.document;
+      persistQcmPriorities();
+      const ignored = result.unsupported.length;
+      state.priorityStatus = `${result.document.priorities.length} règle(s) QCM importée(s)${ignored ? `, ${ignored} sans exercice disponible ignorée(s)` : ''}.`;
+    } catch (error) {
+      state.priorityStatus = `Import impossible : ${error.message}`;
+    }
+    render();
+  }
+
+  function formatPriority(row) {
+    if (row.errors > 0 && row.qcm_factor > 1) return `${row.errors} erreur(s) ici · priorité QCM ${row.qcm_factor.toFixed(2)}`;
+    if (row.errors > 0) return `${row.errors} erreur(s) ici sur ${row.attempts} réponse(s)`;
+    if (row.qcm_factor > 1) return `priorité QCM ${row.qcm_factor.toFixed(2)}`;
+    if (row.attempts > 0) return `${row.attempts} réponse(s), aucune erreur`;
+    return 'pas encore travaillée';
+  }
+
+  function renderPriorityPanel(card, priorities) {
+    const panel = element('section', 'priority-panel');
+    panel.append(element('h2', null, 'Règles à revoir'));
+    const active = priorities.filter((row) => row.errors > 0 || row.qcm_factor > 1);
+    const priorityButton = element('button', 'next-button priority-start', active.length ? `Mes priorités (${Math.min(20, ENGINE.buildPrioritySession(BANK, state.mastery, state.qcmPriorities, 20, () => 0.5).length)} exercices)` : 'Mes priorités');
+    priorityButton.type = 'button';
+    priorityButton.disabled = active.length === 0;
+    priorityButton.addEventListener('click', startPrioritySession);
+    panel.append(priorityButton);
+    if (active.length) {
+      const list = element('ol', 'priority-list');
+      active.slice(0, 5).forEach((row) => {
+        const item = element('li', null);
+        item.append(element('strong', null, row.label));
+        item.append(element('span', null, formatPriority(row)));
+        list.append(item);
+      });
+      panel.append(list);
+    } else {
+      panel.append(element('p', 'status-line', 'Aucune erreur enregistrée et aucun résumé QCM importé.'));
+    }
+    const importLabel = element('label', 'secondary-button import-label', 'Importer les règles du QCM');
+    importLabel.htmlFor = 'qcm-priority-file';
+    const fileInput = element('input', 'visually-hidden');
+    fileInput.id = 'qcm-priority-file';
+    fileInput.type = 'file';
+    fileInput.accept = '.json,application/json';
+    fileInput.addEventListener('change', () => importQcmPriorities(fileInput.files && fileInput.files[0]));
+    panel.append(importLabel, fileInput);
+    if (state.qcmPriorities) {
+      const date = new Date(state.qcmPriorities.generated_at).toLocaleString('fr-CH');
+      panel.append(element('p', 'status-line', `Export QCM du ${date} · ${state.qcmPriorities.priorities.length} règle(s) compatible(s).`));
+    }
+    if (state.priorityStatus) panel.append(element('p', 'status-line', state.priorityStatus));
+    card.append(panel);
+  }
+
+  function renderRuleMenu() {
+    const card = element('section', 'card rule-menu');
+    card.append(element('p', 'eyebrow', 'Entraînement ciblé'));
+    card.append(element('h1', null, 'Choisis une règle'));
+    card.append(element('p', 'summary-text', 'Lance toute la banque ou travaille une seule règle.'));
+    const priorities = ENGINE.rulePriorities(BANK, state.mastery, state.qcmPriorities);
+    renderPriorityPanel(card, priorities);
+    const choices = element('div', 'rule-choices');
+    const allButton = element('button', 'rule-choice all-rules', `Toutes les règles (${BANK.questions.length} exercices)`);
+    allButton.type = 'button';
+    allButton.addEventListener('click', () => startRule(null));
+    choices.append(allButton);
+    priorities.forEach((rule) => {
+      const button = element('button', 'rule-choice', `${rule.label} (${rule.questions})`);
+      button.type = 'button';
+      const meta = element('span', 'rule-meta', formatPriority(rule));
+      button.append(meta);
+      button.addEventListener('click', () => startRule(rule.mechanism_id));
+      choices.append(button);
+    });
+    card.append(choices);
+    renderBackupPanel(card);
+    APP.replaceChildren(card);
+  }
+
   function renderFeedbackEntry(card, question) {
     const section = element('section', 'feedback-entry');
+    const hasFeedback = Boolean(state.feedbacks[question.id]);
+    const toggle = element('button', 'link-button feedback-toggle', hasFeedback ? 'Modifier le feedback' : 'Ajouter un feedback');
+    toggle.type = 'button';
+    toggle.addEventListener('click', () => {
+      state.feedbackOpen[question.id] = !state.feedbackOpen[question.id];
+      render();
+    });
+    section.append(toggle);
+    if (!state.feedbackOpen[question.id] && !hasFeedback) {
+      card.append(section);
+      return;
+    }
     const label = element('label', null, 'Feedback sur cette question (facultatif)');
     label.htmlFor = `feedback-${question.id}`;
     const textarea = element('textarea', null);
@@ -204,14 +380,19 @@
 
   function renderSummary() {
     const result = ENGINE.score(state.attempts);
+    const questions = activeQuestions();
     const card = element('section', 'card summary');
     card.append(element('p', 'eyebrow', 'Séance terminée'));
-    card.append(element('h1', null, `${result.correct} / ${BANK.questions.length}`));
-    card.append(element('p', 'summary-text', `Tu as répondu correctement à ${result.correct} exercice${result.correct === 1 ? '' : 's'} sur ${BANK.questions.length}.`));
+    card.append(element('h1', null, `${result.correct} / ${questions.length}`));
+    card.append(element('p', 'summary-text', `Tu as répondu correctement à ${result.correct} exercice${result.correct === 1 ? '' : 's'} sur ${questions.length}.`));
     const button = element('button', 'next-button', 'Recommencer');
     button.type = 'button';
     button.addEventListener('click', restart);
     card.append(button);
+    const menuButton = element('button', 'secondary-button', 'Choisir une autre règle');
+    menuButton.type = 'button';
+    menuButton.addEventListener('click', openRuleMenu);
+    card.append(menuButton);
     renderBackupPanel(card);
     APP.replaceChildren(card);
   }
@@ -219,6 +400,10 @@
   function render() {
     if (!ENGINE || !ENGINE.validateBank(BANK)) {
       APP.replaceChildren(element('p', 'error', 'La banque d’exercices est indisponible.'));
+      return;
+    }
+    if (state.screen === 'menu') {
+      renderRuleMenu();
       return;
     }
     if (!current()) {
@@ -231,8 +416,8 @@
     const correct = revealed && ENGINE.isCorrect(state.selected, question);
     const card = element('section', 'card');
     const top = element('div', 'topline');
-    top.append(element('span', 'eyebrow', 'Orthographe'));
-    top.append(element('span', 'progress', `Exercice ${state.index + 1} / ${BANK.questions.length}`));
+    top.append(element('span', 'eyebrow', state.sessionLabel || 'Orthographe'));
+    top.append(element('span', 'progress', `Exercice ${state.index + 1} / ${activeQuestions().length}`));
     card.append(top);
     card.append(element('h1', null, 'Choisis la forme correcte'));
     card.append(element('p', 'sentence', question.prompt));
@@ -252,21 +437,41 @@
       choices.append(button);
     });
     card.append(choices);
-    renderFeedbackEntry(card, question);
 
     if (revealed) {
-      const feedback = element('div', `feedback ${correct ? 'correct' : 'wrong'}`);
-      feedback.append(element('h2', null, correct ? 'Correct' : 'À revoir'));
-      if (!correct) feedback.append(element('p', null, `Réponse correcte : ${question.answer}`));
-      feedback.append(element('h3', null, 'Pourquoi ?'));
-      feedback.append(element('p', null, question.application_note));
-      const nextButton = element('button', 'next-button', state.index + 1 === BANK.questions.length ? 'Voir le résultat' : 'Question suivante');
+      const correction = question.correction;
+      const feedback = element('section', `feedback ${correct ? 'correct' : 'wrong'}`);
+      feedback.append(element('h2', null, correct ? 'Correct.' : 'Incorrect.'));
+      if (!correct) feedback.append(element('p', 'answer-line', `Réponse correcte : ${question.answer}`));
+      feedback.append(element('p', 'correction-note', correction.application));
+      feedback.append(element('p', 'correction-conclusion', correction.conclusion));
+      const details = element('details', 'correction-details');
+      details.append(element('summary', null, 'Voir le raisonnement détaillé'));
+      details.append(element('h3', null, 'Règle'));
+      details.append(element('p', null, correction.rule));
+      details.append(element('h3', null, 'Méthode'));
+      const steps = element('ol', 'correction-steps');
+      correction.method_steps.forEach((step) => steps.append(element('li', null, step)));
+      details.append(steps);
+      details.append(element('h3', null, 'Pourquoi chaque forme ?'));
+      const reasons = element('dl', 'choice-reasons');
+      question.choices.forEach((choice) => {
+        reasons.append(element('dt', null, choice));
+        reasons.append(element('dd', null, correction.why[choice].replaceAll('`', '')));
+      });
+      details.append(reasons);
+      feedback.append(details);
+      const nextButton = element('button', 'next-button', state.index + 1 === activeQuestions().length ? 'Voir le résultat' : 'Question suivante');
       nextButton.type = 'button';
       nextButton.addEventListener('click', next);
       feedback.append(nextButton);
       card.append(feedback);
     }
-    renderBackupPanel(card);
+    renderFeedbackEntry(card, question);
+    const menuButton = element('button', 'link-button', 'Changer de règle');
+    menuButton.type = 'button';
+    menuButton.addEventListener('click', openRuleMenu);
+    card.append(menuButton);
     APP.replaceChildren(card);
   }
 

@@ -1,0 +1,338 @@
+{
+  "schema_version": "hep-choice-corrections/1.0",
+  "source_batch_id": "hep-db1-20260810-0001",
+  "corrections": [
+    {
+      "drill_id": "hep-d1-20260810-0001",
+      "diagnostics": {
+        "impartialitée": "ajoute un e final qui n’appartient pas au nom terminé par -ité.",
+        "inpartialité": "emploie le préfixe in- devant p, alors que la graphie française exige im-.",
+        "impartialiter": "remplace la terminaison nominale -ité par la terminaison verbale -er."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260810-0002",
+      "diagnostics": {
+        "au quel": "sépare à tort la forme soudée obtenue par à + lequel.",
+        "à lequel": "ne réalise pas la contraction de à + lequel au masculin singulier.",
+        "auxquels": "est au pluriel, alors que l’antécédent règlement est masculin singulier."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260810-0003",
+      "diagnostics": {
+        "donc": "est un connecteur de conséquence et ne reprend pas le complément de la chercheuse.",
+        "d’on": "correspondrait à la suite de + on et ne peut pas introduire le lien possessif attendu.",
+        "don": "est un nom commun et non un pronom relatif."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260810-0004",
+      "diagnostics": {
+        "éclairants": "porte un accord masculin pluriel, alors que le nom explications est féminin pluriel.",
+        "éclairant": "reste au masculin singulier ou invariable, alors que l’emploi adjectival exige l’accord avec explications.",
+        "éclairentes": "altère la terminaison -ante de l’adjectif verbal en -ente."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260810-0005",
+      "diagnostics": {
+        "fiabilitée": "ajoute un e final qui n’appartient pas au nom en -ité.",
+        "fiableté": "conserve à tort la fin de l’adjectif fiable au lieu de former le nom en -abilité.",
+        "fiablité": "supprime le a nécessaire dans la suite -abilité."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260810-0006",
+      "diagnostics": {
+        "auquel": "est masculin singulier, alors que l’antécédent proposition est féminin singulier.",
+        "à la quelle": "sépare à tort laquelle, qui s’écrit en un seul mot.",
+        "auxquelles": "est au pluriel, alors que proposition est singulier."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260810-0007",
+      "diagnostics": {
+        "donc": "est un connecteur de conséquence et ne reprend pas le complément du village.",
+        "d’on": "correspondrait à la suite de + on et ne peut pas exprimer le lien entre le village et ses maisons.",
+        "don": "est un nom commun et non un pronom relatif."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260810-0008",
+      "diagnostics": {
+        "consultante": "ajoute un accord féminin au participe présent, qui reste invariable.",
+        "consultants": "ajoute un accord masculin pluriel au participe présent, qui reste invariable.",
+        "consultantes": "ajoute un accord féminin pluriel au participe présent, qui reste invariable."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260810-0009",
+      "diagnostics": {
+        "spontaneité": "omet l’accent aigu conservé sur le é de spontané.",
+        "spontanéitée": "ajoute un e final qui n’appartient pas au nom en -ité.",
+        "spontannéité": "double à tort le n dans le radical spontané-."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260810-0010",
+      "diagnostics": {
+        "auxquelles": "est féminin pluriel, alors que l’antécédent principes est masculin pluriel.",
+        "auquel": "est singulier, alors que principes est pluriel.",
+        "aux quels": "sépare à tort la forme soudée auxquels."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260810-0011",
+      "diagnostics": {
+        "donc": "est un connecteur de conséquence et ne reprend pas le complément du candidat.",
+        "d’on": "correspondrait à la suite de + on et ne peut pas introduire le lien possessif attendu.",
+        "don": "est un nom commun et non un pronom relatif."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260810-0012",
+      "diagnostics": {
+        "innovants": "porte un accord masculin pluriel, alors que propositions est féminin pluriel.",
+        "innovant": "reste au masculin singulier ou invariable, alors que l’emploi adjectival exige l’accord avec propositions.",
+        "inovantes": "supprime un des deux n du radical innov-."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260810-0013",
+      "diagnostics": {
+        "efficassité": "remplace par ss le c conservé devant la terminaison -ité.",
+        "efficacitée": "ajoute un e final qui n’appartient pas au nom en -ité.",
+        "éfficacité": "ajoute à tort un accent aigu sur le e initial."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260810-0014",
+      "diagnostics": {
+        "auxquels": "est masculin pluriel, alors que l’antécédent normes est féminin pluriel.",
+        "à lesquelles": "ne réalise pas la contraction de à + lesquelles, qui donne auxquelles.",
+        "aux quelles": "sépare à tort la forme soudée auxquelles."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260810-0015",
+      "diagnostics": {
+        "donc": "est un connecteur de conséquence et ne reprend pas le complément des dossiers.",
+        "d’on": "correspondrait à la suite de + on et ne peut pas exprimer le lien entre les dossiers et leurs annexes.",
+        "don": "est un nom commun et non un pronom relatif."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260810-0016",
+      "diagnostics": {
+        "encourageante": "ajoute un accord féminin au participe présent, qui reste invariable.",
+        "encouragent": "est une forme conjuguée du présent et non le participe présent demandé.",
+        "encourageants": "ajoute un accord masculin pluriel au participe présent, qui reste invariable."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260810-0017",
+      "diagnostics": {
+        "autonommie": "double à tort le m dans le radical autonom-.",
+        "autonimie": "altère le radical autonom- en autonim-.",
+        "autonomitée": "remplace la terminaison -ie par une terminaison -itée inexistante."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260810-0018",
+      "diagnostics": {
+        "auxquels": "est au pluriel, alors que l’antécédent objectif est masculin singulier.",
+        "au quel": "sépare à tort la forme soudée obtenue par à + lequel.",
+        "à lequel": "ne réalise pas la contraction de à + lequel au masculin singulier."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260810-0019",
+      "diagnostics": {
+        "donc": "est un connecteur de conséquence et ne reprend pas le complément de l’équipe.",
+        "d’on": "correspondrait à la suite de + on et ne peut pas exprimer le lien entre l’équipe et ses résultats.",
+        "don": "est un nom commun et non un pronom relatif."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260810-0020",
+      "diagnostics": {
+        "rassurants": "porte un accord masculin pluriel, alors que mesures est féminin pluriel.",
+        "rassurant": "reste au masculin singulier ou invariable, alors que l’emploi adjectival exige l’accord avec mesures.",
+        "rassurente": "altère la terminaison -ante de l’adjectif verbal en -ente."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260811-0021",
+      "diagnostics": {
+        "unanimitée": "ajoute un e final qui n’appartient pas au nom en -ité.",
+        "unaminité": "inverse les consonnes n et m dans le radical unanim-.",
+        "unanimiter": "remplace la terminaison nominale -ité par la terminaison verbale -er."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260811-0022",
+      "diagnostics": {
+        "auquel": "est masculin singulier, alors que l’antécédent méthode est féminin singulier.",
+        "à la quelle": "sépare à tort laquelle, qui s’écrit en un seul mot.",
+        "auxquelles": "est au pluriel, alors que méthode est singulier."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260811-0023",
+      "diagnostics": {
+        "donc": "est un connecteur de conséquence et ne reprend pas le complément de l’experte.",
+        "d’on": "correspondrait à la suite de + on et ne peut pas exprimer le lien entre l’experte et ses conseils.",
+        "don": "est un nom commun et non un pronom relatif."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260811-0024",
+      "diagnostics": {
+        "convainquant": "emploie la graphie en qu du participe présent et omet l’accord pluriel de l’adjectif verbal.",
+        "convaincant": "a la bonne graphie adjectivale en c, mais reste au masculin singulier devant arguments au pluriel.",
+        "convainquants": "accorde le mot au pluriel, mais conserve à tort la graphie en qu du participe présent."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260811-0025",
+      "diagnostics": {
+        "solidaritée": "ajoute un e final qui n’appartient pas au nom en -ité.",
+        "soliderité": "remplace par e le a conservé dans le radical solidar-.",
+        "solidariter": "remplace la terminaison nominale -ité par la terminaison verbale -er."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260811-0026",
+      "diagnostics": {
+        "auxquels": "est masculin pluriel, alors que l’antécédent conclusions est féminin pluriel.",
+        "à lesquelles": "ne réalise pas la contraction de à + lesquelles, qui donne auxquelles.",
+        "aux quelles": "sépare à tort la forme soudée auxquelles."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260811-0027",
+      "diagnostics": {
+        "donc": "est un connecteur de conséquence et ne reprend pas le complément de la commune.",
+        "d’on": "correspondrait à la suite de + on et ne peut pas exprimer le lien entre la commune et son budget.",
+        "don": "est un nom commun et non un pronom relatif."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260811-0028",
+      "diagnostics": {
+        "convaincant": "emploie la graphie en c de l’adjectif verbal, alors que le complément leurs collègues révèle un participe présent.",
+        "convainquants": "ajoute un accord pluriel au participe présent, qui reste invariable.",
+        "convaincants": "cumule la graphie adjectivale en c et un accord pluriel incompatibles avec le participe présent."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260811-0029",
+      "diagnostics": {
+        "confidentialitée": "ajoute un e final qui n’appartient pas au nom en -ité.",
+        "confidencialité": "remplace par c le t du groupe -tialité.",
+        "confidentalité": "omet le i nécessaire dans la suite -tialité."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260811-0030",
+      "diagnostics": {
+        "auxquelles": "est féminin pluriel, alors que l’antécédent objectifs est masculin pluriel.",
+        "auquel": "est singulier, alors que objectifs est pluriel.",
+        "aux quels": "sépare à tort la forme soudée auxquels."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260811-0031",
+      "diagnostics": {
+        "donc": "est un connecteur de conséquence et ne reprend pas le complément de l’article.",
+        "d’on": "correspondrait à la suite de + on et ne peut pas exprimer le lien entre l’article et son auteur.",
+        "don": "est un nom commun et non un pronom relatif."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260811-0032",
+      "diagnostics": {
+        "blessants": "porte un accord masculin pluriel, alors que remarques est féminin pluriel.",
+        "blessant": "reste au masculin singulier ou invariable, alors que l’emploi adjectival exige l’accord avec remarques.",
+        "blessentes": "altère la terminaison -ante de l’adjectif verbal en -ente."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260811-0033",
+      "diagnostics": {
+        "complexitée": "ajoute un e final qui n’appartient pas au nom en -ité.",
+        "compléxité": "ajoute à tort un accent aigu sur le e de complexe.",
+        "complexiter": "remplace la terminaison nominale -ité par la terminaison verbale -er."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260811-0034",
+      "diagnostics": {
+        "auquel": "est masculin singulier, alors que l’antécédent décision est féminin singulier.",
+        "à la quelle": "sépare à tort laquelle, qui s’écrit en un seul mot.",
+        "auxquelles": "est au pluriel, alors que décision est singulier."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260811-0035",
+      "diagnostics": {
+        "donc": "est un connecteur de conséquence et ne reprend pas le complément de la mesure.",
+        "d’on": "correspondrait à la suite de + on et ne peut pas exprimer le lien entre la mesure et ses effets.",
+        "don": "est un nom commun et non un pronom relatif."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260811-0036",
+      "diagnostics": {
+        "analysante": "ajoute un accord féminin au participe présent, qui reste invariable.",
+        "analysants": "ajoute un accord masculin pluriel au participe présent, qui reste invariable.",
+        "analysantes": "ajoute un accord féminin pluriel au participe présent, qui reste invariable."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260811-0037",
+      "diagnostics": {
+        "authenticitée": "ajoute un e final qui n’appartient pas au nom en -ité.",
+        "autenticité": "omet le h du radical authent-.",
+        "authentisité": "remplace par s le c conservé devant la terminaison -ité."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260811-0038",
+      "diagnostics": {
+        "auxquels": "est au pluriel, alors que l’antécédent principe est masculin singulier.",
+        "au quel": "sépare à tort la forme soudée obtenue par à + lequel.",
+        "à lequel": "ne réalise pas la contraction de à + lequel au masculin singulier."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260811-0039",
+      "diagnostics": {
+        "donc": "est un connecteur de conséquence et ne reprend pas le complément de la solution.",
+        "d’on": "correspondrait à la suite de + on et ne peut pas exprimer le lien entre la solution et ses avantages.",
+        "don": "est un nom commun et non un pronom relatif."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260811-0040",
+      "diagnostics": {
+        "fatigants": "porte un accord masculin pluriel, alors que démarches est féminin pluriel.",
+        "fatigant": "reste au masculin singulier ou invariable, alors que l’emploi adjectival exige l’accord avec démarches.",
+        "fatiguantes": "conserve à tort le u du radical de certaines formes conjuguées devant la terminaison -ante."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260812-0041",
+      "diagnostics": {
+        "suisse": "garde une minuscule alors que le mot désigne ici une personne, donc un nom d’habitant."
+      }
+    },
+    {
+      "drill_id": "hep-d1-20260812-0042",
+      "diagnostics": {
+        "Suisse": "met une majuscule à un adjectif de nationalité qui qualifie délégation."
+      }
+    }
+  ]
+}

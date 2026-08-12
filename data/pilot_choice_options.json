@@ -41,6 +41,8 @@
     {"drill_id": "hep-d1-20260811-0037", "choices": ["authenticité", "authenticitée", "autenticité", "authentisité"]},
     {"drill_id": "hep-d1-20260811-0038", "choices": ["auquel", "auxquels", "au quel", "à lequel"]},
     {"drill_id": "hep-d1-20260811-0039", "choices": ["dont", "donc", "d’on", "don"]},
-    {"drill_id": "hep-d1-20260811-0040", "choices": ["fatigantes", "fatigants", "fatigant", "fatiguantes"]}
+    {"drill_id": "hep-d1-20260811-0040", "choices": ["fatigantes", "fatigants", "fatigant", "fatiguantes"]},
+    {"drill_id": "hep-d1-20260812-0041", "choices": ["Suisse", "suisse"]},
+    {"drill_id": "hep-d1-20260812-0042", "choices": ["Suisse", "suisse"]}
   ]
 }

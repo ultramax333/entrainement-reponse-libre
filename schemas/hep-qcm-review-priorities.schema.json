@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hep.local/schemas/hep-qcm-review-priorities.schema.json",
+  "title": "Résumé des règles QCM à revoir",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "export_id", "generated_at", "taxonomy_version", "priorities"],
+  "properties": {
+    "schema_version": { "const": "hep-qcm-review-priorities/1.0" },
+    "export_id": { "type": "string", "minLength": 1, "maxLength": 120 },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "taxonomy_version": { "const": "hep-pedagogy-dict/2.0" },
+    "priorities": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["family", "mechanism_id", "detail_id", "tense_id", "priority"],
+        "properties": {
+          "family": { "type": "string", "pattern": "^[a-z][a-z0-9_]{1,63}$" },
+          "mechanism_id": { "type": "string", "pattern": "^[a-z][a-z0-9_]{1,63}$" },
+          "detail_id": { "type": ["string", "null"], "pattern": "^[a-z][a-z0-9_]{1,63}$" },
+          "tense_id": { "type": ["string", "null"], "pattern": "^[a-z][a-z0-9_]{1,63}$" },
+          "priority": { "type": "number", "minimum": 1, "maximum": 4 }
+        }
+      }
+    }
+  }
+}

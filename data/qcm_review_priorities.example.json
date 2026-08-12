@@ -1,0 +1,22 @@
+{
+  "schema_version": "hep-qcm-review-priorities/1.0",
+  "export_id": "hep-qcm-priorities-exemple-001",
+  "generated_at": "2026-08-12T16:09:26Z",
+  "taxonomy_version": "hep-pedagogy-dict/2.0",
+  "priorities": [
+    {
+      "family": "orthographe_lexicale",
+      "mechanism_id": "graphie_lexicale_usage",
+      "detail_id": null,
+      "tense_id": null,
+      "priority": 1.36
+    },
+    {
+      "family": "pronoms_relatifs",
+      "mechanism_id": "possession_dont",
+      "detail_id": null,
+      "tense_id": null,
+      "priority": 1.23
+    }
+  ]
+}

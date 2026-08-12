@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hep.local/schemas/hep-choice-corrections.schema.json",
+  "title": "Diagnostics des choix courts",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "source_batch_id", "corrections"],
+  "properties": {
+    "schema_version": { "const": "hep-choice-corrections/1.0" },
+    "source_batch_id": { "type": "string", "pattern": "^hep-db1-[0-9]{8}-[0-9]{4}$" },
+    "corrections": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["drill_id", "diagnostics"],
+        "properties": {
+          "drill_id": { "type": "string", "pattern": "^hep-d1-[0-9]{8}-[0-9]{4}$" },
+          "diagnostics": {
+            "type": "object",
+            "minProperties": 1,
+            "maxProperties": 3,
+            "additionalProperties": { "type": "string", "minLength": 12, "maxLength": 280 }
+          }
+        }
+      }
+    }
+  }
+}

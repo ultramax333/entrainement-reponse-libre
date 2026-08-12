@@ -58,7 +58,7 @@
       "prompt": "Les explications sont ___ (éclairer) et faciles à suivre.",
       "accepted_answers": ["éclairantes"],
       "display_answer": "éclairantes",
-      "application_note": "Éclairantes attribue une propriété à explications et s’accorde au féminin pluriel.",
+      "application_note": "Éclairantes attribue une propriété au nom « explications » et s’accorde avec lui au féminin pluriel.",
       "pedagogy_dict_version": "hep-pedagogy-dict/2.0"
     },
     {
@@ -170,7 +170,7 @@
       "prompt": "Le jury a salué des propositions particulièrement ___ (innover).",
       "accepted_answers": ["innovantes"],
       "display_answer": "innovantes",
-      "application_note": "Innovantes qualifie propositions et s’accorde avec ce nom féminin pluriel.",
+      "application_note": "Innovantes qualifie le nom « propositions » et s’accorde avec lui au féminin pluriel.",
       "pedagogy_dict_version": "hep-pedagogy-dict/2.0"
     },
     {
@@ -282,7 +282,7 @@
       "prompt": "Ces mesures se sont révélées ___ (rassurer) pour le personnel.",
       "accepted_answers": ["rassurantes"],
       "display_answer": "rassurantes",
-      "application_note": "Rassurantes qualifie mesures et s’accorde avec ce nom féminin pluriel.",
+      "application_note": "Rassurantes qualifie le nom « mesures » et s’accorde avec lui au féminin pluriel.",
       "pedagogy_dict_version": "hep-pedagogy-dict/2.0"
     },
     {
@@ -338,7 +338,7 @@
       "prompt": "Ces arguments paraissent ___ (convaincre).",
       "accepted_answers": ["convaincants"],
       "display_answer": "convaincants",
-      "application_note": "Convaincants qualifie arguments : l’adjectif verbal s’écrit avec c et s’accorde au masculin pluriel.",
+      "application_note": "Convaincants qualifie le nom « arguments » : l’adjectif verbal s’écrit avec c et s’accorde au masculin pluriel.",
       "pedagogy_dict_version": "hep-pedagogy-dict/2.0"
     },
     {
@@ -450,7 +450,7 @@
       "prompt": "Des remarques ___ (blesser) ont interrompu le dialogue.",
       "accepted_answers": ["blessantes"],
       "display_answer": "blessantes",
-      "application_note": "Blessantes qualifie remarques et s’accorde avec ce nom féminin pluriel.",
+      "application_note": "Blessantes qualifie le nom « remarques » et s’accorde avec lui au féminin pluriel.",
       "pedagogy_dict_version": "hep-pedagogy-dict/2.0"
     },
     {
@@ -562,7 +562,35 @@
       "prompt": "Ces démarches sont ___ (fatiguer) pour les participants.",
       "accepted_answers": ["fatigantes"],
       "display_answer": "fatigantes",
-      "application_note": "Fatigantes qualifie démarches et s’accorde avec ce nom féminin pluriel.",
+      "application_note": "Fatigantes qualifie le nom « démarches » et s’accorde avec lui au féminin pluriel.",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0"
+    },
+    {
+      "schema_version": "hep-drill/1.0",
+      "id": "hep-d1-20260812-0041",
+      "source_batch_id": "hep-db1-20260810-0001",
+      "family": "gentiles_majuscules",
+      "mechanism_id": "nom_peuple_adjectif_langue",
+      "detail_id": "peuple",
+      "tense_id": null,
+      "prompt": "Un ___ participe au débat en français avec une délégation suisse.",
+      "accepted_answers": ["Suisse"],
+      "display_answer": "Suisse",
+      "application_note": "Suisse désigne ici une personne : comme nom d’habitant, il prend une majuscule. Français désigne la langue et suisse qualifie délégation : les deux restent en minuscule.",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0"
+    },
+    {
+      "schema_version": "hep-drill/1.0",
+      "id": "hep-d1-20260812-0042",
+      "source_batch_id": "hep-db1-20260810-0001",
+      "family": "gentiles_majuscules",
+      "mechanism_id": "nom_peuple_adjectif_langue",
+      "detail_id": "adjectif",
+      "tense_id": null,
+      "prompt": "La délégation ___ répond en français aux Suisses présents.",
+      "accepted_answers": ["suisse"],
+      "display_answer": "suisse",
+      "application_note": "Suisse qualifie délégation : comme adjectif de nationalité, il reste en minuscule. Suisses désigne des personnes et prend une majuscule.",
       "pedagogy_dict_version": "hep-pedagogy-dict/2.0"
     }
   ]

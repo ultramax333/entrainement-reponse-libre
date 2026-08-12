@@ -13,6 +13,9 @@
 - identifiants et releases valides.
 - deux à quatre choix courts par exercice ;
 - une seule réponse correcte parmi les choix ;
+- un diagnostic précis pour chaque choix fautif et aucun diagnostic générique ;
+- correction structurée avec les quatre repères `Règle`, `Méthode`,
+  `Dans cette phrase` et `Donc` ;
 - aucun champ de saisie dans l’application publiée.
 
 ### Bridge
@@ -31,6 +34,17 @@ Tester au minimum :
 10. import répété de la même séance ;
 11. question en revue/supprimée côté QCM ;
 12. chemin inconnu ou fiche pédagogique absente.
+
+### Import QCM dans le navigateur
+
+- schéma fermé `hep-qcm-review-priorities/1.0` ;
+- réponse ou texte de question explicitement rejetés ;
+- taxonomie incompatible rejetée ;
+- même `export_id` importé une seule fois ;
+- chemin sans exercice disponible ignoré et signalé ;
+- erreurs locales persistantes après rechargement ;
+- baisse du signal local seulement après deux réussites consécutives ;
+- maximum du facteur QCM ajusté et du facteur local, sans addition.
 
 ### Production
 
@@ -52,6 +66,8 @@ ne doit pas être présentée comme un échec fonctionnel du code.
 - validation correcte/incorrecte ;
 - absence de règle avant réponse ;
 - affichage de la règle, méthode et application après réponse ;
+- correction courte visible immédiatement et raisonnement détaillé replié ;
+- justification de chacune des deux à quatre graphies proposées ;
 - progression et série correcte ;
 - sélection pondérée des mécanismes ;
 - priorité aux exercices non vus ;
@@ -69,7 +85,7 @@ Pour chaque réponse admise :
 3. conserver les alertes de chaque moteur ;
 4. distinguer erreur, alerte acceptable, indisponibilité et indétermination.
 
-## Banque de 40 exercices
+## Banque de 42 exercices
 
 Le pilote initial et son extension alimentent la banque autonome `bank.js`,
 générée après validation des choix orthographiques.

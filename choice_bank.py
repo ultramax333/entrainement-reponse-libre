@@ -7,18 +7,34 @@ import hashlib
 import json
 import os
 import re
+import sys
 import tempfile
 from datetime import date
 from pathlib import Path
 from typing import Any
 
-from drill_contracts import DrillContractError, load_json, normalize_answer, validate_drill_batch
+from drill_contracts import ANALYSE_DIR, DrillContractError, load_json, normalize_answer, validate_drill_batch
+
+if str(ANALYSE_DIR) not in sys.path:
+    sys.path.insert(0, str(ANALYSE_DIR))
+
+from pedagogy_HEP import correction_template, describe, load_pedagogy
 
 
 ROOT = Path(__file__).resolve().parent
 DEFAULT_CANDIDATES = ROOT / "data" / "pilot_candidates.json"
 DEFAULT_OPTIONS = ROOT / "data" / "pilot_choice_options.json"
+DEFAULT_CORRECTIONS = ROOT / "data" / "pilot_choice_corrections.json"
 DEFAULT_OUTPUT = ROOT / "bank.js"
+
+VAGUE_DIAGNOSTICS = (
+    "mauvaise réponse",
+    "mauvais accord",
+    "forme fausse",
+    "forme incorrecte",
+    "est faux",
+    "est incorrect",
+)
 
 
 class ChoiceBankError(ValueError):
@@ -30,12 +46,18 @@ def _display_prompt(prompt: str) -> str:
     return without_lemma.replace("___", "…")
 
 
-def build_choice_bank(candidates: dict[str, Any], options: dict[str, Any]) -> dict[str, Any]:
+def build_choice_bank(
+    candidates: dict[str, Any], options: dict[str, Any], corrections: dict[str, Any]
+) -> dict[str, Any]:
     if options.get("schema_version") != "hep-drill-choice-options/1.0":
         raise ChoiceBankError("Version des choix non prise en charge.")
     drills = validate_drill_batch(candidates.get("drills", []))
     if options.get("source_batch_id") != candidates.get("source_batch_id"):
         raise ChoiceBankError("Le lot des choix ne correspond pas au pilote.")
+    if corrections.get("schema_version") != "hep-choice-corrections/1.0":
+        raise ChoiceBankError("Version des corrigés non prise en charge.")
+    if corrections.get("source_batch_id") != candidates.get("source_batch_id"):
+        raise ChoiceBankError("Le lot des corrigés ne correspond pas au pilote.")
 
     rows = options.get("options")
     if not isinstance(rows, list):
@@ -63,22 +85,89 @@ def build_choice_bank(candidates: dict[str, Any], options: dict[str, Any]) -> di
         extra = sorted(set(by_id) - expected_ids)
         raise ChoiceBankError(f"Choix incomplets (manquants={missing}, supplémentaires={extra}).")
 
+    correction_rows = corrections.get("corrections")
+    if not isinstance(correction_rows, list):
+        raise ChoiceBankError("La liste des corrigés est absente.")
+    correction_by_id: dict[str, dict[str, str]] = {}
+    for row in correction_rows:
+        if not isinstance(row, dict) or set(row) != {"drill_id", "diagnostics"}:
+            raise ChoiceBankError("Une entrée de corrigé est invalide.")
+        drill_id = str(row["drill_id"])
+        diagnostics = row["diagnostics"]
+        if drill_id in correction_by_id:
+            raise ChoiceBankError(f"Corrigé dupliqué pour {drill_id}.")
+        if not isinstance(diagnostics, dict) or any(
+            not isinstance(choice, str) or not isinstance(reason, str) or not 12 <= len(reason.strip()) <= 280
+            for choice, reason in diagnostics.items()
+        ):
+            raise ChoiceBankError(f"{drill_id}: diagnostics invalides.")
+        for reason in diagnostics.values():
+            if any(marker in reason.casefold() for marker in VAGUE_DIAGNOSTICS):
+                raise ChoiceBankError(f"{drill_id}: diagnostic trop vague.")
+        correction_by_id[drill_id] = diagnostics
+    if set(correction_by_id) != expected_ids:
+        missing = sorted(expected_ids - set(correction_by_id))
+        extra = sorted(set(correction_by_id) - expected_ids)
+        raise ChoiceBankError(f"Corrigés incomplets (manquants={missing}, supplémentaires={extra}).")
+
+    pedagogy = load_pedagogy()
     questions = []
     for drill in drills:
         choices = by_id[drill["id"]]
+        diagnostics = correction_by_id[drill["id"]]
         accepted = {normalize_answer(answer) for answer in drill["accepted_answers"]}
         matches = [choice for choice in choices if normalize_answer(choice) in accepted]
         if matches != [drill["display_answer"]]:
             raise ChoiceBankError(f"{drill['id']}: une seule réponse affichée doit être correcte.")
+        false_choices = {choice for choice in choices if choice != drill["display_answer"]}
+        if set(diagnostics) != false_choices:
+            raise ChoiceBankError(f"{drill['id']}: un diagnostic est requis pour chaque forme fautive.")
+        template = correction_template(
+            drill["family"], drill["mechanism_id"], drill["detail_id"], drill["tense_id"],
+            document=pedagogy,
+        )
+        if template is None:
+            raise ChoiceBankError(f"{drill['id']}: modèle pédagogique introuvable.")
+        application = drill["application_note"].strip()
+        conclusion = f"On écrit donc « {drill['display_answer']} » dans cette phrase."
+        method = " ".join(
+            f"{index}. {step}" for index, step in enumerate(template["method_steps"], 1)
+        )
+        explanation = (
+            f"Règle : {template['rule']}\n"
+            f"Méthode : {method}\n"
+            f"Dans cette phrase : {application}\n"
+            f"Donc : {conclusion}"
+        )
+        why = {}
+        for choice in choices:
+            if choice == drill["display_answer"]:
+                why[choice] = f"La forme « {choice} » est correcte ici. {application}"
+            else:
+                reason = diagnostics[choice].strip()
+                why[choice] = f"`{choice}` : {reason} La forme attendue est « {drill['display_answer']} »."
+        description = describe(
+            drill["family"], drill["mechanism_id"], drill["detail_id"], drill["tense_id"],
+            document=pedagogy,
+        )
         questions.append({
             "id": drill["id"],
             "family": drill["family"],
             "mechanism_id": drill["mechanism_id"],
+            "rule_label": description["mechanism_label"],
             "detail_id": drill["detail_id"],
+            "tense_id": drill["tense_id"],
             "prompt": _display_prompt(drill["prompt"]),
             "choices": choices,
             "answer": drill["display_answer"],
-            "application_note": drill["application_note"],
+            "correction": {
+                "rule": template["rule"],
+                "method_steps": template["method_steps"],
+                "application": application,
+                "conclusion": conclusion,
+                "explanation": explanation,
+                "why": why,
+            },
         })
 
     compact = json.dumps(questions, ensure_ascii=False, separators=(",", ":"))
@@ -114,10 +203,13 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--candidates", type=Path, default=DEFAULT_CANDIDATES)
     parser.add_argument("--options", type=Path, default=DEFAULT_OPTIONS)
+    parser.add_argument("--corrections", type=Path, default=DEFAULT_CORRECTIONS)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     args = parser.parse_args()
     try:
-        bank = build_choice_bank(load_json(args.candidates), load_json(args.options))
+        bank = build_choice_bank(
+            load_json(args.candidates), load_json(args.options), load_json(args.corrections)
+        )
         write_bank(bank, args.output)
     except (DrillContractError, ChoiceBankError) as exc:
         raise SystemExit(f"ERREUR: {exc}") from exc

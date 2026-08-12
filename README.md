@@ -9,14 +9,16 @@ Le pipeline local et l’application autonome sont implémentés :
 
 - contrats fermés et normalisation des réponses ;
 - mémoire drill séparée, import idempotent, agrégation et bridge de priorités ;
-- page autonome dans ce dossier, avec banque de 40 exercices contrôlés ;
+- page autonome dans ce dossier, avec banque de 42 exercices contrôlés ;
 - export manuel et file locale de synchronisation ;
 - planification, projection canonique, lint, correcteurs locaux et publication
   atomique sur copie de test;
-- pilote initial de 20 exercices revu indépendamment, puis extension de 20
+- pilote initial de 20 exercices revu indépendamment, puis extension de 22
   exercices contrôlée localement ;
 - deux à quatre formes courtes par exercice, contrôlées avant la génération de
-  `bank.js`.
+  `bank.js` ;
+- 42 corrigés structurés selon le modèle QCM HEP : règle et méthode canoniques,
+  application à la phrase, conclusion et diagnostic propre à chaque graphie.
 
 L’application ne dépend pas du site QCM dans le navigateur. Le projet original
 reste hors du périmètre de publication.
@@ -76,6 +78,15 @@ La page affiche un exercice à la fois :
 - aucune indication de la règle avant validation ;
 - après validation : la bonne réponse et une explication appliquée à la phrase.
 
+La correction reprend le principe du QCM HEP : le choix correct et le choix
+sélectionné sont colorés immédiatement, puis une explication courte est affichée
+sous les réponses. Elle reste dans l’écran courant lorsque l’espace le permet ;
+le raisonnement complet et le diagnostic de chaque forme sont repliés par défaut,
+puis peuvent être développés et lus par défilement dans la carte.
+
+Avant la séance, un menu permet de choisir toute la banque ou l’une des règles
+effectivement présentes. La règle choisie n’est pas révélée pendant un exercice.
+
 La difficulté est celle d’un utilisateur de niveau bac qui connaît notamment COD
 et COI, mais a besoin d’explications grammaticales accessibles et méthodiques.
 
@@ -93,6 +104,16 @@ entrainement_reponse_libre/
 ```
 
 La publication GitHub de ce dossier reste indépendante du dépôt `quiz-app`.
+
+La génération des corrigés est spécifiée dans
+[`CORRECTION_GENERATION.md`](CORRECTION_GENERATION.md). Ce document réutilise le
+contrat QCM HEP sans le dupliquer et décrit uniquement l’adaptation aux deux à
+quatre formes courtes.
+
+L’import unidirectionnel des règles à revoir depuis le QCM est décrit dans
+[`QCM_PRIORITY_IMPORT.md`](QCM_PRIORITY_IMPORT.md). L’application en ligne tient
+aussi un profil de maîtrise local et propose une séance **Mes priorités** fondée
+sur le maximum du signal QCM et du signal propre aux exercices courts.
 
 ## Sources canoniques du projet principal
 
