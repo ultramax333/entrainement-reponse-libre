@@ -14,6 +14,9 @@
 - deux à quatre choix courts par exercice ;
 - une seule réponse correcte parmi les choix ;
 - un diagnostic précis pour chaque choix fautif et aucun diagnostic générique ;
+- un mécanisme d’erreur connu pour chacun des 122 distracteurs ;
+- raisonnement probable formulé comme une hypothèse, jamais comme une certitude ;
+- test de décision et stratégie de réparation pour chaque mécanisme ;
 - correction structurée avec les quatre repères `Règle`, `Méthode`,
   `Dans cette phrase` et `Donc` ;
 - aucun champ de saisie dans l’application publiée.
@@ -67,6 +70,7 @@ ne doit pas être présentée comme un échec fonctionnel du code.
 - absence de règle avant réponse ;
 - affichage de la règle, méthode et application après réponse ;
 - correction courte visible immédiatement et raisonnement détaillé replié ;
+- diagnostic ciblé sur la forme réellement sélectionnée ;
 - justification de chacune des deux à quatre graphies proposées ;
 - progression et série correcte ;
 - sélection pondérée des mécanismes ;

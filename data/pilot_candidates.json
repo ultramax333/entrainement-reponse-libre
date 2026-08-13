@@ -16,7 +16,7 @@
       "prompt": "Le comité garantit l’___ de la procédure (impartial).",
       "accepted_answers": ["impartialité"],
       "display_answer": "impartialité",
-      "application_note": "Le nom formé sur « impartial » s’écrit impartialité, avec la terminaison -ité.",
+      "application_note": "Dans « garantit l’impartialité », le complément attendu est un nom, pas un adjectif à accorder. Le nom formé sur « impartial » se termine par -ité, sans e final.",
       "pedagogy_dict_version": "hep-pedagogy-dict/2.0"
     },
     {
@@ -72,7 +72,7 @@
       "prompt": "Le rapport confirme la ___ du dispositif (fiable).",
       "accepted_answers": ["fiabilité"],
       "display_answer": "fiabilité",
-      "application_note": "Le nom formé sur « fiable » s’écrit fiabilité, sans conserver le e de l’adjectif.",
+      "application_note": "Après « la », le blanc désigne une qualité : la phrase attend le nom fiabilité, pas un adjectif à accorder. Ce nom se forme en -abilité, sans e final.",
       "pedagogy_dict_version": "hep-pedagogy-dict/2.0"
     },
     {
@@ -128,7 +128,7 @@
       "prompt": "Elle a réagi avec une grande ___ (spontané).",
       "accepted_answers": ["spontanéité"],
       "display_answer": "spontanéité",
-      "application_note": "Le nom formé sur « spontané » s’écrit spontanéité et conserve les deux accents aigus.",
+      "application_note": "Dans « une grande spontanéité », grande est l’adjectif et le blanc attend le nom spontanéité. Ce nom conserve les deux accents aigus et se termine par -ité, sans e final.",
       "pedagogy_dict_version": "hep-pedagogy-dict/2.0"
     },
     {
@@ -184,7 +184,7 @@
       "prompt": "Cette mesure améliore l’___ du service (efficace).",
       "accepted_answers": ["efficacité"],
       "display_answer": "efficacité",
-      "application_note": "Le nom formé sur « efficace » s’écrit efficacité, avec c avant la terminaison -ité.",
+      "application_note": "Dans « améliore l’efficacité », le complément attendu est un nom, pas un adjectif à accorder. Le nom efficacité conserve c devant -ité et ne prend pas de e final.",
       "pedagogy_dict_version": "hep-pedagogy-dict/2.0"
     },
     {
@@ -296,7 +296,7 @@
       "prompt": "La décision a été prise à l’___ du comité (unanime).",
       "accepted_answers": ["unanimité"],
       "display_answer": "unanimité",
-      "application_note": "Le nom formé sur « unanime » s’écrit unanimité, avec la terminaison -ité.",
+      "application_note": "Après « à l’ », la locution attend le nom unanimité, pas un adjectif à accorder. Le nom formé sur « unanime » se termine par -ité, sans e final.",
       "pedagogy_dict_version": "hep-pedagogy-dict/2.0"
     },
     {
@@ -352,7 +352,7 @@
       "prompt": "Le projet repose sur la ___ des partenaires (solidaire).",
       "accepted_answers": ["solidarité"],
       "display_answer": "solidarité",
-      "application_note": "Le nom formé sur « solidaire » s’écrit solidarité, sans conserver la terminaison -aire.",
+      "application_note": "Après « la », le blanc désigne ce sur quoi repose le projet : la phrase attend le nom solidarité. Ce nom ne conserve pas -aire et se termine par -ité, sans e final.",
       "pedagogy_dict_version": "hep-pedagogy-dict/2.0"
     },
     {
@@ -408,7 +408,7 @@
       "prompt": "Cette procédure garantit la ___ des données (confidentiel).",
       "accepted_answers": ["confidentialité"],
       "display_answer": "confidentialité",
-      "application_note": "Le nom formé sur « confidentiel » s’écrit confidentialité, avec la suite -tialité.",
+      "application_note": "Après « la », le blanc désigne la propriété garantie : la phrase attend le nom confidentialité. Ce nom contient -tialité et se termine par -ité, sans e final.",
       "pedagogy_dict_version": "hep-pedagogy-dict/2.0"
     },
     {
@@ -464,7 +464,7 @@
       "prompt": "Le rapport souligne la ___ du dispositif (complexe).",
       "accepted_answers": ["complexité"],
       "display_answer": "complexité",
-      "application_note": "Le nom formé sur « complexe » s’écrit complexité, avec la terminaison -ité.",
+      "application_note": "Après « la », le blanc désigne ce que souligne le rapport : la phrase attend le nom complexité. Ce nom se termine par -ité, sans e final.",
       "pedagogy_dict_version": "hep-pedagogy-dict/2.0"
     },
     {
@@ -520,7 +520,7 @@
       "prompt": "L’enquête confirme l’___ du témoignage (authentique).",
       "accepted_answers": ["authenticité"],
       "display_answer": "authenticité",
-      "application_note": "Le nom formé sur « authentique » s’écrit authenticité, avec c avant la terminaison -ité.",
+      "application_note": "Dans « confirme l’authenticité », le complément attendu est un nom, pas un adjectif à accorder. Le nom authenticité conserve c devant -ité et ne prend pas de e final.",
       "pedagogy_dict_version": "hep-pedagogy-dict/2.0"
     },
     {

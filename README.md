@@ -18,7 +18,8 @@ Le pipeline local et l’application autonome sont implémentés :
 - deux à quatre formes courtes par exercice, contrôlées avant la génération de
   `bank.js` ;
 - 42 corrigés structurés selon le modèle QCM HEP : règle et méthode canoniques,
-  application à la phrase, conclusion et diagnostic propre à chaque graphie.
+  application à la phrase, conclusion et diagnostic du raisonnement propre à
+  chacune des 122 graphies fautives.
 
 L’application ne dépend pas du site QCM dans le navigateur. Le projet original
 reste hors du périmètre de publication.
@@ -83,6 +84,11 @@ sélectionné sont colorés immédiatement, puis une explication courte est affi
 sous les réponses. Elle reste dans l’écran courant lorsque l’espace le permet ;
 le raisonnement complet et le diagnostic de chaque forme sont repliés par défaut,
 puis peuvent être développés et lus par défilement dans la carte.
+
+Lorsqu’une réponse est fausse, le corrigé commence par le piège correspondant à
+la forme réellement choisie : raisonnement probable, point de rupture, test de
+décision et réflexe transférable. Les autres distracteurs restent expliqués dans
+le détail.
 
 Avant la séance, un menu permet de choisir toute la banque ou l’une des règles
 effectivement présentes. La règle choisie n’est pas révélée pendant un exercice.

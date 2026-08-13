@@ -27,6 +27,7 @@ ce site possède deux à quatre formes textuelles et une seule forme correcte.
 | --- | --- | --- |
 | Correction générale | `explanation` | `explanation`, même structure |
 | Justification par option | `why[1|2|3|4|A|T]` | `why[forme exacte]` |
+| Diagnostic du raisonnement | implicite dans `why` | `diagnostics[forme fautive]` |
 | Réponse correcte | clé d’option | forme exacte parmi `choices` |
 | Aucune / Toutes | analysées | absentes : ne pas les créer |
 
@@ -43,6 +44,16 @@ Chaque exercice publié doit recevoir un objet `correction` :
   "why": {
     "forme correcte": "Justification précise de cette forme.",
     "forme fautive": "Erreur visible, règle utile et forme attendue."
+  },
+  "diagnostics": {
+    "forme fautive": {
+      "mechanism_id": "mécanisme_d_erreur",
+      "label": "Nom compréhensible du piège",
+      "likely_reasoning": "Tu as probablement…",
+      "reasoning_break": "La forme choisie…",
+      "decision_test": "Question ou manipulation permettant de trancher.",
+      "repair_strategy": "Chemin de décision à réutiliser."
+    }
   }
 }
 ```
@@ -77,23 +88,70 @@ la réponse attendue.
   accord » ;
 - une forme fautive citée dans le texte est entourée de backticks.
 
+### `diagnostics`
+
+Chaque distracteur doit représenter un raisonnement erroné plausible. La source
+associe donc chaque forme fautive à un mécanisme déclaré dans
+`data/error_mechanisms.json` et à un point de rupture propre à la forme.
+
+Le diagnostic distingue obligatoirement :
+
+1. l’écart visible dans la graphie ;
+2. le raisonnement qui a probablement rendu cette forme plausible ;
+3. l’endroit précis où ce raisonnement cesse d’être valable ;
+4. le test grammatical ou lexical qui permet de décider ;
+5. le réflexe à réutiliser dans une nouvelle phrase.
+
+L’inférence sur le raisonnement reste probabiliste : écrire « tu as
+probablement… », jamais affirmer connaître avec certitude la pensée de
+l’utilisateur.
+
+La difficulté n’est pas réduite. Il faut produire jusqu’à trois distracteurs
+plausibles et distincts lorsque le mécanisme le permet. Un quatrième choix n’est
+écarté que s’il est indéfendable ou s’il ne permet aucun diagnostic utile.
+
+Une forme peut matérialiser plusieurs écarts visibles seulement si elle reste un
+piège naturel. Son diagnostic doit alors nommer le raisonnement commun qui
+explique ces écarts, sans prétendre isoler une cause qui ne peut pas l’être.
+
+## Règles et mécanismes futurs
+
+La taxonomie grammaticale et la taxonomie diagnostique restent séparées :
+
+- la règle officielle et la méthode viennent toujours de
+  `../analyse_gpt/pedagogy_HEP.json` ;
+- les raisonnements erronés réutilisables viennent de
+  `data/error_mechanisms.json` ;
+- le point de rupture propre à chaque distracteur reste dans
+  `data/pilot_choice_corrections.json`.
+
+Si une future règle grammaticale n’existe pas dans la pédagogie HEP, la question
+est bloquée avant publication jusqu’à l’ajout d’une fiche officielle. Si seule
+la famille de raisonnement erroné est nouvelle, un mécanisme diagnostique peut
+être ajouté au catalogue, puis validé avant la génération de la banque.
+
 ## Pipeline retenu
 
 1. Générer et valider d’abord les exercices sans corrigé.
 2. Produire les corrigés après la validation aveugle des choix.
 3. Assembler `Règle` et `Méthode` depuis la pédagogie HEP.
-4. Valider la structure, les quatre marqueurs, chaque clé `why`, l’absence de
-   gabarit vague et la cohérence avec la réponse.
-5. Soumettre les corrigés à Grammalecte et LanguageTool, puis à la revue Sol
+4. Produire de deux à quatre choix en visant un piège diagnostique distinct par
+   forme fautive.
+5. Associer chaque distracteur à un mécanisme d’erreur et rédiger son point de
+   rupture appliqué à la phrase.
+6. Valider la structure, les quatre marqueurs, chaque clé `why`, chaque
+   diagnostic, l’absence de gabarit vague et la cohérence avec la réponse.
+7. Soumettre les corrigés à Grammalecte et LanguageTool, puis à la revue Sol
    High groupée.
-6. Générer `bank.js` seulement avec les exercices et corrigés validés.
+8. Générer `bank.js` seulement avec les exercices et corrigés validés.
 
 ## Affichage
 
-Après une réponse, le site montre immédiatement la forme correcte, puis le
-résumé `Dans cette phrase` et `Donc`. La règle, la méthode et les justifications
-de chaque forme restent accessibles dans un détail repliable. Elles peuvent
-dépasser l’écran : aucune explication n’est tronquée.
+Après une erreur, le site montre immédiatement le diagnostic du choix effectué :
+raisonnement probable, point de rupture, test et bon réflexe. Il affiche ensuite
+le résumé `Dans cette phrase` et `Donc`. La règle, la méthode et les
+justifications de chaque forme restent accessibles dans un détail repliable.
+Elles peuvent dépasser l’écran : aucune explication n’est tronquée.
 
 ## Migration de la banque actuelle
 

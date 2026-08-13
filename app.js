@@ -443,6 +443,16 @@
       const feedback = element('section', `feedback ${correct ? 'correct' : 'wrong'}`);
       feedback.append(element('h2', null, correct ? 'Correct.' : 'Incorrect.'));
       if (!correct) feedback.append(element('p', 'answer-line', `Réponse correcte : ${question.answer}`));
+      if (!correct) {
+        const diagnostic = correction.diagnostics[state.selected];
+        const diagnosticCard = element('section', 'diagnostic-card');
+        diagnosticCard.append(element('h3', null, `Ce choix suggère : ${diagnostic.label}`));
+        diagnosticCard.append(element('p', null, diagnostic.likely_reasoning));
+        diagnosticCard.append(element('p', 'diagnostic-break', `Où le raisonnement dévie : ${diagnostic.reasoning_break}`));
+        diagnosticCard.append(element('p', null, `Le test à faire : ${diagnostic.decision_test}`));
+        diagnosticCard.append(element('p', null, `Le bon réflexe : ${diagnostic.repair_strategy}`));
+        feedback.append(diagnosticCard);
+      }
       feedback.append(element('p', 'correction-note', correction.application));
       feedback.append(element('p', 'correction-conclusion', correction.conclusion));
       const details = element('details', 'correction-details');

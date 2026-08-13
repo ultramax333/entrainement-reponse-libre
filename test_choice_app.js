@@ -27,6 +27,21 @@ assert(bank.questions.every((question) =>
 assert(bank.questions.every((question) => question.choices.every((choice) =>
   choice === question.answer || question.correction.why[choice].includes(`\`${choice}\``)
 )));
+assert(bank.questions.every((question) => {
+  const wrongChoices = question.choices.filter((choice) => choice !== question.answer);
+  return JSON.stringify(Object.keys(question.correction.diagnostics).sort()) === JSON.stringify(wrongChoices.sort()) &&
+    wrongChoices.every((choice) => {
+      const diagnostic = question.correction.diagnostics[choice];
+      return diagnostic.likely_reasoning.includes('probablement') &&
+        diagnostic.reasoning_break.includes(`« ${choice} »`) &&
+        diagnostic.decision_test.length >= 30 && diagnostic.repair_strategy.length >= 30;
+    });
+}));
+const spontaneity = bank.questions.find((question) => question.answer === 'spontanéité');
+assert.strictEqual(
+  spontaneity.correction.diagnostics.spontanéitée.mechanism_id,
+  'nom_feminin_traite_comme_adjectif'
+);
 assert.deepStrictEqual(engine.score([{ correct: true }, { correct: false }]), { answered: 2, correct: 1 });
 const original = ['a', 'b', 'c'];
 assert.deepStrictEqual(engine.shuffled(original, () => 0), ['b', 'c', 'a']);

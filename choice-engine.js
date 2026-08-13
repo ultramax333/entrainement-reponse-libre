@@ -225,6 +225,7 @@
     if (!Array.isArray(bank.questions) || bank.questions.length === 0) return false;
     return bank.questions.every((question) => {
       const correction = question.correction;
+      const falseChoices = question.choices.filter((choice) => !isCorrect(choice, question));
       return typeof question.prompt === 'string' && !question.prompt.includes('___') &&
         Array.isArray(question.choices) && question.choices.length >= 2 && question.choices.length <= 4 &&
         question.choices.filter((choice) => isCorrect(choice, question)).length === 1 &&
@@ -233,7 +234,15 @@
         Array.isArray(correction.method_steps) && correction.method_steps.length >= 2 &&
         correction.why && typeof correction.why === 'object' &&
         Object.keys(correction.why).length === question.choices.length &&
-        question.choices.every((choice) => typeof correction.why[choice] === 'string' && correction.why[choice].length >= 12);
+        question.choices.every((choice) => typeof correction.why[choice] === 'string' && correction.why[choice].length >= 12) &&
+        correction.diagnostics && typeof correction.diagnostics === 'object' &&
+        Object.keys(correction.diagnostics).length === falseChoices.length &&
+        falseChoices.every((choice) => {
+          const diagnostic = correction.diagnostics[choice];
+          return diagnostic &&
+            ['mechanism_id', 'label', 'likely_reasoning', 'reasoning_break', 'decision_test', 'repair_strategy']
+              .every((field) => typeof diagnostic[field] === 'string' && diagnostic[field].length >= 3);
+        });
     });
   }
 

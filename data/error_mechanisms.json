@@ -1,0 +1,131 @@
+{
+  "schema_version": "hep-error-mechanisms/1.0",
+  "mechanisms": {
+    "nom_feminin_traite_comme_adjectif": {
+      "label": "nom féminin traité comme un adjectif",
+      "likely_reasoning": "Tu as probablement ajouté un e parce que le mot est féminin, comme lors de l’accord d’un adjectif.",
+      "decision_test": "Vérifie si la forme attendue est un nom ou un adjectif. Un nom féminin ne reçoit pas automatiquement un e final.",
+      "repair_strategy": "Si c’est un nom en -ité, conserve la terminaison nominale -ité, sans ajouter de marque d’accord."
+    },
+    "confusion_nom_infinitif": {
+      "label": "nom confondu avec un infinitif",
+      "likely_reasoning": "Tu as probablement choisi la terminaison -er parce qu’elle est fréquente à la fin des verbes.",
+      "decision_test": "Cherche si la phrase demande une action ou une chose précédée d’un déterminant. Un déterminant appelle ici un nom, pas un infinitif.",
+      "repair_strategy": "Identifie d’abord la catégorie grammaticale, puis choisis la terminaison nominale ou verbale correspondante."
+    },
+    "prefixe_assimile": {
+      "label": "préfixe reconstruit sans assimilation",
+      "likely_reasoning": "Tu as probablement conservé la forme générale du préfixe sans tenir compte de sa graphie devant la consonne suivante.",
+      "decision_test": "Observe les premières lettres du radical et vérifie la forme attestée du préfixe devant cette consonne.",
+      "repair_strategy": "Mémorise le mot avec sa famille et conserve la forme assimilée attestée."
+    },
+    "contraction_absente": {
+      "label": "contraction grammaticale non réalisée",
+      "likely_reasoning": "Tu as probablement juxtaposé la préposition et le pronom sans effectuer la contraction obligatoire.",
+      "decision_test": "Décompose la construction en à + forme de lequel, puis vérifie si ces deux éléments doivent se contracter.",
+      "repair_strategy": "Effectue la contraction avant d’accorder la forme obtenue avec l’antécédent."
+    },
+    "forme_composee_separee": {
+      "label": "forme soudée séparée",
+      "likely_reasoning": "Tu as probablement reconnu plusieurs éléments grammaticaux et les as écrits séparément.",
+      "decision_test": "Après avoir décomposé la forme, vérifie si le français l’écrit en un seul mot.",
+      "repair_strategy": "Recompose la forme grammaticale attestée, puis relis-la dans la phrase entière."
+    },
+    "accord_antecedent_genre": {
+      "label": "genre de l’antécédent mal identifié",
+      "likely_reasoning": "Tu as probablement choisi la forme d’après un mot voisin plutôt que d’après l’antécédent réel.",
+      "decision_test": "Repère précisément le nom repris, puis détermine son genre avant de choisir la forme du pronom.",
+      "repair_strategy": "Fais l’accord uniquement avec l’antécédent identifié, pas avec le nom le plus proche."
+    },
+    "accord_antecedent_nombre": {
+      "label": "nombre de l’antécédent mal identifié",
+      "likely_reasoning": "Tu as probablement perdu le singulier ou le pluriel de l’antécédent en construisant le pronom.",
+      "decision_test": "Repère le nom repris et vérifie explicitement s’il est au singulier ou au pluriel.",
+      "repair_strategy": "Conserve le nombre de l’antécédent dans la forme contractée finale."
+    },
+    "confusion_dont_connecteur": {
+      "label": "pronom relatif confondu avec un connecteur",
+      "likely_reasoning": "Tu as probablement choisi le mot d’après sa prononciation sans vérifier sa fonction dans la phrase.",
+      "decision_test": "Demande-toi si le mot exprime une conséquence ou s’il reprend un complément construit avec de.",
+      "repair_strategy": "Si la seconde proposition reprend de + nom, utilise le pronom relatif dont."
+    },
+    "confusion_dont_segmentation": {
+      "label": "pronom relatif segmenté en deux mots",
+      "likely_reasoning": "Tu as probablement analysé le son entendu comme la préposition de suivie du pronom on.",
+      "decision_test": "Vérifie si on désigne réellement des personnes indéfinies ; sinon, cherche un complément repris avec de.",
+      "repair_strategy": "Écris dont en un mot lorsqu’il remplace de + antécédent."
+    },
+    "confusion_dont_nom": {
+      "label": "pronom relatif confondu avec le nom don",
+      "likely_reasoning": "Tu as probablement choisi l’homophone nominal sans vérifier la fonction de liaison entre les propositions.",
+      "decision_test": "Vérifie si le mot peut être précédé d’un déterminant comme un nom, ou s’il relie deux propositions.",
+      "repair_strategy": "Utilise dont pour reprendre un complément en de ; réserve don au nom commun."
+    },
+    "participe_present_accorde": {
+      "label": "participe présent accordé comme un adjectif",
+      "likely_reasoning": "Tu as probablement accordé la forme en -ant avec le nom voisin comme s’il s’agissait d’un adjectif.",
+      "decision_test": "Vérifie si la forme exprime une action et conserve un complément verbal. Dans ce cas, le participe présent reste invariable.",
+      "repair_strategy": "Identifie l’emploi verbal avant tout accord ; un participe présent ne varie ni en genre ni en nombre."
+    },
+    "participe_present_forme_conjuguee": {
+      "label": "participe présent confondu avec un verbe conjugué",
+      "likely_reasoning": "Tu as probablement accordé le verbe avec son sujet au lieu de conserver la forme en -ant demandée par la construction.",
+      "decision_test": "Cherche si la phrase possède déjà un verbe principal et si la forme décrit une action simultanée.",
+      "repair_strategy": "Quand la construction exige un participe présent, forme-le en -ant et laisse-le invariable."
+    },
+    "adjectif_verbal_accord": {
+      "label": "adjectif verbal mal accordé",
+      "likely_reasoning": "Tu as probablement traité l’adjectif verbal comme une forme verbale invariable ou accordé avec le mauvais nom.",
+      "decision_test": "Vérifie si le mot qualifie directement un nom ; si oui, accorde-le avec ce nom en genre et en nombre.",
+      "repair_strategy": "Identifie le nom qualifié, puis applique les marques ordinaires de l’adjectif."
+    },
+    "terminaison_adjectif_verbal": {
+      "label": "terminaison de l’adjectif verbal reconstruite",
+      "likely_reasoning": "Tu as probablement écrit la terminaison d’après la prononciation sans conserver la graphie du radical et du suffixe.",
+      "decision_test": "Retrouve la forme masculine de l’adjectif verbal, puis ajoute seulement les marques d’accord nécessaires.",
+      "repair_strategy": "Conserve la terminaison adjectivale attestée avant d’effectuer l’accord."
+    },
+    "adjectif_verbal_participe_present": {
+      "label": "adjectif verbal confondu avec le participe présent",
+      "likely_reasoning": "Tu as probablement reconnu la même prononciation sans distinguer l’emploi adjectival de l’emploi verbal.",
+      "decision_test": "Vérifie si la forme qualifie un nom ou exprime une action avec un complément. Ce test détermine la graphie et l’accord.",
+      "repair_strategy": "Choisis d’abord la catégorie grammaticale, puis applique la graphie propre à l’adjectif verbal ou au participe présent."
+    },
+    "accent_lexical": {
+      "label": "accent lexical reconstruit",
+      "likely_reasoning": "Tu as probablement écrit l’accent d’après la prononciation ou par analogie avec un mot proche.",
+      "decision_test": "Retrouve le radical ou un mot de la même famille et vérifie quels accents sont conservés.",
+      "repair_strategy": "Mémorise la graphie du radical avec un mot de la même famille et conserve ses accents attestés."
+    },
+    "consonne_radical": {
+      "label": "consonne du radical reconstruite",
+      "likely_reasoning": "Tu as probablement écrit les consonnes d’après la prononciation ou par analogie avec une autre famille de mots.",
+      "decision_test": "Isole le radical et compare-le avec un mot connu de la même famille.",
+      "repair_strategy": "Conserve les consonnes du radical attesté avant d’ajouter la terminaison."
+    },
+    "formation_suffixale_nom": {
+      "label": "formation du nom par suffixe mal reconstruite",
+      "likely_reasoning": "Tu as probablement fabriqué le nom directement à partir de l’adjectif sans vérifier la transformation du radical et du suffixe.",
+      "decision_test": "Sépare le radical du suffixe nominal et compare la formation avec un mot de la même famille.",
+      "repair_strategy": "Mémorise ensemble l’adjectif et le nom dérivé, en repérant la partie qui change."
+    },
+    "graphie_lexicale_analogie": {
+      "label": "graphie reconstruite par analogie",
+      "likely_reasoning": "Tu as probablement reconstruit le mot d’après sa prononciation ou un mot qui lui ressemble.",
+      "decision_test": "Vérifie le radical, le suffixe et un mot de la même famille plutôt que de te fier uniquement au son.",
+      "repair_strategy": "Mémorise la graphie attestée avec sa famille et une phrase d’exemple."
+    },
+    "majuscule_nom_habitant": {
+      "label": "nom d’habitant traité comme un adjectif ou une langue",
+      "likely_reasoning": "Tu as probablement gardé la minuscule parce que la même forme peut aussi désigner un adjectif ou une langue.",
+      "decision_test": "Demande-toi si le mot désigne ici une personne, qualifie un nom ou nomme une langue.",
+      "repair_strategy": "Mets une majuscule lorsque le mot est un nom désignant un habitant ou un peuple."
+    },
+    "majuscule_adjectif_nationalite": {
+      "label": "adjectif de nationalité traité comme un nom d’habitant",
+      "likely_reasoning": "Tu as probablement mis une majuscule parce que le mot évoque une nationalité.",
+      "decision_test": "Vérifie si le mot désigne une personne ou s’il qualifie directement un nom.",
+      "repair_strategy": "Garde la minuscule lorsqu’il s’agit d’un adjectif de nationalité."
+    }
+  }
+}

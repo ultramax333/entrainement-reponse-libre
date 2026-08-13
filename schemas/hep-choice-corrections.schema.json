@@ -6,7 +6,7 @@
   "additionalProperties": false,
   "required": ["schema_version", "source_batch_id", "corrections"],
   "properties": {
-    "schema_version": { "const": "hep-choice-corrections/1.0" },
+    "schema_version": { "const": "hep-choice-corrections/2.0" },
     "source_batch_id": { "type": "string", "pattern": "^hep-db1-[0-9]{8}-[0-9]{4}$" },
     "corrections": {
       "type": "array",
@@ -21,7 +21,15 @@
             "type": "object",
             "minProperties": 1,
             "maxProperties": 3,
-            "additionalProperties": { "type": "string", "minLength": 12, "maxLength": 280 }
+            "additionalProperties": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["mechanism_id", "reasoning_break"],
+              "properties": {
+                "mechanism_id": { "type": "string", "pattern": "^[a-z][a-z0-9_]{2,80}$" },
+                "reasoning_break": { "type": "string", "minLength": 12, "maxLength": 280 }
+              }
+            }
           }
         }
       }

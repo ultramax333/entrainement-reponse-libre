@@ -22,6 +22,7 @@ def test_choice_corrections_match_closed_schema() -> None:
     schema, corrections = documents()
     Draft202012Validator(schema).validate(corrections)
     assert len(corrections["corrections"]) == 42
+    assert sum(len(row["diagnostics"]) for row in corrections["corrections"]) == 122
 
 
 def test_choice_correction_schema_rejects_generated_rule_duplication() -> None:

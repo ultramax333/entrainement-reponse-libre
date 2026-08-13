@@ -141,6 +141,23 @@ button {
 .answer-line { font-weight: 750; }
 .correction-note { margin-top: 7px !important; color: #45574d; }
 .correction-conclusion { margin-top: 7px !important; font-weight: 750; }
+
+.diagnostic-card {
+  margin: 0.85rem 0;
+  padding: 0.8rem 0.9rem;
+  border-left: 4px solid #b2493f;
+  border-radius: 0.45rem;
+  background: #fff8f5;
+}
+
+.diagnostic-card h3 {
+  margin: 0 0 0.55rem;
+  font-size: 1rem;
+}
+
+.diagnostic-card p { margin: 0.4rem 0; }
+
+.diagnostic-break { font-weight: 650; }
 .correction-details { margin-top: 12px; border-top: 1px solid #d6e1da; padding-top: 10px; }
 .correction-details summary { color: #35684f; cursor: pointer; font-weight: 750; }
 .correction-details h3 { margin: 14px 0 5px; font-size: .95rem; }

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hep.local/schemas/hep-error-mechanisms.schema.json",
+  "title": "Mécanismes diagnostiques des choix courts",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "mechanisms"],
+  "properties": {
+    "schema_version": { "const": "hep-error-mechanisms/1.0" },
+    "mechanisms": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["label", "likely_reasoning", "decision_test", "repair_strategy"],
+        "properties": {
+          "label": { "type": "string", "minLength": 12, "maxLength": 100 },
+          "likely_reasoning": { "type": "string", "minLength": 30, "maxLength": 280 },
+          "decision_test": { "type": "string", "minLength": 30, "maxLength": 280 },
+          "repair_strategy": { "type": "string", "minLength": 30, "maxLength": 280 }
+        }
+      }
+    }
+  }
+}

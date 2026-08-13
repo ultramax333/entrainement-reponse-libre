@@ -25,6 +25,7 @@ ROOT = Path(__file__).resolve().parent
 DEFAULT_CANDIDATES = ROOT / "data" / "pilot_candidates.json"
 DEFAULT_OPTIONS = ROOT / "data" / "pilot_choice_options.json"
 DEFAULT_CORRECTIONS = ROOT / "data" / "pilot_choice_corrections.json"
+DEFAULT_ERROR_MECHANISMS = ROOT / "data" / "error_mechanisms.json"
 DEFAULT_OUTPUT = ROOT / "bank.js"
 
 VAGUE_DIAGNOSTICS = (
@@ -47,14 +48,17 @@ def _display_prompt(prompt: str) -> str:
 
 
 def build_choice_bank(
-    candidates: dict[str, Any], options: dict[str, Any], corrections: dict[str, Any]
+    candidates: dict[str, Any],
+    options: dict[str, Any],
+    corrections: dict[str, Any],
+    error_mechanisms: dict[str, Any],
 ) -> dict[str, Any]:
     if options.get("schema_version") != "hep-drill-choice-options/1.0":
         raise ChoiceBankError("Version des choix non prise en charge.")
     drills = validate_drill_batch(candidates.get("drills", []))
     if options.get("source_batch_id") != candidates.get("source_batch_id"):
         raise ChoiceBankError("Le lot des choix ne correspond pas au pilote.")
-    if corrections.get("schema_version") != "hep-choice-corrections/1.0":
+    if corrections.get("schema_version") != "hep-choice-corrections/2.0":
         raise ChoiceBankError("Version des corrigés non prise en charge.")
     if corrections.get("source_batch_id") != candidates.get("source_batch_id"):
         raise ChoiceBankError("Le lot des corrigés ne correspond pas au pilote.")
@@ -85,10 +89,28 @@ def build_choice_bank(
         extra = sorted(set(by_id) - expected_ids)
         raise ChoiceBankError(f"Choix incomplets (manquants={missing}, supplémentaires={extra}).")
 
+    if error_mechanisms.get("schema_version") != "hep-error-mechanisms/1.0":
+        raise ChoiceBankError("Version des mécanismes d’erreur non prise en charge.")
+    mechanism_catalog = error_mechanisms.get("mechanisms")
+    if not isinstance(mechanism_catalog, dict) or not mechanism_catalog:
+        raise ChoiceBankError("Le catalogue des mécanismes d’erreur est absent.")
+    required_mechanism_fields = {"label", "likely_reasoning", "decision_test", "repair_strategy"}
+    if any(
+        not isinstance(mechanism_id, str)
+        or not isinstance(mechanism, dict)
+        or set(mechanism) != required_mechanism_fields
+        or any(
+            not isinstance(mechanism[field], str) or len(mechanism[field].strip()) < 12
+            for field in required_mechanism_fields
+        )
+        for mechanism_id, mechanism in mechanism_catalog.items()
+    ):
+        raise ChoiceBankError("Le catalogue des mécanismes d’erreur est invalide.")
+
     correction_rows = corrections.get("corrections")
     if not isinstance(correction_rows, list):
         raise ChoiceBankError("La liste des corrigés est absente.")
-    correction_by_id: dict[str, dict[str, str]] = {}
+    correction_by_id: dict[str, dict[str, dict[str, str]]] = {}
     for row in correction_rows:
         if not isinstance(row, dict) or set(row) != {"drill_id", "diagnostics"}:
             raise ChoiceBankError("Une entrée de corrigé est invalide.")
@@ -97,11 +119,18 @@ def build_choice_bank(
         if drill_id in correction_by_id:
             raise ChoiceBankError(f"Corrigé dupliqué pour {drill_id}.")
         if not isinstance(diagnostics, dict) or any(
-            not isinstance(choice, str) or not isinstance(reason, str) or not 12 <= len(reason.strip()) <= 280
-            for choice, reason in diagnostics.items()
+            not isinstance(choice, str)
+            or not isinstance(diagnostic, dict)
+            or set(diagnostic) != {"mechanism_id", "reasoning_break"}
+            or not isinstance(diagnostic["mechanism_id"], str)
+            or diagnostic["mechanism_id"] not in mechanism_catalog
+            or not isinstance(diagnostic["reasoning_break"], str)
+            or not 12 <= len(diagnostic["reasoning_break"].strip()) <= 280
+            for choice, diagnostic in diagnostics.items()
         ):
             raise ChoiceBankError(f"{drill_id}: diagnostics invalides.")
-        for reason in diagnostics.values():
+        for diagnostic in diagnostics.values():
+            reason = diagnostic["reasoning_break"]
             if any(marker in reason.casefold() for marker in VAGUE_DIAGNOSTICS):
                 raise ChoiceBankError(f"{drill_id}: diagnostic trop vague.")
         correction_by_id[drill_id] = diagnostics
@@ -140,12 +169,23 @@ def build_choice_bank(
             f"Donc : {conclusion}"
         )
         why = {}
+        published_diagnostics = {}
         for choice in choices:
             if choice == drill["display_answer"]:
                 why[choice] = f"La forme « {choice} » est correcte ici. {application}"
             else:
-                reason = diagnostics[choice].strip()
+                source_diagnostic = diagnostics[choice]
+                reason = source_diagnostic["reasoning_break"].strip()
+                mechanism = mechanism_catalog[source_diagnostic["mechanism_id"]]
                 why[choice] = f"`{choice}` : {reason} La forme attendue est « {drill['display_answer']} »."
+                published_diagnostics[choice] = {
+                    "mechanism_id": source_diagnostic["mechanism_id"],
+                    "label": mechanism["label"],
+                    "likely_reasoning": mechanism["likely_reasoning"],
+                    "reasoning_break": f"La forme « {choice} » {reason}",
+                    "decision_test": mechanism["decision_test"],
+                    "repair_strategy": mechanism["repair_strategy"],
+                }
         description = describe(
             drill["family"], drill["mechanism_id"], drill["detail_id"], drill["tense_id"],
             document=pedagogy,
@@ -167,6 +207,7 @@ def build_choice_bank(
                 "conclusion": conclusion,
                 "explanation": explanation,
                 "why": why,
+                "diagnostics": published_diagnostics,
             },
         })
 
@@ -204,11 +245,15 @@ def main() -> None:
     parser.add_argument("--candidates", type=Path, default=DEFAULT_CANDIDATES)
     parser.add_argument("--options", type=Path, default=DEFAULT_OPTIONS)
     parser.add_argument("--corrections", type=Path, default=DEFAULT_CORRECTIONS)
+    parser.add_argument("--error-mechanisms", type=Path, default=DEFAULT_ERROR_MECHANISMS)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     args = parser.parse_args()
     try:
         bank = build_choice_bank(
-            load_json(args.candidates), load_json(args.options), load_json(args.corrections)
+            load_json(args.candidates),
+            load_json(args.options),
+            load_json(args.corrections),
+            load_json(args.error_mechanisms),
         )
         write_bank(bank, args.output)
     except (DrillContractError, ChoiceBankError) as exc:
