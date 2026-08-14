@@ -4,7 +4,13 @@ from copy import deepcopy
 
 import pytest
 
-from choice_bank import ROOT, ChoiceBankError, build_choice_bank
+from choice_bank import (
+    ROOT,
+    ChoiceBankError,
+    build_choice_bank,
+    build_choice_bank_from_manifest,
+    combine_choice_banks,
+)
 from drill_contracts import load_json
 
 
@@ -15,6 +21,24 @@ def sources() -> tuple[dict, dict, dict, dict]:
         load_json(ROOT / "data" / "pilot_choice_corrections.json"),
         load_json(ROOT / "data" / "error_mechanisms.json"),
     )
+
+
+def test_publication_manifest_builds_the_148_question_bank() -> None:
+    manifest = load_json(ROOT / "data" / "bank_manifest.json")
+    mechanisms = load_json(ROOT / "data" / "error_mechanisms.json")
+    bank = build_choice_bank_from_manifest(manifest, mechanisms)
+    assert len(bank["questions"]) == 148
+    assert len({question["id"] for question in bank["questions"]}) == 148
+    assert sum(question["mechanism_id"] == "ou_ou" for question in bank["questions"]) == 6
+    assert sum(len(question["choices"]) == 2 for question in bank["questions"]) == 8
+    assert sum(len(question["choices"]) == 4 for question in bank["questions"]) == 140
+
+
+def test_combination_rejects_duplicate_question_ids() -> None:
+    candidates, options, corrections, mechanisms = sources()
+    bank = build_choice_bank(candidates, options, corrections, mechanisms)
+    with pytest.raises(ChoiceBankError, match="dupliquée entre les lots"):
+        combine_choice_banks([bank, bank])
 
 
 def test_choice_bank_contains_resolved_questions() -> None:

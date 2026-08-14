@@ -9,7 +9,7 @@ Le pipeline local et l’application autonome sont implémentés :
 
 - contrats fermés et normalisation des réponses ;
 - mémoire drill séparée, import idempotent, agrégation et bridge de priorités ;
-- page autonome dans ce dossier, avec banque de 42 exercices contrôlés ;
+- page autonome dans ce dossier, avec banque publiée de 148 exercices contrôlés ;
 - export manuel et file locale de synchronisation ;
 - planification, projection canonique, lint, correcteurs locaux et publication
   atomique sur copie de test;
@@ -17,9 +17,12 @@ Le pipeline local et l’application autonome sont implémentés :
   exercices contrôlée localement ;
 - deux à quatre formes courtes par exercice, contrôlées avant la génération de
   `bank.js` ;
-- 42 corrigés structurés selon le modèle QCM HEP : règle et méthode canoniques,
+- 148 corrigés structurés selon le modèle QCM HEP : règle et méthode canoniques,
   application à la phrase, conclusion et diagnostic du raisonnement propre à
-  chacune des 122 graphies fautives.
+  chacune des 122 graphies fautives ;
+- production de 106 nouveaux exercices intégrée à la banque initiale de 42 : 100
+  avec quatre choix et 6 exercices `ou/où` avec deux choix, auditée à 106/106 et
+  contrôlée par les deux correcteurs locaux.
 
 L’application ne dépend pas du site QCM dans le navigateur. Le projet original
 reste hors du périmètre de publication.
@@ -35,6 +38,9 @@ python pipeline_drills.py project-context data/drill_plan.json data/prompt_conte
 python pipeline_drills.py lint candidats.json data/lint_report.json
 python pipeline_drills.py check-local candidats.json data/checker_report.json
 python choice_bank.py
+python choice_production.py prepare
+python production_content.py
+python choice_production.py audit-all data/drill_plan.json data/production_candidates.json data/production_choice_options.json data/production_choice_corrections.json data/production_review.json
 python -m pytest
 ```
 
@@ -120,6 +126,15 @@ L’import unidirectionnel des règles à revoir depuis le QCM est décrit dans
 [`QCM_PRIORITY_IMPORT.md`](QCM_PRIORITY_IMPORT.md). L’application en ligne tient
 aussi un profil de maîtrise local et propose une séance **Mes priorités** fondée
 sur le maximum du signal QCM et du signal propre aux exercices courts.
+Une troisième source, `data/manual_review_rules.json`, conserve les règles que
+l’utilisateur demande volontairement de revoir, sans leur attribuer de fausses
+erreurs. La règle `ou_ou` y est inscrite et ses six exercices sont disponibles
+dans les séances web.
+
+La préparation reproductible des 106 prochains exercices est décrite dans
+[`PRODUCTION_100.md`](PRODUCTION_100.md). Elle réserve dix lots de dix et un lot
+final de six, impose le nombre de choix défini par chaque quota, puis exige une
+revue indépendante exhaustive avant toute fusion dans la banque.
 
 ## Sources canoniques du projet principal
 
@@ -170,8 +185,8 @@ Ces nombres ne sont pas des constantes du sous-projet. Toujours les relire.
 
 - Une seule banque QCM : `quiz-app/questions.js`, qui ne sera pas modifiée par ce
   sous-projet.
-- Une seule banque publiée pour ce site autonome : `bank.js`, générée depuis le
-  pilote contrôlé et `data/pilot_choice_options.json`.
+- Une seule banque publiée pour ce site autonome : `bank.js`, générée depuis les
+  lots déclarés dans `data/bank_manifest.json`.
 - Taxonomie et pédagogie communes au QCM et aux drills.
 - Statistiques QCM et drills séparées ; seul le bridge combine leurs signaux.
 - Pas de génération par API dans le navigateur.

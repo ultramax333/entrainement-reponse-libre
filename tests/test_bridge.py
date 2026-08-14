@@ -12,6 +12,7 @@ from bridge_priorities import (
     build_bridge,
     drill_need,
     import_sessions,
+    load_manual_review_rules,
     load_store,
 )
 
@@ -143,3 +144,26 @@ def test_unknown_unproven_path_is_only_eligible_on_explicit_request() -> None:
     assert result["eligible"] and result["requested"]
     assert not result["exam_proven"]
     assert result["exam_factor"] == pytest.approx(0.30)
+
+
+def test_manual_review_list_loads_ou_ou_and_rejects_unknown_rule(tmp_path) -> None:
+    path = tmp_path / "manual.json"
+    document = {
+        "schema_version": "hep-manual-review-rules/1.0",
+        "rules": [{
+            "family": "homophones_grammaticaux",
+            "mechanism_id": "ou_ou",
+            "detail_id": "core",
+            "tense_id": None,
+            "reason": "Demande explicite.",
+        }],
+    }
+    path.write_text(json.dumps(document), encoding="utf-8")
+    assert load_manual_review_rules(path) == [
+        ("homophones_grammaticaux", "ou_ou", "core", None)
+    ]
+
+    document["rules"][0]["mechanism_id"] = "regle_absente"
+    path.write_text(json.dumps(document), encoding="utf-8")
+    with pytest.raises(BridgeError, match="absente de la pédagogie"):
+        load_manual_review_rules(path)

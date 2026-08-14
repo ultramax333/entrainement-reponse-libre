@@ -7,12 +7,14 @@ const engine = require('./choice-engine.js');
 const drive = require('./drive-backup.js');
 
 assert(engine.validateBank(bank));
-assert.strictEqual(bank.questions.length, 42);
+assert.strictEqual(bank.questions.length, 148);
 assert(bank.questions.every((question) => question.choices.length >= 2 && question.choices.length <= 4));
 assert(bank.questions.every((question) => !question.prompt.includes('___')));
 assert(bank.questions.every((question) => engine.isCorrect(question.answer, question)));
 assert(bank.questions.every((question) => question.choices.filter((choice) => engine.isCorrect(choice, question)).length === 1));
-assert.strictEqual(bank.questions.filter((question) => question.mechanism_id === 'nom_peuple_adjectif_langue').length, 2);
+assert.strictEqual(bank.questions.filter((question) => question.mechanism_id === 'nom_peuple_adjectif_langue').length, 22);
+assert.strictEqual(bank.questions.filter((question) => question.mechanism_id === 'ou_ou').length, 6);
+assert.strictEqual(bank.questions.filter((question) => question.choices.length === 2).length, 8);
 assert(bank.questions.every((question) => question.rule_label));
 assert(bank.questions.every((question) => Object.prototype.hasOwnProperty.call(question, 'tense_id')));
 assert(bank.questions.every((question) => !Object.prototype.hasOwnProperty.call(question, 'application_note')));
@@ -101,4 +103,4 @@ assert.strictEqual(engine.validatePriorityExport(invalidExport, bank).valid, fal
 const leakingExport = { ...qcmExport, selected_answer: 'secret' };
 assert.strictEqual(engine.validatePriorityExport(leakingExport, bank).valid, false);
 
-console.log('test_choice_app.js: OK — 42 exercices, priorités QCM et maîtrise locale contrôlés.');
+console.log('test_choice_app.js: OK — 148 exercices, priorités QCM et maîtrise locale contrôlés.');

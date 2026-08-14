@@ -42,6 +42,11 @@ Sol High reçoit :
 Il produit le candidat complet, sauf la règle et la méthode générales qui restent
 dans la base pédagogique.
 
+Pour une production à choix diagnostiques, cette étape est scindée : la phrase,
+la réponse et l’application passent d’abord le lint ; les trois distracteurs et
+leurs diagnostics sont générés seulement ensuite. La première série de 100 est
+découpée en dix lots de dix et soumise à une revue exhaustive.
+
 ### 3. Lint déterministe
 
 Pour chaque candidat :

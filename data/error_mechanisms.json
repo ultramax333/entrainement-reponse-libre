@@ -126,6 +126,42 @@
       "likely_reasoning": "Tu as probablement mis une majuscule parce que le mot évoque une nationalité.",
       "decision_test": "Vérifie si le mot désigne une personne ou s’il qualifie directement un nom.",
       "repair_strategy": "Garde la minuscule lorsqu’il s’agit d’un adjectif de nationalité."
+    },
+    "accord_nom_habitant_genre": {
+      "label": "genre du nom d’habitant mal accordé",
+      "likely_reasoning": "Tu as probablement reconnu le peuple, mais sans accorder le nom d’habitant avec la personne désignée.",
+      "decision_test": "Repère si la personne désignée est un homme ou une femme, puis choisis la forme correspondante du nom d’habitant.",
+      "repair_strategy": "Accorde le nom d’habitant en genre tout en conservant sa majuscule initiale."
+    },
+    "accord_nom_habitant_nombre": {
+      "label": "nombre du nom d’habitant mal accordé",
+      "likely_reasoning": "Tu as probablement reconnu le nom d’habitant, mais perdu le singulier ou le pluriel indiqué par la phrase.",
+      "decision_test": "Repère le déterminant et vérifie combien de personnes sont désignées avant de choisir la terminaison.",
+      "repair_strategy": "Accorde le nom d’habitant en nombre tout en conservant sa majuscule initiale."
+    },
+    "accord_adjectif_nationalite_genre": {
+      "label": "genre de l’adjectif de nationalité mal accordé",
+      "likely_reasoning": "Tu as probablement choisi la nationalité correcte sans accorder l’adjectif avec le nom qu’il qualifie.",
+      "decision_test": "Identifie le nom qualifié et détermine son genre avant de choisir la forme de l’adjectif.",
+      "repair_strategy": "Garde la minuscule et accorde l’adjectif de nationalité avec le nom qualifié."
+    },
+    "accord_adjectif_nationalite_nombre": {
+      "label": "nombre de l’adjectif de nationalité mal accordé",
+      "likely_reasoning": "Tu as probablement choisi la nationalité correcte sans reprendre le singulier ou le pluriel du nom qualifié.",
+      "decision_test": "Identifie le nom qualifié et vérifie son nombre avant de choisir la terminaison de l’adjectif.",
+      "repair_strategy": "Garde la minuscule et accorde l’adjectif de nationalité en nombre avec le nom qualifié."
+    },
+    "formation_adverbe_amment_emment": {
+      "label": "terminaison de l’adverbe mal reconstruite",
+      "likely_reasoning": "Tu as probablement écrit la terminaison de l’adverbe d’après sa prononciation sans retrouver l’adjectif dont il dérive.",
+      "decision_test": "Retrouve l’adjectif de départ et vérifie s’il conduit à la terminaison -amment ou -emment.",
+      "repair_strategy": "Associe l’adverbe à son adjectif de base et mémorise ensemble leur transformation."
+    },
+    "confusion_ou_ou": {
+      "label": "ou de choix confondu avec où de lieu ou de temps",
+      "likely_reasoning": "Tu as probablement choisi l’accent d’après la prononciation, alors que ou et où se prononcent de la même manière.",
+      "decision_test": "Teste « ou bien » : si le remplacement fonctionne, écris ou ; si le mot situe un lieu ou un moment, écris où.",
+      "repair_strategy": "Décide d’abord entre l’alternative et la localisation, puis ajoute l’accent uniquement pour où."
     }
   }
 }

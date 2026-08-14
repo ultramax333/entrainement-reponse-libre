@@ -23,6 +23,7 @@ DEFAULT_STORE = ROOT / "data" / "drill_observations.json"
 DEFAULT_QCM_PRIORITIES = ANALYSE_DIR / "error_priorities_HEP.txt"
 DEFAULT_EXAM_EVIDENCE = ANALYSE_DIR / "exam_rule_evidence_HEP.json"
 DEFAULT_WEIGHTING = ANALYSE_DIR / "error_weighting_HEP.yaml"
+DEFAULT_MANUAL_RULES = ROOT / "data" / "manual_review_rules.json"
 
 
 class BridgeError(ValueError):
@@ -94,6 +95,51 @@ def load_store(path: Path = DEFAULT_STORE) -> dict[str, Any]:
     if value.get("schema_version") != "hep-drill-observations/1.0" or not isinstance(value.get("sessions"), list):
         raise BridgeError("Journal drill absent ou de version inconnue.")
     return value
+
+
+def load_manual_review_rules(
+    path: Path = DEFAULT_MANUAL_RULES,
+) -> list[tuple[str, str, str | None, str | None]]:
+    """Charge les demandes volontaires sans les transformer en fausses erreurs."""
+    if not path.exists():
+        return []
+    try:
+        value = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        raise BridgeError(f"Impossible de lire {path}: {exc}") from exc
+    if set(value) != {"schema_version", "rules"}:
+        raise BridgeError("La liste manuelle ne respecte pas le contrat fermé.")
+    if value.get("schema_version") != "hep-manual-review-rules/1.0":
+        raise BridgeError("Version de liste manuelle inconnue.")
+    rows = value.get("rules")
+    if not isinstance(rows, list) or len(rows) > 100:
+        raise BridgeError("La liste manuelle est absente ou trop longue.")
+    required = {"family", "mechanism_id", "detail_id", "tense_id", "reason"}
+    paths = []
+    if str(ANALYSE_DIR) not in sys.path:
+        sys.path.insert(0, str(ANALYSE_DIR))
+    try:
+        from pedagogy_HEP import correction_template, load_pedagogy
+        pedagogy = load_pedagogy()
+    except Exception as exc:
+        raise BridgeError(f"Chargement de la pédagogie HEP impossible: {exc}") from exc
+    for row in rows:
+        if not isinstance(row, dict) or set(row) != required:
+            raise BridgeError("Une règle manuelle ne respecte pas le contrat fermé.")
+        if not all(isinstance(row[key], str) and row[key].strip() for key in ("family", "mechanism_id", "reason")):
+            raise BridgeError("Une règle manuelle contient un identifiant vide.")
+        if any(row[key] is not None and not isinstance(row[key], str) for key in ("detail_id", "tense_id")):
+            raise BridgeError("Le détail ou le temps d’une règle manuelle est invalide.")
+        path_value = path_key(row)
+        if correction_template(*path_value, document=pedagogy) is None:
+            raise BridgeError(
+                "Règle manuelle absente de la pédagogie HEP: "
+                + "/".join(str(item) for item in path_value)
+            )
+        paths.append(path_value)
+    if len(paths) != len(set(paths)):
+        raise BridgeError("La liste manuelle contient un chemin en double.")
+    return paths
 
 
 def atomic_write_json(path: Path, value: Any) -> None:

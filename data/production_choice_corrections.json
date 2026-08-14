@@ -1,0 +1,1760 @@
+{
+  "corrections": [
+    {
+      "diagnostics": {
+        "pérenité": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "omet un n du radical conservé dans le nom pérennité."
+        },
+        "pérenniter": {
+          "mechanism_id": "confusion_nom_infinitif",
+          "reasoning_break": "remplace la terminaison du nom -ité par la terminaison verbale -er."
+        },
+        "pérennitée": {
+          "mechanism_id": "nom_feminin_traite_comme_adjectif",
+          "reasoning_break": "ajoute un e final comme si le nom féminin devait s’accorder à la manière d’un adjectif."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0043"
+    },
+    {
+      "diagnostics": {
+        "au quel": {
+          "mechanism_id": "forme_composee_separee",
+          "reasoning_break": "sépare à tort la forme soudée issue de à + lequel."
+        },
+        "auxquels": {
+          "mechanism_id": "accord_antecedent_nombre",
+          "reasoning_break": "est au pluriel, alors que dispositif est singulier."
+        },
+        "à lequel": {
+          "mechanism_id": "contraction_absente",
+          "reasoning_break": "ne réalise pas la contraction obligatoire de à + lequel au masculin singulier."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0044"
+    },
+    {
+      "diagnostics": {
+        "don": {
+          "mechanism_id": "confusion_dont_nom",
+          "reasoning_break": "est un nom commun et non le pronom relatif qui relie les deux propositions."
+        },
+        "donc": {
+          "mechanism_id": "confusion_dont_connecteur",
+          "reasoning_break": "exprime une conséquence et ne reprend pas le complément du laboratoire."
+        },
+        "d’on": {
+          "mechanism_id": "confusion_dont_segmentation",
+          "reasoning_break": "correspondrait à de + on et ne peut pas reprendre le groupe « du laboratoire »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0045"
+    },
+    {
+      "diagnostics": {
+        "provocante": {
+          "mechanism_id": "adjectif_verbal_accord",
+          "reasoning_break": "ne respecte pas le nombre du nom « décisions »."
+        },
+        "provocants": {
+          "mechanism_id": "adjectif_verbal_accord",
+          "reasoning_break": "ne respecte pas le genre du nom « décisions »."
+        },
+        "provoquantes": {
+          "mechanism_id": "adjectif_verbal_participe_present",
+          "reasoning_break": "emploie la graphie du participe présent alors que le mot qualifie « décisions »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0046"
+    },
+    {
+      "diagnostics": {
+        "provocant": {
+          "mechanism_id": "adjectif_verbal_participe_present",
+          "reasoning_break": "emploie la graphie de l’adjectif verbal alors que la forme exprime une action."
+        },
+        "provoquante": {
+          "mechanism_id": "participe_present_accorde",
+          "reasoning_break": "ajoute un accord féminin au participe présent, qui reste invariable."
+        },
+        "provoquants": {
+          "mechanism_id": "participe_present_accorde",
+          "reasoning_break": "ajoute un accord pluriel au participe présent, qui reste invariable."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0047"
+    },
+    {
+      "diagnostics": {
+        "Canadien": {
+          "mechanism_id": "accord_nom_habitant_genre",
+          "reasoning_break": "ne respecte pas le genre indiqué par « le déterminant une »."
+        },
+        "Canadiennes": {
+          "mechanism_id": "accord_nom_habitant_nombre",
+          "reasoning_break": "ne respecte pas le nombre indiqué par « le déterminant une »."
+        },
+        "canadienne": {
+          "mechanism_id": "majuscule_nom_habitant",
+          "reasoning_break": "garde une minuscule alors que le mot est ici un nom désignant une personne ou un peuple."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0048"
+    },
+    {
+      "diagnostics": {
+        "Canadienne": {
+          "mechanism_id": "majuscule_adjectif_nationalite",
+          "reasoning_break": "met une majuscule à un adjectif de nationalité qui qualifie « délégation »."
+        },
+        "canadien": {
+          "mechanism_id": "accord_adjectif_nationalite_genre",
+          "reasoning_break": "ne respecte pas le genre indiqué par « délégation »."
+        },
+        "canadiennes": {
+          "mechanism_id": "accord_adjectif_nationalite_nombre",
+          "reasoning_break": "ne respecte pas le nombre indiqué par « délégation »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0049"
+    },
+    {
+      "diagnostics": {
+        "où": {
+          "mechanism_id": "confusion_ou_ou",
+          "reasoning_break": "ajoute un accent alors que le mot relie ici deux possibilités et peut être remplacé par « ou bien »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0050"
+    },
+    {
+      "diagnostics": {
+        "nécessairemant": {
+          "mechanism_id": "graphie_lexicale_analogie",
+          "reasoning_break": "écrit la fin de l’adverbe d’après sa prononciation au lieu de conserver le suffixe -ment."
+        },
+        "nécesserement": {
+          "mechanism_id": "formation_adverbe_amment_emment",
+          "reasoning_break": "reconstruit mal le passage de l’adjectif nécessaire à l’adverbe nécessairement."
+        },
+        "nécéssairement": {
+          "mechanism_id": "accent_lexical",
+          "reasoning_break": "ajoute un accent aigu sur le second e du radical nécessaire."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0051"
+    },
+    {
+      "diagnostics": {
+        "auquel": {
+          "mechanism_id": "accord_antecedent_genre",
+          "reasoning_break": "est masculin, alors que stratégie est féminin."
+        },
+        "auxquelles": {
+          "mechanism_id": "accord_antecedent_nombre",
+          "reasoning_break": "est au pluriel, alors que stratégie est singulier."
+        },
+        "à la quelle": {
+          "mechanism_id": "forme_composee_separee",
+          "reasoning_break": "sépare à tort laquelle, qui s’écrit en un seul mot."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0052"
+    },
+    {
+      "diagnostics": {
+        "don": {
+          "mechanism_id": "confusion_dont_nom",
+          "reasoning_break": "est un nom commun et non le pronom relatif qui relie les deux propositions."
+        },
+        "donc": {
+          "mechanism_id": "confusion_dont_connecteur",
+          "reasoning_break": "exprime une conséquence et ne reprend pas le complément du musée."
+        },
+        "d’on": {
+          "mechanism_id": "confusion_dont_segmentation",
+          "reasoning_break": "correspondrait à de + on et ne peut pas reprendre le groupe « du musée »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0053"
+    },
+    {
+      "diagnostics": {
+        "fatigante": {
+          "mechanism_id": "adjectif_verbal_accord",
+          "reasoning_break": "ne respecte pas le nombre du nom « démarches »."
+        },
+        "fatigants": {
+          "mechanism_id": "adjectif_verbal_accord",
+          "reasoning_break": "ne respecte pas le genre du nom « démarches »."
+        },
+        "fatiguantes": {
+          "mechanism_id": "adjectif_verbal_participe_present",
+          "reasoning_break": "emploie la graphie du participe présent alors que le mot qualifie « démarches »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0054"
+    },
+    {
+      "diagnostics": {
+        "fatigant": {
+          "mechanism_id": "adjectif_verbal_participe_present",
+          "reasoning_break": "emploie la graphie de l’adjectif verbal alors que la forme exprime une action."
+        },
+        "fatiguante": {
+          "mechanism_id": "participe_present_accorde",
+          "reasoning_break": "ajoute un accord féminin au participe présent, qui reste invariable."
+        },
+        "fatiguants": {
+          "mechanism_id": "participe_present_accorde",
+          "reasoning_break": "ajoute un accord pluriel au participe présent, qui reste invariable."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0055"
+    },
+    {
+      "diagnostics": {
+        "Italien": {
+          "mechanism_id": "accord_nom_habitant_nombre",
+          "reasoning_break": "ne respecte pas le nombre indiqué par « le déterminant des »."
+        },
+        "Italiennes": {
+          "mechanism_id": "accord_nom_habitant_genre",
+          "reasoning_break": "ne respecte pas le genre indiqué par « le déterminant des »."
+        },
+        "italiens": {
+          "mechanism_id": "majuscule_nom_habitant",
+          "reasoning_break": "garde une minuscule alors que le mot est ici un nom désignant une personne ou un peuple."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0056"
+    },
+    {
+      "diagnostics": {
+        "Italiennes": {
+          "mechanism_id": "majuscule_adjectif_nationalite",
+          "reasoning_break": "met une majuscule à un adjectif de nationalité qui qualifie « entreprises »."
+        },
+        "italienne": {
+          "mechanism_id": "accord_adjectif_nationalite_nombre",
+          "reasoning_break": "ne respecte pas le nombre indiqué par « entreprises »."
+        },
+        "italiens": {
+          "mechanism_id": "accord_adjectif_nationalite_genre",
+          "reasoning_break": "ne respecte pas le genre indiqué par « entreprises »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0057"
+    },
+    {
+      "diagnostics": {
+        "où": {
+          "mechanism_id": "confusion_ou_ou",
+          "reasoning_break": "traite le mot comme une indication de temps, alors qu’il coordonne deux moments proposés en alternative."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0058"
+    },
+    {
+      "diagnostics": {
+        "occurence": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "omet un r dans le radical du nom occurrence."
+        },
+        "occurrance": {
+          "mechanism_id": "graphie_lexicale_analogie",
+          "reasoning_break": "remplace la terminaison attestée -ence par -ance d’après la prononciation."
+        },
+        "ocurrence": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "omet un c au début du nom occurrence."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0059"
+    },
+    {
+      "diagnostics": {
+        "auquel": {
+          "mechanism_id": "accord_antecedent_nombre",
+          "reasoning_break": "est au singulier, alors que critères est pluriel."
+        },
+        "aux quels": {
+          "mechanism_id": "forme_composee_separee",
+          "reasoning_break": "sépare à tort la forme contractée auxquels."
+        },
+        "auxquelles": {
+          "mechanism_id": "accord_antecedent_genre",
+          "reasoning_break": "est féminin, alors que critères est masculin."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0060"
+    },
+    {
+      "diagnostics": {
+        "don": {
+          "mechanism_id": "confusion_dont_nom",
+          "reasoning_break": "est un nom commun et non le pronom relatif qui relie les deux propositions."
+        },
+        "donc": {
+          "mechanism_id": "confusion_dont_connecteur",
+          "reasoning_break": "exprime une conséquence et ne reprend pas le complément de l’association."
+        },
+        "d’on": {
+          "mechanism_id": "confusion_dont_segmentation",
+          "reasoning_break": "correspondrait à de + on et ne peut pas reprendre le groupe « de l’association »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0061"
+    },
+    {
+      "diagnostics": {
+        "convaincante": {
+          "mechanism_id": "adjectif_verbal_accord",
+          "reasoning_break": "ne respecte pas le nombre du nom « preuves »."
+        },
+        "convaincants": {
+          "mechanism_id": "adjectif_verbal_accord",
+          "reasoning_break": "ne respecte pas le genre du nom « preuves »."
+        },
+        "convainquantes": {
+          "mechanism_id": "adjectif_verbal_participe_present",
+          "reasoning_break": "emploie la graphie du participe présent alors que le mot qualifie « preuves »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0062"
+    },
+    {
+      "diagnostics": {
+        "convaincant": {
+          "mechanism_id": "adjectif_verbal_participe_present",
+          "reasoning_break": "emploie la graphie de l’adjectif verbal alors que la forme exprime une action."
+        },
+        "convainquante": {
+          "mechanism_id": "participe_present_accorde",
+          "reasoning_break": "ajoute un accord féminin au participe présent, qui reste invariable."
+        },
+        "convainquants": {
+          "mechanism_id": "participe_present_accorde",
+          "reasoning_break": "ajoute un accord pluriel au participe présent, qui reste invariable."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0063"
+    },
+    {
+      "diagnostics": {
+        "Allemande": {
+          "mechanism_id": "accord_nom_habitant_genre",
+          "reasoning_break": "ne respecte pas le genre indiqué par « le déterminant un »."
+        },
+        "Allemands": {
+          "mechanism_id": "accord_nom_habitant_nombre",
+          "reasoning_break": "ne respecte pas le nombre indiqué par « le déterminant un »."
+        },
+        "allemand": {
+          "mechanism_id": "majuscule_nom_habitant",
+          "reasoning_break": "garde une minuscule alors que le mot est ici un nom désignant une personne ou un peuple."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0064"
+    },
+    {
+      "diagnostics": {
+        "Allemand": {
+          "mechanism_id": "majuscule_adjectif_nationalite",
+          "reasoning_break": "met une majuscule à un adjectif de nationalité qui qualifie « laboratoire »."
+        },
+        "allemande": {
+          "mechanism_id": "accord_adjectif_nationalite_genre",
+          "reasoning_break": "ne respecte pas le genre indiqué par « laboratoire »."
+        },
+        "allemands": {
+          "mechanism_id": "accord_adjectif_nationalite_nombre",
+          "reasoning_break": "ne respecte pas le nombre indiqué par « laboratoire »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0065"
+    },
+    {
+      "diagnostics": {
+        "où": {
+          "mechanism_id": "confusion_ou_ou",
+          "reasoning_break": "ajoute l’accent du relatif de lieu ou de temps alors que la phrase exprime un choix entre deux travaux."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0066"
+    },
+    {
+      "diagnostics": {
+        "dilemne": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "remplace le second m par un n dans la graphie du nom."
+        },
+        "dillemme": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "double à tort le l initial du mot dilemme."
+        },
+        "dilème": {
+          "mechanism_id": "accent_lexical",
+          "reasoning_break": "ajoute un accent grave et supprime une consonne du mot dilemme."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0067"
+    },
+    {
+      "diagnostics": {
+        "aux quelles": {
+          "mechanism_id": "forme_composee_separee",
+          "reasoning_break": "sépare à tort la forme contractée auxquelles."
+        },
+        "auxquels": {
+          "mechanism_id": "accord_antecedent_genre",
+          "reasoning_break": "est masculin, alors que exigences est féminin."
+        },
+        "à lesquelles": {
+          "mechanism_id": "contraction_absente",
+          "reasoning_break": "ne réalise pas la contraction requise au pluriel après la préposition à."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0068"
+    },
+    {
+      "diagnostics": {
+        "don": {
+          "mechanism_id": "confusion_dont_nom",
+          "reasoning_break": "est un nom commun et non le pronom relatif qui relie les deux propositions."
+        },
+        "donc": {
+          "mechanism_id": "confusion_dont_connecteur",
+          "reasoning_break": "exprime une conséquence et ne reprend pas le complément de l’autrice."
+        },
+        "d’on": {
+          "mechanism_id": "confusion_dont_segmentation",
+          "reasoning_break": "correspondrait à de + on et ne peut pas reprendre le groupe « de l’autrice »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0069"
+    },
+    {
+      "diagnostics": {
+        "négligeantes": {
+          "mechanism_id": "adjectif_verbal_participe_present",
+          "reasoning_break": "emploie la graphie du participe présent alors que le mot qualifie « attitudes »."
+        },
+        "négligente": {
+          "mechanism_id": "adjectif_verbal_accord",
+          "reasoning_break": "ne respecte pas le nombre du nom « attitudes »."
+        },
+        "négligents": {
+          "mechanism_id": "adjectif_verbal_accord",
+          "reasoning_break": "ne respecte pas le genre du nom « attitudes »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0070"
+    },
+    {
+      "diagnostics": {
+        "négligeante": {
+          "mechanism_id": "participe_present_accorde",
+          "reasoning_break": "ajoute un accord féminin au participe présent, qui reste invariable."
+        },
+        "négligeants": {
+          "mechanism_id": "participe_present_accorde",
+          "reasoning_break": "ajoute un accord pluriel au participe présent, qui reste invariable."
+        },
+        "négligent": {
+          "mechanism_id": "adjectif_verbal_participe_present",
+          "reasoning_break": "emploie la graphie de l’adjectif verbal alors que la forme exprime une action."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0071"
+    },
+    {
+      "diagnostics": {
+        "Français": {
+          "mechanism_id": "accord_nom_habitant_genre",
+          "reasoning_break": "ne respecte pas le genre indiqué par « le déterminant une »."
+        },
+        "Françaises": {
+          "mechanism_id": "accord_nom_habitant_nombre",
+          "reasoning_break": "ne respecte pas le nombre indiqué par « le déterminant une »."
+        },
+        "française": {
+          "mechanism_id": "majuscule_nom_habitant",
+          "reasoning_break": "garde une minuscule alors que le mot est ici un nom désignant une personne ou un peuple."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0072"
+    },
+    {
+      "diagnostics": {
+        "Françaises": {
+          "mechanism_id": "majuscule_adjectif_nationalite",
+          "reasoning_break": "met une majuscule à un adjectif de nationalité qui qualifie « méthodes »."
+        },
+        "français": {
+          "mechanism_id": "accord_adjectif_nationalite_genre",
+          "reasoning_break": "ne respecte pas le genre indiqué par « méthodes »."
+        },
+        "française": {
+          "mechanism_id": "accord_adjectif_nationalite_nombre",
+          "reasoning_break": "ne respecte pas le nombre indiqué par « méthodes »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0073"
+    },
+    {
+      "diagnostics": {
+        "ou": {
+          "mechanism_id": "confusion_ou_ou",
+          "reasoning_break": "supprime l’accent alors que le mot reprend un lieu et signifie « dans laquelle »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0074"
+    },
+    {
+      "diagnostics": {
+        "acceuil": {
+          "mechanism_id": "graphie_lexicale_analogie",
+          "reasoning_break": "inverse u et e dans la suite graphique -cueil."
+        },
+        "aceuil": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "omet un c au début du nom accueil."
+        },
+        "acueil": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "omet le second c sans rétablir la graphie correcte de -cueil."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0075"
+    },
+    {
+      "diagnostics": {
+        "au quel": {
+          "mechanism_id": "forme_composee_separee",
+          "reasoning_break": "sépare à tort la forme soudée issue de à + lequel."
+        },
+        "auxquels": {
+          "mechanism_id": "accord_antecedent_nombre",
+          "reasoning_break": "est au pluriel, alors que programme est singulier."
+        },
+        "à lequel": {
+          "mechanism_id": "contraction_absente",
+          "reasoning_break": "ne réalise pas la contraction obligatoire de à + lequel au masculin singulier."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0076"
+    },
+    {
+      "diagnostics": {
+        "don": {
+          "mechanism_id": "confusion_dont_nom",
+          "reasoning_break": "est un nom commun et non le pronom relatif qui relie les deux propositions."
+        },
+        "donc": {
+          "mechanism_id": "confusion_dont_connecteur",
+          "reasoning_break": "exprime une conséquence et ne reprend pas le complément de la ville."
+        },
+        "d’on": {
+          "mechanism_id": "confusion_dont_segmentation",
+          "reasoning_break": "correspondrait à de + on et ne peut pas reprendre le groupe « de la ville »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0077"
+    },
+    {
+      "diagnostics": {
+        "divergeantes": {
+          "mechanism_id": "adjectif_verbal_participe_present",
+          "reasoning_break": "emploie la graphie du participe présent alors que le mot qualifie « interprétations »."
+        },
+        "divergente": {
+          "mechanism_id": "adjectif_verbal_accord",
+          "reasoning_break": "ne respecte pas le nombre du nom « interprétations »."
+        },
+        "divergents": {
+          "mechanism_id": "adjectif_verbal_accord",
+          "reasoning_break": "ne respecte pas le genre du nom « interprétations »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0078"
+    },
+    {
+      "diagnostics": {
+        "divergeante": {
+          "mechanism_id": "participe_present_accorde",
+          "reasoning_break": "ajoute un accord féminin au participe présent, qui reste invariable."
+        },
+        "divergeants": {
+          "mechanism_id": "participe_present_accorde",
+          "reasoning_break": "ajoute un accord pluriel au participe présent, qui reste invariable."
+        },
+        "divergent": {
+          "mechanism_id": "adjectif_verbal_participe_present",
+          "reasoning_break": "emploie la graphie de l’adjectif verbal alors que la forme exprime une action."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0079"
+    },
+    {
+      "diagnostics": {
+        "Espagnole": {
+          "mechanism_id": "accord_nom_habitant_nombre",
+          "reasoning_break": "ne respecte pas le nombre indiqué par « plusieurs et le féminin »."
+        },
+        "Espagnols": {
+          "mechanism_id": "accord_nom_habitant_genre",
+          "reasoning_break": "ne respecte pas le genre indiqué par « plusieurs et le féminin »."
+        },
+        "espagnoles": {
+          "mechanism_id": "majuscule_nom_habitant",
+          "reasoning_break": "garde une minuscule alors que le mot est ici un nom désignant une personne ou un peuple."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0080"
+    },
+    {
+      "diagnostics": {
+        "Espagnole": {
+          "mechanism_id": "majuscule_adjectif_nationalite",
+          "reasoning_break": "met une majuscule à un adjectif de nationalité qui qualifie « équipe »."
+        },
+        "espagnol": {
+          "mechanism_id": "accord_adjectif_nationalite_genre",
+          "reasoning_break": "ne respecte pas le genre indiqué par « équipe »."
+        },
+        "espagnoles": {
+          "mechanism_id": "accord_adjectif_nationalite_nombre",
+          "reasoning_break": "ne respecte pas le nombre indiqué par « équipe »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0081"
+    },
+    {
+      "diagnostics": {
+        "ou": {
+          "mechanism_id": "confusion_ou_ou",
+          "reasoning_break": "emploie la conjonction de choix alors que le mot reprend ici un moment précis."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0082"
+    },
+    {
+      "diagnostics": {
+        "remunération": {
+          "mechanism_id": "accent_lexical",
+          "reasoning_break": "omet l’accent aigu initial du nom rémunération."
+        },
+        "rémunèration": {
+          "mechanism_id": "accent_lexical",
+          "reasoning_break": "place un accent grave sur le e de la terminaison -ération."
+        },
+        "rénumération": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "inverse m et n dans le radical du mot rémunération."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0083"
+    },
+    {
+      "diagnostics": {
+        "auquel": {
+          "mechanism_id": "accord_antecedent_genre",
+          "reasoning_break": "est masculin, alors que initiative est féminin."
+        },
+        "auxquelles": {
+          "mechanism_id": "accord_antecedent_nombre",
+          "reasoning_break": "est au pluriel, alors que initiative est singulier."
+        },
+        "à la quelle": {
+          "mechanism_id": "forme_composee_separee",
+          "reasoning_break": "sépare à tort laquelle, qui s’écrit en un seul mot."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0084"
+    },
+    {
+      "diagnostics": {
+        "don": {
+          "mechanism_id": "confusion_dont_nom",
+          "reasoning_break": "est un nom commun et non le pronom relatif qui relie les deux propositions."
+        },
+        "donc": {
+          "mechanism_id": "confusion_dont_connecteur",
+          "reasoning_break": "exprime une conséquence et ne reprend pas le complément de l’entreprise."
+        },
+        "d’on": {
+          "mechanism_id": "confusion_dont_segmentation",
+          "reasoning_break": "correspondrait à de + on et ne peut pas reprendre le groupe « de l’entreprise »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0085"
+    },
+    {
+      "diagnostics": {
+        "convergeantes": {
+          "mechanism_id": "adjectif_verbal_participe_present",
+          "reasoning_break": "emploie la graphie du participe présent alors que le mot qualifie « analyses »."
+        },
+        "convergente": {
+          "mechanism_id": "adjectif_verbal_accord",
+          "reasoning_break": "ne respecte pas le nombre du nom « analyses »."
+        },
+        "convergents": {
+          "mechanism_id": "adjectif_verbal_accord",
+          "reasoning_break": "ne respecte pas le genre du nom « analyses »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0086"
+    },
+    {
+      "diagnostics": {
+        "convergeante": {
+          "mechanism_id": "participe_present_accorde",
+          "reasoning_break": "ajoute un accord féminin au participe présent, qui reste invariable."
+        },
+        "convergeants": {
+          "mechanism_id": "participe_present_accorde",
+          "reasoning_break": "ajoute un accord pluriel au participe présent, qui reste invariable."
+        },
+        "convergent": {
+          "mechanism_id": "adjectif_verbal_participe_present",
+          "reasoning_break": "emploie la graphie de l’adjectif verbal alors que la forme exprime une action."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0087"
+    },
+    {
+      "diagnostics": {
+        "Portugais": {
+          "mechanism_id": "accord_nom_habitant_genre",
+          "reasoning_break": "ne respecte pas le genre indiqué par « le déterminant des et le féminin »."
+        },
+        "Portugaise": {
+          "mechanism_id": "accord_nom_habitant_nombre",
+          "reasoning_break": "ne respecte pas le nombre indiqué par « le déterminant des et le féminin »."
+        },
+        "portugaises": {
+          "mechanism_id": "majuscule_nom_habitant",
+          "reasoning_break": "garde une minuscule alors que le mot est ici un nom désignant une personne ou un peuple."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0088"
+    },
+    {
+      "diagnostics": {
+        "Portugaise": {
+          "mechanism_id": "majuscule_adjectif_nationalite",
+          "reasoning_break": "met une majuscule à un adjectif de nationalité qui qualifie « chercheuse »."
+        },
+        "portugais": {
+          "mechanism_id": "accord_adjectif_nationalite_genre",
+          "reasoning_break": "ne respecte pas le genre indiqué par « chercheuse »."
+        },
+        "portugaises": {
+          "mechanism_id": "accord_adjectif_nationalite_nombre",
+          "reasoning_break": "ne respecte pas le nombre indiqué par « chercheuse »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0089"
+    },
+    {
+      "diagnostics": {
+        "ou": {
+          "mechanism_id": "confusion_ou_ou",
+          "reasoning_break": "supprime l’accent alors que le mot situe l’étape à laquelle une nouvelle décision devient nécessaire."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0090"
+    },
+    {
+      "diagnostics": {
+        "dévelloppement": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "double à tort le l dans le radical."
+        },
+        "dévelopement": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "omet un p du radical de développer."
+        },
+        "développemment": {
+          "mechanism_id": "graphie_lexicale_analogie",
+          "reasoning_break": "reconstruit la fin du nom comme celle d’un adverbe en -emment."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0091"
+    },
+    {
+      "diagnostics": {
+        "auquel": {
+          "mechanism_id": "accord_antecedent_nombre",
+          "reasoning_break": "est au singulier, alors que engagements est pluriel."
+        },
+        "aux quels": {
+          "mechanism_id": "forme_composee_separee",
+          "reasoning_break": "sépare à tort la forme contractée auxquels."
+        },
+        "auxquelles": {
+          "mechanism_id": "accord_antecedent_genre",
+          "reasoning_break": "est féminin, alors que engagements est masculin."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0092"
+    },
+    {
+      "diagnostics": {
+        "don": {
+          "mechanism_id": "confusion_dont_nom",
+          "reasoning_break": "est un nom commun et non le pronom relatif qui relie les deux propositions."
+        },
+        "donc": {
+          "mechanism_id": "confusion_dont_connecteur",
+          "reasoning_break": "exprime une conséquence et ne reprend pas le complément du projet."
+        },
+        "d’on": {
+          "mechanism_id": "confusion_dont_segmentation",
+          "reasoning_break": "correspondrait à de + on et ne peut pas reprendre le groupe « du projet »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0093"
+    },
+    {
+      "diagnostics": {
+        "influantes": {
+          "mechanism_id": "adjectif_verbal_participe_present",
+          "reasoning_break": "emploie la graphie du participe présent alors que le mot qualifie « chercheuses »."
+        },
+        "influente": {
+          "mechanism_id": "adjectif_verbal_accord",
+          "reasoning_break": "ne respecte pas le nombre du nom « chercheuses »."
+        },
+        "influents": {
+          "mechanism_id": "adjectif_verbal_accord",
+          "reasoning_break": "ne respecte pas le genre du nom « chercheuses »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0094"
+    },
+    {
+      "diagnostics": {
+        "influante": {
+          "mechanism_id": "participe_present_accorde",
+          "reasoning_break": "ajoute un accord féminin au participe présent, qui reste invariable."
+        },
+        "influants": {
+          "mechanism_id": "participe_present_accorde",
+          "reasoning_break": "ajoute un accord pluriel au participe présent, qui reste invariable."
+        },
+        "influent": {
+          "mechanism_id": "adjectif_verbal_participe_present",
+          "reasoning_break": "emploie la graphie de l’adjectif verbal alors que la forme exprime une action."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0095"
+    },
+    {
+      "diagnostics": {
+        "Brésilien": {
+          "mechanism_id": "accord_nom_habitant_genre",
+          "reasoning_break": "ne respecte pas le genre indiqué par « le déterminant une »."
+        },
+        "Brésiliennes": {
+          "mechanism_id": "accord_nom_habitant_nombre",
+          "reasoning_break": "ne respecte pas le nombre indiqué par « le déterminant une »."
+        },
+        "brésilienne": {
+          "mechanism_id": "majuscule_nom_habitant",
+          "reasoning_break": "garde une minuscule alors que le mot est ici un nom désignant une personne ou un peuple."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0096"
+    },
+    {
+      "diagnostics": {
+        "Brésilienne": {
+          "mechanism_id": "majuscule_adjectif_nationalite",
+          "reasoning_break": "met une majuscule à un adjectif de nationalité qui qualifie « délégation »."
+        },
+        "brésilien": {
+          "mechanism_id": "accord_adjectif_nationalite_genre",
+          "reasoning_break": "ne respecte pas le genre indiqué par « délégation »."
+        },
+        "brésiliennes": {
+          "mechanism_id": "accord_adjectif_nationalite_nombre",
+          "reasoning_break": "ne respecte pas le nombre indiqué par « délégation »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0097"
+    },
+    {
+      "diagnostics": {
+        "connecion": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "omet le x de la graphie attestée."
+        },
+        "connection": {
+          "mechanism_id": "graphie_lexicale_analogie",
+          "reasoning_break": "emploie la graphie anglaise en -ction au lieu de la forme française en -xion."
+        },
+        "connextion": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "ajoute un t qui n’appartient pas au nom connexion."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0098"
+    },
+    {
+      "diagnostics": {
+        "aux quelles": {
+          "mechanism_id": "forme_composee_separee",
+          "reasoning_break": "sépare à tort la forme contractée auxquelles."
+        },
+        "auxquels": {
+          "mechanism_id": "accord_antecedent_genre",
+          "reasoning_break": "est masculin, alors que recommandations est féminin."
+        },
+        "à lesquelles": {
+          "mechanism_id": "contraction_absente",
+          "reasoning_break": "ne réalise pas la contraction requise au pluriel après la préposition à."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0099"
+    },
+    {
+      "diagnostics": {
+        "don": {
+          "mechanism_id": "confusion_dont_nom",
+          "reasoning_break": "est un nom commun et non le pronom relatif qui relie les deux propositions."
+        },
+        "donc": {
+          "mechanism_id": "confusion_dont_connecteur",
+          "reasoning_break": "exprime une conséquence et ne reprend pas le complément de la candidate."
+        },
+        "d’on": {
+          "mechanism_id": "confusion_dont_segmentation",
+          "reasoning_break": "correspondrait à de + on et ne peut pas reprendre le groupe « de la candidate »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0100"
+    },
+    {
+      "diagnostics": {
+        "précédantes": {
+          "mechanism_id": "adjectif_verbal_participe_present",
+          "reasoning_break": "emploie la graphie du participe présent alors que le mot qualifie « versions »."
+        },
+        "précédente": {
+          "mechanism_id": "adjectif_verbal_accord",
+          "reasoning_break": "ne respecte pas le nombre du nom « versions »."
+        },
+        "précédents": {
+          "mechanism_id": "adjectif_verbal_accord",
+          "reasoning_break": "ne respecte pas le genre du nom « versions »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0101"
+    },
+    {
+      "diagnostics": {
+        "précédante": {
+          "mechanism_id": "participe_present_accorde",
+          "reasoning_break": "ajoute un accord féminin au participe présent, qui reste invariable."
+        },
+        "précédants": {
+          "mechanism_id": "participe_present_accorde",
+          "reasoning_break": "ajoute un accord pluriel au participe présent, qui reste invariable."
+        },
+        "précédent": {
+          "mechanism_id": "adjectif_verbal_participe_present",
+          "reasoning_break": "emploie la graphie de l’adjectif verbal alors que la forme exprime une action."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0102"
+    },
+    {
+      "diagnostics": {
+        "Norvégien": {
+          "mechanism_id": "accord_nom_habitant_nombre",
+          "reasoning_break": "ne respecte pas le nombre indiqué par « les deux chercheurs »."
+        },
+        "Norvégiennes": {
+          "mechanism_id": "accord_nom_habitant_genre",
+          "reasoning_break": "ne respecte pas le genre indiqué par « les deux chercheurs »."
+        },
+        "norvégiens": {
+          "mechanism_id": "majuscule_nom_habitant",
+          "reasoning_break": "garde une minuscule alors que le mot est ici un nom désignant une personne ou un peuple."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0103"
+    },
+    {
+      "diagnostics": {
+        "Norvégiennes": {
+          "mechanism_id": "majuscule_adjectif_nationalite",
+          "reasoning_break": "met une majuscule à un adjectif de nationalité qui qualifie « solutions »."
+        },
+        "norvégienne": {
+          "mechanism_id": "accord_adjectif_nationalite_nombre",
+          "reasoning_break": "ne respecte pas le nombre indiqué par « solutions »."
+        },
+        "norvégiens": {
+          "mechanism_id": "accord_adjectif_nationalite_genre",
+          "reasoning_break": "ne respecte pas le genre indiqué par « solutions »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0104"
+    },
+    {
+      "diagnostics": {
+        "profesionnalisme": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "omet un s dans le radical profession-."
+        },
+        "professionalisme": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "omet un n dans le radical de professionnel."
+        },
+        "professionnallisme": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "double à tort le l dans la terminaison -alisme."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0105"
+    },
+    {
+      "diagnostics": {
+        "au quel": {
+          "mechanism_id": "forme_composee_separee",
+          "reasoning_break": "sépare à tort la forme soudée issue de à + lequel."
+        },
+        "auxquels": {
+          "mechanism_id": "accord_antecedent_nombre",
+          "reasoning_break": "est au pluriel, alors que obstacle est singulier."
+        },
+        "à lequel": {
+          "mechanism_id": "contraction_absente",
+          "reasoning_break": "ne réalise pas la contraction obligatoire de à + lequel au masculin singulier."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0106"
+    },
+    {
+      "diagnostics": {
+        "don": {
+          "mechanism_id": "confusion_dont_nom",
+          "reasoning_break": "est un nom commun et non le pronom relatif qui relie les deux propositions."
+        },
+        "donc": {
+          "mechanism_id": "confusion_dont_connecteur",
+          "reasoning_break": "exprime une conséquence et ne reprend pas le complément du comité."
+        },
+        "d’on": {
+          "mechanism_id": "confusion_dont_segmentation",
+          "reasoning_break": "correspondrait à de + on et ne peut pas reprendre le groupe « du comité »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0107"
+    },
+    {
+      "diagnostics": {
+        "communicante": {
+          "mechanism_id": "adjectif_verbal_accord",
+          "reasoning_break": "ne respecte pas le nombre du nom « salles »."
+        },
+        "communicants": {
+          "mechanism_id": "adjectif_verbal_accord",
+          "reasoning_break": "ne respecte pas le genre du nom « salles »."
+        },
+        "communiquantes": {
+          "mechanism_id": "adjectif_verbal_participe_present",
+          "reasoning_break": "emploie la graphie du participe présent alors que le mot qualifie « salles »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0108"
+    },
+    {
+      "diagnostics": {
+        "communicant": {
+          "mechanism_id": "adjectif_verbal_participe_present",
+          "reasoning_break": "emploie la graphie de l’adjectif verbal alors que la forme exprime une action."
+        },
+        "communiquante": {
+          "mechanism_id": "participe_present_accorde",
+          "reasoning_break": "ajoute un accord féminin au participe présent, qui reste invariable."
+        },
+        "communiquants": {
+          "mechanism_id": "participe_present_accorde",
+          "reasoning_break": "ajoute un accord pluriel au participe présent, qui reste invariable."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0109"
+    },
+    {
+      "diagnostics": {
+        "Autrichienne": {
+          "mechanism_id": "accord_nom_habitant_genre",
+          "reasoning_break": "ne respecte pas le genre indiqué par « le déterminant un »."
+        },
+        "Autrichiens": {
+          "mechanism_id": "accord_nom_habitant_nombre",
+          "reasoning_break": "ne respecte pas le nombre indiqué par « le déterminant un »."
+        },
+        "autrichien": {
+          "mechanism_id": "majuscule_nom_habitant",
+          "reasoning_break": "garde une minuscule alors que le mot est ici un nom désignant une personne ou un peuple."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0110"
+    },
+    {
+      "diagnostics": {
+        "Autrichiens": {
+          "mechanism_id": "majuscule_adjectif_nationalite",
+          "reasoning_break": "met une majuscule à un adjectif de nationalité qui qualifie « partenaires »."
+        },
+        "autrichien": {
+          "mechanism_id": "accord_adjectif_nationalite_nombre",
+          "reasoning_break": "ne respecte pas le nombre indiqué par « partenaires »."
+        },
+        "autrichiennes": {
+          "mechanism_id": "accord_adjectif_nationalite_genre",
+          "reasoning_break": "ne respecte pas le genre indiqué par « partenaires »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0111"
+    },
+    {
+      "diagnostics": {
+        "privillège": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "double à tort le l du mot privilège."
+        },
+        "privilègee": {
+          "mechanism_id": "graphie_lexicale_analogie",
+          "reasoning_break": "ajoute un e final qui n’appartient pas au nom privilège."
+        },
+        "privilége": {
+          "mechanism_id": "accent_lexical",
+          "reasoning_break": "emploie un accent aigu à la place de l’accent grave."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0112"
+    },
+    {
+      "diagnostics": {
+        "auquel": {
+          "mechanism_id": "accord_antecedent_genre",
+          "reasoning_break": "est masculin, alors que procédure est féminin."
+        },
+        "auxquelles": {
+          "mechanism_id": "accord_antecedent_nombre",
+          "reasoning_break": "est au pluriel, alors que procédure est singulier."
+        },
+        "à la quelle": {
+          "mechanism_id": "forme_composee_separee",
+          "reasoning_break": "sépare à tort laquelle, qui s’écrit en un seul mot."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0113"
+    },
+    {
+      "diagnostics": {
+        "don": {
+          "mechanism_id": "confusion_dont_nom",
+          "reasoning_break": "est un nom commun et non le pronom relatif qui relie les deux propositions."
+        },
+        "donc": {
+          "mechanism_id": "confusion_dont_connecteur",
+          "reasoning_break": "exprime une conséquence et ne reprend pas le complément de l’étude."
+        },
+        "d’on": {
+          "mechanism_id": "confusion_dont_segmentation",
+          "reasoning_break": "correspondrait à de + on et ne peut pas reprendre le groupe « de l’étude »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0114"
+    },
+    {
+      "diagnostics": {
+        "adhérantes": {
+          "mechanism_id": "adjectif_verbal_participe_present",
+          "reasoning_break": "emploie la graphie du participe présent alors que le mot qualifie « matières »."
+        },
+        "adhérente": {
+          "mechanism_id": "adjectif_verbal_accord",
+          "reasoning_break": "ne respecte pas le nombre du nom « matières »."
+        },
+        "adhérents": {
+          "mechanism_id": "adjectif_verbal_accord",
+          "reasoning_break": "ne respecte pas le genre du nom « matières »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0115"
+    },
+    {
+      "diagnostics": {
+        "adhérante": {
+          "mechanism_id": "participe_present_accorde",
+          "reasoning_break": "ajoute un accord féminin au participe présent, qui reste invariable."
+        },
+        "adhérants": {
+          "mechanism_id": "participe_present_accorde",
+          "reasoning_break": "ajoute un accord pluriel au participe présent, qui reste invariable."
+        },
+        "adhérent": {
+          "mechanism_id": "adjectif_verbal_participe_present",
+          "reasoning_break": "emploie la graphie de l’adjectif verbal alors que la forme exprime une action."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0116"
+    },
+    {
+      "diagnostics": {
+        "Grecque": {
+          "mechanism_id": "accord_nom_habitant_nombre",
+          "reasoning_break": "ne respecte pas le nombre indiqué par « le déterminant des et le féminin »."
+        },
+        "Grecs": {
+          "mechanism_id": "accord_nom_habitant_genre",
+          "reasoning_break": "ne respecte pas le genre indiqué par « le déterminant des et le féminin »."
+        },
+        "grecques": {
+          "mechanism_id": "majuscule_nom_habitant",
+          "reasoning_break": "garde une minuscule alors que le mot est ici un nom désignant une personne ou un peuple."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0117"
+    },
+    {
+      "diagnostics": {
+        "Grecque": {
+          "mechanism_id": "majuscule_adjectif_nationalite",
+          "reasoning_break": "met une majuscule à un adjectif de nationalité qui qualifie « association »."
+        },
+        "grec": {
+          "mechanism_id": "accord_adjectif_nationalite_genre",
+          "reasoning_break": "ne respecte pas le genre indiqué par « association »."
+        },
+        "grecques": {
+          "mechanism_id": "accord_adjectif_nationalite_nombre",
+          "reasoning_break": "ne respecte pas le nombre indiqué par « association »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0118"
+    },
+    {
+      "diagnostics": {
+        "parallèlel": {
+          "mechanism_id": "graphie_lexicale_analogie",
+          "reasoning_break": "ajoute une consonne finale absente de la graphie du nom."
+        },
+        "paralléle": {
+          "mechanism_id": "accent_lexical",
+          "reasoning_break": "emploie un accent aigu à la place de l’accent grave."
+        },
+        "paralèle": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "omet un l dans le radical de parallèle."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0119"
+    },
+    {
+      "diagnostics": {
+        "auquel": {
+          "mechanism_id": "accord_antecedent_nombre",
+          "reasoning_break": "est au singulier, alors que principes est pluriel."
+        },
+        "aux quels": {
+          "mechanism_id": "forme_composee_separee",
+          "reasoning_break": "sépare à tort la forme contractée auxquels."
+        },
+        "auxquelles": {
+          "mechanism_id": "accord_antecedent_genre",
+          "reasoning_break": "est féminin, alors que principes est masculin."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0120"
+    },
+    {
+      "diagnostics": {
+        "don": {
+          "mechanism_id": "confusion_dont_nom",
+          "reasoning_break": "est un nom commun et non le pronom relatif qui relie les deux propositions."
+        },
+        "donc": {
+          "mechanism_id": "confusion_dont_connecteur",
+          "reasoning_break": "exprime une conséquence et ne reprend pas le complément du village."
+        },
+        "d’on": {
+          "mechanism_id": "confusion_dont_segmentation",
+          "reasoning_break": "correspondrait à de + on et ne peut pas reprendre le groupe « du village »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0121"
+    },
+    {
+      "diagnostics": {
+        "bienvaillance": {
+          "mechanism_id": "graphie_lexicale_analogie",
+          "reasoning_break": "remplace à tort la suite -veil- par -vail-."
+        },
+        "bienveilance": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "omet un l dans la suite -veillance."
+        },
+        "bienveillence": {
+          "mechanism_id": "graphie_lexicale_analogie",
+          "reasoning_break": "remplace la terminaison -ance par -ence d’après la prononciation."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0122"
+    },
+    {
+      "diagnostics": {
+        "aux quelles": {
+          "mechanism_id": "forme_composee_separee",
+          "reasoning_break": "sépare à tort la forme contractée auxquelles."
+        },
+        "auxquels": {
+          "mechanism_id": "accord_antecedent_genre",
+          "reasoning_break": "est masculin, alors que conditions est féminin."
+        },
+        "à lesquelles": {
+          "mechanism_id": "contraction_absente",
+          "reasoning_break": "ne réalise pas la contraction requise au pluriel après la préposition à."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0123"
+    },
+    {
+      "diagnostics": {
+        "don": {
+          "mechanism_id": "confusion_dont_nom",
+          "reasoning_break": "est un nom commun et non le pronom relatif qui relie les deux propositions."
+        },
+        "donc": {
+          "mechanism_id": "confusion_dont_connecteur",
+          "reasoning_break": "exprime une conséquence et ne reprend pas le complément de l’école."
+        },
+        "d’on": {
+          "mechanism_id": "confusion_dont_segmentation",
+          "reasoning_break": "correspondrait à de + on et ne peut pas reprendre le groupe « de l’école »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0124"
+    },
+    {
+      "diagnostics": {
+        "maintainance": {
+          "mechanism_id": "graphie_lexicale_analogie",
+          "reasoning_break": "importe la suite anglaise -tain- dans la graphie française."
+        },
+        "maintenence": {
+          "mechanism_id": "graphie_lexicale_analogie",
+          "reasoning_break": "remplace la terminaison -ance par -ence."
+        },
+        "maintennance": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "double à tort le n au milieu du mot."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0125"
+    },
+    {
+      "diagnostics": {
+        "au quel": {
+          "mechanism_id": "forme_composee_separee",
+          "reasoning_break": "sépare à tort la forme soudée issue de à + lequel."
+        },
+        "auxquels": {
+          "mechanism_id": "accord_antecedent_nombre",
+          "reasoning_break": "est au pluriel, alors que recours est singulier."
+        },
+        "à lequel": {
+          "mechanism_id": "contraction_absente",
+          "reasoning_break": "ne réalise pas la contraction obligatoire de à + lequel au masculin singulier."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0126"
+    },
+    {
+      "diagnostics": {
+        "don": {
+          "mechanism_id": "confusion_dont_nom",
+          "reasoning_break": "est un nom commun et non le pronom relatif qui relie les deux propositions."
+        },
+        "donc": {
+          "mechanism_id": "confusion_dont_connecteur",
+          "reasoning_break": "exprime une conséquence et ne reprend pas le complément de la chercheuse."
+        },
+        "d’on": {
+          "mechanism_id": "confusion_dont_segmentation",
+          "reasoning_break": "correspondrait à de + on et ne peut pas reprendre le groupe « de la chercheuse »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0127"
+    },
+    {
+      "diagnostics": {
+        "récurence": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "omet un r dans le radical de récurrence."
+        },
+        "récurrance": {
+          "mechanism_id": "graphie_lexicale_analogie",
+          "reasoning_break": "remplace la terminaison -ence par -ance."
+        },
+        "récurrrence": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "ajoute un troisième r au radical."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0128"
+    },
+    {
+      "diagnostics": {
+        "auquel": {
+          "mechanism_id": "accord_antecedent_genre",
+          "reasoning_break": "est masculin, alors que solution est féminin."
+        },
+        "auxquelles": {
+          "mechanism_id": "accord_antecedent_nombre",
+          "reasoning_break": "est au pluriel, alors que solution est singulier."
+        },
+        "à la quelle": {
+          "mechanism_id": "forme_composee_separee",
+          "reasoning_break": "sépare à tort laquelle, qui s’écrit en un seul mot."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0129"
+    },
+    {
+      "diagnostics": {
+        "don": {
+          "mechanism_id": "confusion_dont_nom",
+          "reasoning_break": "est un nom commun et non le pronom relatif qui relie les deux propositions."
+        },
+        "donc": {
+          "mechanism_id": "confusion_dont_connecteur",
+          "reasoning_break": "exprime une conséquence et ne reprend pas le complément du traité."
+        },
+        "d’on": {
+          "mechanism_id": "confusion_dont_segmentation",
+          "reasoning_break": "correspondrait à de + on et ne peut pas reprendre le groupe « du traité »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0130"
+    },
+    {
+      "diagnostics": {
+        "succint": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "omet le c final de la graphie succinct."
+        },
+        "succintt": {
+          "mechanism_id": "graphie_lexicale_analogie",
+          "reasoning_break": "double le t final tout en omettant le c de -ct."
+        },
+        "sussinct": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "remplace les deux c après su- par deux s d’après la prononciation."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0131"
+    },
+    {
+      "diagnostics": {
+        "auquel": {
+          "mechanism_id": "accord_antecedent_nombre",
+          "reasoning_break": "est au singulier, alors que changements est pluriel."
+        },
+        "aux quels": {
+          "mechanism_id": "forme_composee_separee",
+          "reasoning_break": "sépare à tort la forme contractée auxquels."
+        },
+        "auxquelles": {
+          "mechanism_id": "accord_antecedent_genre",
+          "reasoning_break": "est féminin, alors que changements est masculin."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0132"
+    },
+    {
+      "diagnostics": {
+        "don": {
+          "mechanism_id": "confusion_dont_nom",
+          "reasoning_break": "est un nom commun et non le pronom relatif qui relie les deux propositions."
+        },
+        "donc": {
+          "mechanism_id": "confusion_dont_connecteur",
+          "reasoning_break": "exprime une conséquence et ne reprend pas le complément de la société."
+        },
+        "d’on": {
+          "mechanism_id": "confusion_dont_segmentation",
+          "reasoning_break": "correspondrait à de + on et ne peut pas reprendre le groupe « de la société »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0133"
+    },
+    {
+      "diagnostics": {
+        "vraisemblanse": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "remplace le c de la terminaison -ance par un s."
+        },
+        "vraisemblence": {
+          "mechanism_id": "graphie_lexicale_analogie",
+          "reasoning_break": "remplace la terminaison -ance par -ence."
+        },
+        "vraissemblance": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "double à tort le s à la jonction de vrai et semblance."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0134"
+    },
+    {
+      "diagnostics": {
+        "aux quelles": {
+          "mechanism_id": "forme_composee_separee",
+          "reasoning_break": "sépare à tort la forme contractée auxquelles."
+        },
+        "auxquels": {
+          "mechanism_id": "accord_antecedent_genre",
+          "reasoning_break": "est masculin, alors que valeurs est féminin."
+        },
+        "à lesquelles": {
+          "mechanism_id": "contraction_absente",
+          "reasoning_break": "ne réalise pas la contraction requise au pluriel après la préposition à."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0135"
+    },
+    {
+      "diagnostics": {
+        "don": {
+          "mechanism_id": "confusion_dont_nom",
+          "reasoning_break": "est un nom commun et non le pronom relatif qui relie les deux propositions."
+        },
+        "donc": {
+          "mechanism_id": "confusion_dont_connecteur",
+          "reasoning_break": "exprime une conséquence et ne reprend pas le complément du roman."
+        },
+        "d’on": {
+          "mechanism_id": "confusion_dont_segmentation",
+          "reasoning_break": "correspondrait à de + on et ne peut pas reprendre le groupe « du roman »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0136"
+    },
+    {
+      "diagnostics": {
+        "acquitement": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "omet un t du verbe acquitter."
+        },
+        "acquittemment": {
+          "mechanism_id": "graphie_lexicale_analogie",
+          "reasoning_break": "double à tort le m de la terminaison -ement."
+        },
+        "aquitement": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "omet le c et un t dans le radical acquitt-."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0137"
+    },
+    {
+      "diagnostics": {
+        "au quel": {
+          "mechanism_id": "forme_composee_separee",
+          "reasoning_break": "sépare à tort la forme soudée issue de à + lequel."
+        },
+        "auxquels": {
+          "mechanism_id": "accord_antecedent_nombre",
+          "reasoning_break": "est au pluriel, alors que calendrier est singulier."
+        },
+        "à lequel": {
+          "mechanism_id": "contraction_absente",
+          "reasoning_break": "ne réalise pas la contraction obligatoire de à + lequel au masculin singulier."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0138"
+    },
+    {
+      "diagnostics": {
+        "don": {
+          "mechanism_id": "confusion_dont_nom",
+          "reasoning_break": "est un nom commun et non le pronom relatif qui relie les deux propositions."
+        },
+        "donc": {
+          "mechanism_id": "confusion_dont_connecteur",
+          "reasoning_break": "exprime une conséquence et ne reprend pas le complément du patient."
+        },
+        "d’on": {
+          "mechanism_id": "confusion_dont_segmentation",
+          "reasoning_break": "correspondrait à de + on et ne peut pas reprendre le groupe « du patient »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0139"
+    },
+    {
+      "diagnostics": {
+        "excepionnel": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "omet le t dans le radical exception-. "
+        },
+        "exceptionel": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "omet un n dans la terminaison -onnel."
+        },
+        "exeptionnel": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "omet le c du radical exception-."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0140"
+    },
+    {
+      "diagnostics": {
+        "auquel": {
+          "mechanism_id": "accord_antecedent_genre",
+          "reasoning_break": "est masculin, alors que proposition est féminin."
+        },
+        "auxquelles": {
+          "mechanism_id": "accord_antecedent_nombre",
+          "reasoning_break": "est au pluriel, alors que proposition est singulier."
+        },
+        "à la quelle": {
+          "mechanism_id": "forme_composee_separee",
+          "reasoning_break": "sépare à tort laquelle, qui s’écrit en un seul mot."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0141"
+    },
+    {
+      "diagnostics": {
+        "don": {
+          "mechanism_id": "confusion_dont_nom",
+          "reasoning_break": "est un nom commun et non le pronom relatif qui relie les deux propositions."
+        },
+        "donc": {
+          "mechanism_id": "confusion_dont_connecteur",
+          "reasoning_break": "exprime une conséquence et ne reprend pas le complément du festival."
+        },
+        "d’on": {
+          "mechanism_id": "confusion_dont_segmentation",
+          "reasoning_break": "correspondrait à de + on et ne peut pas reprendre le groupe « du festival »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0142"
+    },
+    {
+      "diagnostics": {
+        "indépendament": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "omet un m dans la terminaison adverbiale -amment."
+        },
+        "indépendammente": {
+          "mechanism_id": "graphie_lexicale_analogie",
+          "reasoning_break": "ajoute une marque finale d’accord à un adverbe invariable."
+        },
+        "indépendemment": {
+          "mechanism_id": "formation_adverbe_amment_emment",
+          "reasoning_break": "choisit -emment au lieu de -amment malgré la base indépendant."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0143"
+    },
+    {
+      "diagnostics": {
+        "auquel": {
+          "mechanism_id": "accord_antecedent_nombre",
+          "reasoning_break": "est au singulier, alors que projets est pluriel."
+        },
+        "aux quels": {
+          "mechanism_id": "forme_composee_separee",
+          "reasoning_break": "sépare à tort la forme contractée auxquels."
+        },
+        "auxquelles": {
+          "mechanism_id": "accord_antecedent_genre",
+          "reasoning_break": "est féminin, alors que projets est masculin."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0144"
+    },
+    {
+      "diagnostics": {
+        "don": {
+          "mechanism_id": "confusion_dont_nom",
+          "reasoning_break": "est un nom commun et non le pronom relatif qui relie les deux propositions."
+        },
+        "donc": {
+          "mechanism_id": "confusion_dont_connecteur",
+          "reasoning_break": "exprime une conséquence et ne reprend pas le complément de l’espèce."
+        },
+        "d’on": {
+          "mechanism_id": "confusion_dont_segmentation",
+          "reasoning_break": "correspondrait à de + on et ne peut pas reprendre le groupe « de l’espèce »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0145"
+    },
+    {
+      "diagnostics": {
+        "intelligeamment": {
+          "mechanism_id": "formation_adverbe_amment_emment",
+          "reasoning_break": "emploie -amment au lieu de -emment après la base intelligent."
+        },
+        "intelligement": {
+          "mechanism_id": "consonne_radical",
+          "reasoning_break": "omet un m dans la terminaison -emment."
+        },
+        "intelligemmentt": {
+          "mechanism_id": "graphie_lexicale_analogie",
+          "reasoning_break": "ajoute un t final qui n’appartient pas à l’adverbe."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0146"
+    },
+    {
+      "diagnostics": {
+        "aux quelles": {
+          "mechanism_id": "forme_composee_separee",
+          "reasoning_break": "sépare à tort la forme contractée auxquelles."
+        },
+        "auxquels": {
+          "mechanism_id": "accord_antecedent_genre",
+          "reasoning_break": "est masculin, alors que fonctions est féminin."
+        },
+        "à lesquelles": {
+          "mechanism_id": "contraction_absente",
+          "reasoning_break": "ne réalise pas la contraction requise au pluriel après la préposition à."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0147"
+    },
+    {
+      "diagnostics": {
+        "don": {
+          "mechanism_id": "confusion_dont_nom",
+          "reasoning_break": "est un nom commun et non le pronom relatif qui relie les deux propositions."
+        },
+        "donc": {
+          "mechanism_id": "confusion_dont_connecteur",
+          "reasoning_break": "exprime une conséquence et ne reprend pas le complément du fonds d’archives."
+        },
+        "d’on": {
+          "mechanism_id": "confusion_dont_segmentation",
+          "reasoning_break": "correspondrait à de + on et ne peut pas reprendre le groupe « du fonds d’archives »."
+        }
+      },
+      "drill_id": "hep-d1-20260813-0148"
+    }
+  ],
+  "schema_version": "hep-choice-corrections/2.0",
+  "source_batch_id": "hep-db1-20260813-0001"
+}

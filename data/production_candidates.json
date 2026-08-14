@@ -1,0 +1,1705 @@
+{
+  "drills": [
+    {
+      "accepted_answers": [
+        "pérennité"
+      ],
+      "application_note": "Après « la », le blanc attend le nom pérennité. Ce nom conserve les deux n du radical de pérenne et se termine par -ité, sans e final.",
+      "detail_id": "core",
+      "display_answer": "pérennité",
+      "family": "orthographe_lexicale",
+      "id": "hep-d1-20260813-0043",
+      "mechanism_id": "graphie_lexicale_usage",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "La réforme vise à assurer la ___ du financement (pérenne).",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "auquel"
+      ],
+      "application_note": "L’équipe a renoncé à ce dispositif : la forme attendue est auquel, accordée avec l’antécédent « dispositif ».",
+      "detail_id": "core",
+      "display_answer": "auquel",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0044",
+      "mechanism_id": "regime_a_auquel",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Le dispositif ___ l’équipe a renoncé sera remplacé en septembre.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "dont"
+      ],
+      "application_note": "Les analyses sont celles du laboratoire : dont reprend ce complément en de et relie les deux propositions.",
+      "detail_id": "core",
+      "display_answer": "dont",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0045",
+      "mechanism_id": "possession_dont",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Le laboratoire ___ les analyses ont révélé l’anomalie publiera ses résultats.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "provocantes"
+      ],
+      "application_note": "Provocantes qualifie le nom « décisions » : c’est l’adjectif verbal, dont la graphie propre doit être conservée et qui s’accorde avec ce nom.",
+      "detail_id": "adjectif",
+      "display_answer": "provocantes",
+      "family": "adjectif_verbal_participe_present",
+      "id": "hep-d1-20260813-0046",
+      "mechanism_id": "accord_adjectif_invariabilite_participe",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Ces décisions paraissent ___ (provoquer) pour une partie du public.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "provoquant"
+      ],
+      "application_note": "Provoquant exprime une action du verbe provoquer et conserve un complément verbal : le participe présent garde sa graphie verbale et reste invariable.",
+      "detail_id": "participe",
+      "display_answer": "provoquant",
+      "family": "adjectif_verbal_participe_present",
+      "id": "hep-d1-20260813-0047",
+      "mechanism_id": "accord_adjectif_invariabilite_participe",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Les déléguées, ___ (provoquer) un débat animé, ont prolongé la séance.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "Canadienne"
+      ],
+      "application_note": "Canadienne désigne ici une personne ou un groupe : ce nom d’habitant prend une majuscule et suit les indications de genre et de nombre données par « le déterminant une ».",
+      "detail_id": "peuple",
+      "display_answer": "Canadienne",
+      "family": "gentiles_majuscules",
+      "id": "hep-d1-20260813-0048",
+      "mechanism_id": "nom_peuple_adjectif_langue",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "La médecin est une ___ établie à Genève.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "canadienne"
+      ],
+      "application_note": "Canadienne qualifie le nom « délégation » : l’adjectif de nationalité garde la minuscule et s’accorde avec ce nom.",
+      "detail_id": "adjectif",
+      "display_answer": "canadienne",
+      "family": "gentiles_majuscules",
+      "id": "hep-d1-20260813-0049",
+      "mechanism_id": "nom_peuple_adjectif_langue",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "La délégation ___ présentera son projet demain.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "ou"
+      ],
+      "application_note": "La phrase propose un choix entre le thé et le café. Le remplacement par « ou bien » fonctionne : on écrit donc ou, sans accent.",
+      "detail_id": "core",
+      "display_answer": "ou",
+      "family": "homophones_grammaticaux",
+      "id": "hep-d1-20260813-0050",
+      "mechanism_id": "ou_ou",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Tu peux choisir du thé ___ du café.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "nécessairement"
+      ],
+      "application_note": "Le mot modifie l’adjectif définitive : il faut l’adverbe nécessairement, formé sur nécessaire avec la terminaison -ment et les accents du radical.",
+      "detail_id": "core",
+      "display_answer": "nécessairement",
+      "family": "orthographe_lexicale",
+      "id": "hep-d1-20260813-0051",
+      "mechanism_id": "graphie_lexicale_usage",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Cette décision n’est pas ___ définitive (nécessaire).",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "à laquelle"
+      ],
+      "application_note": "La direction adhère à cette stratégie : la forme attendue est à laquelle, accordée avec l’antécédent « stratégie ».",
+      "detail_id": "core",
+      "display_answer": "à laquelle",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0052",
+      "mechanism_id": "regime_a_auquel",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "La stratégie ___ la direction adhère exige un suivi régulier.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "dont"
+      ],
+      "application_note": "La collection est celle du musée : dont reprend ce complément en de et relie les deux propositions.",
+      "detail_id": "core",
+      "display_answer": "dont",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0053",
+      "mechanism_id": "possession_dont",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Le musée ___ la collection vient d’être restaurée rouvrira lundi.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "fatigantes"
+      ],
+      "application_note": "Fatigantes qualifie le nom « démarches » : c’est l’adjectif verbal, dont la graphie propre doit être conservée et qui s’accorde avec ce nom.",
+      "detail_id": "adjectif",
+      "display_answer": "fatigantes",
+      "family": "adjectif_verbal_participe_present",
+      "id": "hep-d1-20260813-0054",
+      "mechanism_id": "accord_adjectif_invariabilite_participe",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Ces démarches deviennent ___ (fatiguer) à la longue.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "fatiguant"
+      ],
+      "application_note": "Fatiguant exprime une action du verbe fatiguer et conserve un complément verbal : le participe présent garde sa graphie verbale et reste invariable.",
+      "detail_id": "participe",
+      "display_answer": "fatiguant",
+      "family": "adjectif_verbal_participe_present",
+      "id": "hep-d1-20260813-0055",
+      "mechanism_id": "accord_adjectif_invariabilite_participe",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Les participantes, ___ (fatiguer) leurs collègues par ces répétitions, ont abrégé la discussion.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "Italiens"
+      ],
+      "application_note": "Italiens désigne ici une personne ou un groupe : ce nom d’habitant prend une majuscule et suit les indications de genre et de nombre données par « le déterminant des ».",
+      "detail_id": "peuple",
+      "display_answer": "Italiens",
+      "family": "gentiles_majuscules",
+      "id": "hep-d1-20260813-0056",
+      "mechanism_id": "nom_peuple_adjectif_langue",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Des ___ ont participé à la rencontre culturelle.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "italiennes"
+      ],
+      "application_note": "Italiennes qualifie le nom « entreprises » : l’adjectif de nationalité garde la minuscule et s’accorde avec ce nom.",
+      "detail_id": "adjectif",
+      "display_answer": "italiennes",
+      "family": "gentiles_majuscules",
+      "id": "hep-d1-20260813-0057",
+      "mechanism_id": "nom_peuple_adjectif_langue",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Des entreprises ___ participeront au salon.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "ou"
+      ],
+      "application_note": "Aujourd’hui et demain sont deux possibilités. Comme « aujourd’hui ou bien demain » conserve le sens, la conjonction ou s’écrit sans accent.",
+      "detail_id": "core",
+      "display_answer": "ou",
+      "family": "homophones_grammaticaux",
+      "id": "hep-d1-20260813-0058",
+      "mechanism_id": "ou_ou",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Le dossier peut être envoyé aujourd’hui ___ demain.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "occurrence"
+      ],
+      "application_note": "Le nom occurrence s’écrit avec deux c et deux r avant la terminaison -ence.",
+      "detail_id": "core",
+      "display_answer": "occurrence",
+      "family": "orthographe_lexicale",
+      "id": "hep-d1-20260813-0059",
+      "mechanism_id": "graphie_lexicale_usage",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Une telle ___ reste très rare dans ce secteur.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "auxquels"
+      ],
+      "application_note": "Le dossier doit répondre à ces critères : la forme attendue est auxquels, accordée avec l’antécédent « critères ».",
+      "detail_id": "core",
+      "display_answer": "auxquels",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0060",
+      "mechanism_id": "regime_a_auquel",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Les critères ___ le dossier doit répondre sont clairement définis.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "dont"
+      ],
+      "application_note": "Les statuts sont ceux de l’association : dont reprend ce complément en de et relie les deux propositions.",
+      "detail_id": "core",
+      "display_answer": "dont",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0061",
+      "mechanism_id": "possession_dont",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "L’association ___ les statuts ont été révisés convoquera une assemblée.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "convaincantes"
+      ],
+      "application_note": "Convaincantes qualifie le nom « preuves » : c’est l’adjectif verbal, dont la graphie propre doit être conservée et qui s’accorde avec ce nom.",
+      "detail_id": "adjectif",
+      "display_answer": "convaincantes",
+      "family": "adjectif_verbal_participe_present",
+      "id": "hep-d1-20260813-0062",
+      "mechanism_id": "accord_adjectif_invariabilite_participe",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Les preuves fournies sont ___ (convaincre).",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "convainquant"
+      ],
+      "application_note": "Convainquant exprime une action du verbe convaincre et conserve un complément verbal : le participe présent garde sa graphie verbale et reste invariable.",
+      "detail_id": "participe",
+      "display_answer": "convainquant",
+      "family": "adjectif_verbal_participe_present",
+      "id": "hep-d1-20260813-0063",
+      "mechanism_id": "accord_adjectif_invariabilite_participe",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Les expertes, ___ (convaincre) le comité, ont obtenu un financement.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "Allemand"
+      ],
+      "application_note": "Allemand désigne ici une personne ou un groupe : ce nom d’habitant prend une majuscule et suit les indications de genre et de nombre données par « le déterminant un ».",
+      "detail_id": "peuple",
+      "display_answer": "Allemand",
+      "family": "gentiles_majuscules",
+      "id": "hep-d1-20260813-0064",
+      "mechanism_id": "nom_peuple_adjectif_langue",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Le conférencier est un ___ installé à Lausanne.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "allemand"
+      ],
+      "application_note": "Allemand qualifie le nom « laboratoire » : l’adjectif de nationalité garde la minuscule et s’accorde avec ce nom.",
+      "detail_id": "adjectif",
+      "display_answer": "allemand",
+      "family": "gentiles_majuscules",
+      "id": "hep-d1-20260813-0065",
+      "mechanism_id": "nom_peuple_adjectif_langue",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Un laboratoire ___ coordonne cette étude.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "ou"
+      ],
+      "application_note": "La phrase met en alternative deux formes de travail. Le test « ou bien » est possible : il faut ou sans accent.",
+      "detail_id": "core",
+      "display_answer": "ou",
+      "family": "homophones_grammaticaux",
+      "id": "hep-d1-20260813-0066",
+      "mechanism_id": "ou_ou",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Chaque personne choisira une présentation orale ___ un rapport écrit.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "dilemme"
+      ],
+      "application_note": "Le nom dilemme s’écrit avec un seul l, deux m et la terminaison -emme.",
+      "detail_id": "core",
+      "display_answer": "dilemme",
+      "family": "orthographe_lexicale",
+      "id": "hep-d1-20260813-0067",
+      "mechanism_id": "graphie_lexicale_usage",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Le comité se trouve devant un véritable ___.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "auxquelles"
+      ],
+      "application_note": "Le produit doit satisfaire à ces exigences : la forme attendue est auxquelles, accordée avec l’antécédent « exigences ».",
+      "detail_id": "core",
+      "display_answer": "auxquelles",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0068",
+      "mechanism_id": "regime_a_auquel",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Les exigences ___ le produit doit satisfaire ont été renforcées.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "dont"
+      ],
+      "application_note": "Le roman est celui de l’autrice : dont reprend ce complément en de et relie les deux propositions.",
+      "detail_id": "core",
+      "display_answer": "dont",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0069",
+      "mechanism_id": "possession_dont",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "L’autrice ___ le roman a reçu un prix rencontrera le public.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "négligentes"
+      ],
+      "application_note": "Négligentes qualifie le nom « attitudes » : c’est l’adjectif verbal, dont la graphie propre doit être conservée et qui s’accorde avec ce nom.",
+      "detail_id": "adjectif",
+      "display_answer": "négligentes",
+      "family": "adjectif_verbal_participe_present",
+      "id": "hep-d1-20260813-0070",
+      "mechanism_id": "accord_adjectif_invariabilite_participe",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Les attitudes ___ (négliger) seront signalées.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "négligeant"
+      ],
+      "application_note": "Négligeant exprime une action du verbe négliger et conserve un complément verbal : le participe présent garde sa graphie verbale et reste invariable.",
+      "detail_id": "participe",
+      "display_answer": "négligeant",
+      "family": "adjectif_verbal_participe_present",
+      "id": "hep-d1-20260813-0071",
+      "mechanism_id": "accord_adjectif_invariabilite_participe",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Les responsables, ___ (négliger) plusieurs avertissements, ont aggravé la situation.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "Française"
+      ],
+      "application_note": "Française désigne ici une personne ou un groupe : ce nom d’habitant prend une majuscule et suit les indications de genre et de nombre données par « le déterminant une ».",
+      "detail_id": "peuple",
+      "display_answer": "Française",
+      "family": "gentiles_majuscules",
+      "id": "hep-d1-20260813-0072",
+      "mechanism_id": "nom_peuple_adjectif_langue",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Cette architecte est une ___ qui travaille à Sion.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "françaises"
+      ],
+      "application_note": "Françaises qualifie le nom « méthodes » : l’adjectif de nationalité garde la minuscule et s’accorde avec ce nom.",
+      "detail_id": "adjectif",
+      "display_answer": "françaises",
+      "family": "gentiles_majuscules",
+      "id": "hep-d1-20260813-0073",
+      "mechanism_id": "nom_peuple_adjectif_langue",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Les méthodes ___ ont influencé cette recherche.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "où"
+      ],
+      "application_note": "Le pronom reprend le lieu « la salle » : la réunion se tiendra dans cette salle. On écrit où avec un accent grave.",
+      "detail_id": "core",
+      "display_answer": "où",
+      "family": "homophones_grammaticaux",
+      "id": "hep-d1-20260813-0074",
+      "mechanism_id": "ou_ou",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Voici la salle ___ se tiendra la réunion.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "accueil"
+      ],
+      "application_note": "Le nom accueil conserve la suite de lettres -cueil après acc-.",
+      "detail_id": "core",
+      "display_answer": "accueil",
+      "family": "orthographe_lexicale",
+      "id": "hep-d1-20260813-0075",
+      "mechanism_id": "graphie_lexicale_usage",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Un service d’___ sera organisé dès huit heures.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "auquel"
+      ],
+      "application_note": "Plusieurs communes contribuent à ce programme : la forme attendue est auquel, accordée avec l’antécédent « programme ».",
+      "detail_id": "core",
+      "display_answer": "auquel",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0076",
+      "mechanism_id": "regime_a_auquel",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Le programme ___ plusieurs communes contribuent débutera en janvier.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "dont"
+      ],
+      "application_note": "L’architecture est celle de la ville : dont reprend ce complément en de et relie les deux propositions.",
+      "detail_id": "core",
+      "display_answer": "dont",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0077",
+      "mechanism_id": "possession_dont",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "La ville ___ l’architecture attire les visiteurs protège son centre historique.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "divergentes"
+      ],
+      "application_note": "Divergentes qualifie le nom « interprétations » : c’est l’adjectif verbal, dont la graphie propre doit être conservée et qui s’accorde avec ce nom.",
+      "detail_id": "adjectif",
+      "display_answer": "divergentes",
+      "family": "adjectif_verbal_participe_present",
+      "id": "hep-d1-20260813-0078",
+      "mechanism_id": "accord_adjectif_invariabilite_participe",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Les interprétations restent ___ (diverger) sur ce point.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "divergeant"
+      ],
+      "application_note": "Divergeant exprime une action du verbe diverger et conserve un complément verbal : le participe présent garde sa graphie verbale et reste invariable.",
+      "detail_id": "participe",
+      "display_answer": "divergeant",
+      "family": "adjectif_verbal_participe_present",
+      "id": "hep-d1-20260813-0079",
+      "mechanism_id": "accord_adjectif_invariabilite_participe",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Les deux itinéraires, ___ (diverger) après le pont, mènent à des vallées différentes.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "Espagnoles"
+      ],
+      "application_note": "Espagnoles désigne ici une personne ou un groupe : ce nom d’habitant prend une majuscule et suit les indications de genre et de nombre données par « plusieurs et le féminin ».",
+      "detail_id": "peuple",
+      "display_answer": "Espagnoles",
+      "family": "gentiles_majuscules",
+      "id": "hep-d1-20260813-0080",
+      "mechanism_id": "nom_peuple_adjectif_langue",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Plusieurs ___ exposeront leurs œuvres à Bâle.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "espagnole"
+      ],
+      "application_note": "Espagnole qualifie le nom « équipe » : l’adjectif de nationalité garde la minuscule et s’accorde avec ce nom.",
+      "detail_id": "adjectif",
+      "display_answer": "espagnole",
+      "family": "gentiles_majuscules",
+      "id": "hep-d1-20260813-0081",
+      "mechanism_id": "nom_peuple_adjectif_langue",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Une équipe ___ rejoindra le consortium.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "où"
+      ],
+      "application_note": "Le pronom reprend le moment « le jour » : il signifie « durant lequel ». On écrit où avec un accent grave.",
+      "detail_id": "core",
+      "display_answer": "où",
+      "family": "homophones_grammaticaux",
+      "id": "hep-d1-20260813-0082",
+      "mechanism_id": "ou_ou",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Je me souviens du jour ___ nous avons reçu la confirmation.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "rémunération"
+      ],
+      "application_note": "Le nom rémunération commence par rému- et conserve les accents de sa graphie attestée.",
+      "detail_id": "core",
+      "display_answer": "rémunération",
+      "family": "orthographe_lexicale",
+      "id": "hep-d1-20260813-0083",
+      "mechanism_id": "graphie_lexicale_usage",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Le poste prévoit une ___ conforme aux responsabilités.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "à laquelle"
+      ],
+      "application_note": "Le syndicat s’oppose à cette initiative : la forme attendue est à laquelle, accordée avec l’antécédent « initiative ».",
+      "detail_id": "core",
+      "display_answer": "à laquelle",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0084",
+      "mechanism_id": "regime_a_auquel",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "L’initiative ___ le syndicat s’oppose sera soumise au vote.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "dont"
+      ],
+      "application_note": "Les comptes sont ceux de l’entreprise : dont reprend ce complément en de et relie les deux propositions.",
+      "detail_id": "core",
+      "display_answer": "dont",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0085",
+      "mechanism_id": "possession_dont",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "L’entreprise ___ les comptes ont été contrôlés publiera son rapport annuel.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "convergentes"
+      ],
+      "application_note": "Convergentes qualifie le nom « analyses » : c’est l’adjectif verbal, dont la graphie propre doit être conservée et qui s’accorde avec ce nom.",
+      "detail_id": "adjectif",
+      "display_answer": "convergentes",
+      "family": "adjectif_verbal_participe_present",
+      "id": "hep-d1-20260813-0086",
+      "mechanism_id": "accord_adjectif_invariabilite_participe",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Les analyses sont ___ (converger) malgré des méthodes différentes.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "convergeant"
+      ],
+      "application_note": "Convergeant exprime une action du verbe converger et conserve un complément verbal : le participe présent garde sa graphie verbale et reste invariable.",
+      "detail_id": "participe",
+      "display_answer": "convergeant",
+      "family": "adjectif_verbal_participe_present",
+      "id": "hep-d1-20260813-0087",
+      "mechanism_id": "accord_adjectif_invariabilite_participe",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Les délégations, ___ (converger) vers la place centrale, ont ralenti la circulation.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "Portugaises"
+      ],
+      "application_note": "Portugaises désigne ici une personne ou un groupe : ce nom d’habitant prend une majuscule et suit les indications de genre et de nombre données par « le déterminant des et le féminin ».",
+      "detail_id": "peuple",
+      "display_answer": "Portugaises",
+      "family": "gentiles_majuscules",
+      "id": "hep-d1-20260813-0088",
+      "mechanism_id": "nom_peuple_adjectif_langue",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Ces musiciennes sont des ___ établies en Suisse.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "portugaise"
+      ],
+      "application_note": "Portugaise qualifie le nom « chercheuse » : l’adjectif de nationalité garde la minuscule et s’accorde avec ce nom.",
+      "detail_id": "adjectif",
+      "display_answer": "portugaise",
+      "family": "gentiles_majuscules",
+      "id": "hep-d1-20260813-0089",
+      "mechanism_id": "nom_peuple_adjectif_langue",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "La chercheuse ___ dirigera les entretiens.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "où"
+      ],
+      "application_note": "Le pronom reprend « le stade », envisagé comme une situation atteinte. Il situe le moment de la progression : on écrit où avec un accent grave.",
+      "detail_id": "core",
+      "display_answer": "où",
+      "family": "homophones_grammaticaux",
+      "id": "hep-d1-20260813-0090",
+      "mechanism_id": "ou_ou",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "L’équipe a atteint le stade ___ une nouvelle décision s’impose.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "développement"
+      ],
+      "application_note": "Le nom développement conserve les deux p du verbe développer et prend la terminaison -ement.",
+      "detail_id": "core",
+      "display_answer": "développement",
+      "family": "orthographe_lexicale",
+      "id": "hep-d1-20260813-0091",
+      "mechanism_id": "graphie_lexicale_usage",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Le ___ de cette application se poursuit.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "auxquels"
+      ],
+      "application_note": "Les partenaires ont consenti à ces engagements : la forme attendue est auxquels, accordée avec l’antécédent « engagements ».",
+      "detail_id": "core",
+      "display_answer": "auxquels",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0092",
+      "mechanism_id": "regime_a_auquel",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Les engagements ___ les partenaires ont consenti seront publiés.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "dont"
+      ],
+      "application_note": "Les objectifs sont ceux du projet : dont reprend ce complément en de et relie les deux propositions.",
+      "detail_id": "core",
+      "display_answer": "dont",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0093",
+      "mechanism_id": "possession_dont",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Le projet ___ les objectifs restent ambitieux bénéficie d’un nouveau financement.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "influentes"
+      ],
+      "application_note": "Influentes qualifie le nom « chercheuses » : c’est l’adjectif verbal, dont la graphie propre doit être conservée et qui s’accorde avec ce nom.",
+      "detail_id": "adjectif",
+      "display_answer": "influentes",
+      "family": "adjectif_verbal_participe_present",
+      "id": "hep-d1-20260813-0094",
+      "mechanism_id": "accord_adjectif_invariabilite_participe",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Ces chercheuses sont devenues ___ (influer) dans leur domaine.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "influant"
+      ],
+      "application_note": "Influant exprime une action du verbe influer et conserve un complément verbal : le participe présent garde sa graphie verbale et reste invariable.",
+      "detail_id": "participe",
+      "display_answer": "influant",
+      "family": "adjectif_verbal_participe_present",
+      "id": "hep-d1-20260813-0095",
+      "mechanism_id": "accord_adjectif_invariabilite_participe",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Ces décisions, ___ (influer) sur le calendrier, devront être annoncées rapidement.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "Brésilienne"
+      ],
+      "application_note": "Brésilienne désigne ici une personne ou un groupe : ce nom d’habitant prend une majuscule et suit les indications de genre et de nombre données par « le déterminant une ».",
+      "detail_id": "peuple",
+      "display_answer": "Brésilienne",
+      "family": "gentiles_majuscules",
+      "id": "hep-d1-20260813-0096",
+      "mechanism_id": "nom_peuple_adjectif_langue",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "La réalisatrice est une ___ récompensée à Locarno.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "brésilienne"
+      ],
+      "application_note": "Brésilienne qualifie le nom « délégation » : l’adjectif de nationalité garde la minuscule et s’accorde avec ce nom.",
+      "detail_id": "adjectif",
+      "display_answer": "brésilienne",
+      "family": "gentiles_majuscules",
+      "id": "hep-d1-20260813-0097",
+      "mechanism_id": "nom_peuple_adjectif_langue",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "La délégation ___ arrivera vendredi.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "connexion"
+      ],
+      "application_note": "Le nom connexion s’écrit avec x et la terminaison -xion.",
+      "detail_id": "core",
+      "display_answer": "connexion",
+      "family": "orthographe_lexicale",
+      "id": "hep-d1-20260813-0098",
+      "mechanism_id": "graphie_lexicale_usage",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "La ___ au réseau a été rétablie.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "auxquelles"
+      ],
+      "application_note": "L’équipe se conforme à ces recommandations : la forme attendue est auxquelles, accordée avec l’antécédent « recommandations ».",
+      "detail_id": "core",
+      "display_answer": "auxquelles",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0099",
+      "mechanism_id": "regime_a_auquel",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Les recommandations ___ l’équipe se conforme figurent en annexe.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "dont"
+      ],
+      "application_note": "L’expérience est celle de la candidate : dont reprend ce complément en de et relie les deux propositions.",
+      "detail_id": "core",
+      "display_answer": "dont",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0100",
+      "mechanism_id": "possession_dont",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "La candidate ___ l’expérience a convaincu le jury entrera en fonction lundi.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "précédentes"
+      ],
+      "application_note": "Précédentes qualifie le nom « versions » : c’est l’adjectif verbal, dont la graphie propre doit être conservée et qui s’accorde avec ce nom.",
+      "detail_id": "adjectif",
+      "display_answer": "précédentes",
+      "family": "adjectif_verbal_participe_present",
+      "id": "hep-d1-20260813-0101",
+      "mechanism_id": "accord_adjectif_invariabilite_participe",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Les versions ___ (précéder) contenaient une erreur.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "précédant"
+      ],
+      "application_note": "Précédant exprime une action du verbe précéder et conserve un complément verbal : le participe présent garde sa graphie verbale et reste invariable.",
+      "detail_id": "participe",
+      "display_answer": "précédant",
+      "family": "adjectif_verbal_participe_present",
+      "id": "hep-d1-20260813-0102",
+      "mechanism_id": "accord_adjectif_invariabilite_participe",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Les personnes ___ (précéder) la délégation ouvriront les portes.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "Norvégiens"
+      ],
+      "application_note": "Norvégiens désigne ici une personne ou un groupe : ce nom d’habitant prend une majuscule et suit les indications de genre et de nombre données par « les deux chercheurs ».",
+      "detail_id": "peuple",
+      "display_answer": "Norvégiens",
+      "family": "gentiles_majuscules",
+      "id": "hep-d1-20260813-0103",
+      "mechanism_id": "nom_peuple_adjectif_langue",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Les deux chercheurs sont des ___ invités à Neuchâtel.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "norvégiennes"
+      ],
+      "application_note": "Norvégiennes qualifie le nom « solutions » : l’adjectif de nationalité garde la minuscule et s’accorde avec ce nom.",
+      "detail_id": "adjectif",
+      "display_answer": "norvégiennes",
+      "family": "gentiles_majuscules",
+      "id": "hep-d1-20260813-0104",
+      "mechanism_id": "nom_peuple_adjectif_langue",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Des solutions ___ seront comparées aux nôtres.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "professionnalisme"
+      ],
+      "application_note": "Professionnalisme se forme sur professionnel et conserve les deux n avant -alisme.",
+      "detail_id": "core",
+      "display_answer": "professionnalisme",
+      "family": "orthographe_lexicale",
+      "id": "hep-d1-20260813-0105",
+      "mechanism_id": "graphie_lexicale_usage",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Son ___ a facilité les négociations.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "auquel"
+      ],
+      "application_note": "Les négociateurs se heurtent à cet obstacle : la forme attendue est auquel, accordée avec l’antécédent « obstacle ».",
+      "detail_id": "core",
+      "display_answer": "auquel",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0106",
+      "mechanism_id": "regime_a_auquel",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "L’obstacle ___ les négociateurs se heurtent demeure important.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "dont"
+      ],
+      "application_note": "L’avis est celui du comité : dont reprend ce complément en de et relie les deux propositions.",
+      "detail_id": "core",
+      "display_answer": "dont",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0107",
+      "mechanism_id": "possession_dont",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Le comité ___ l’avis était attendu s’est prononcé ce matin.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "communicantes"
+      ],
+      "application_note": "Communicantes qualifie le nom « salles » : c’est l’adjectif verbal, dont la graphie propre doit être conservée et qui s’accorde avec ce nom.",
+      "detail_id": "adjectif",
+      "display_answer": "communicantes",
+      "family": "adjectif_verbal_participe_present",
+      "id": "hep-d1-20260813-0108",
+      "mechanism_id": "accord_adjectif_invariabilite_participe",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Les deux salles sont ___ (communiquer).",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "communiquant"
+      ],
+      "application_note": "Communiquant exprime une action du verbe communiquer et conserve un complément verbal : le participe présent garde sa graphie verbale et reste invariable.",
+      "detail_id": "participe",
+      "display_answer": "communiquant",
+      "family": "adjectif_verbal_participe_present",
+      "id": "hep-d1-20260813-0109",
+      "mechanism_id": "accord_adjectif_invariabilite_participe",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Les équipes, ___ (communiquer) leurs résultats chaque semaine, coordonnent mieux leurs travaux.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "Autrichien"
+      ],
+      "application_note": "Autrichien désigne ici une personne ou un groupe : ce nom d’habitant prend une majuscule et suit les indications de genre et de nombre données par « le déterminant un ».",
+      "detail_id": "peuple",
+      "display_answer": "Autrichien",
+      "family": "gentiles_majuscules",
+      "id": "hep-d1-20260813-0110",
+      "mechanism_id": "nom_peuple_adjectif_langue",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Le chef d’orchestre est un ___ domicilié à Berne.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "autrichiens"
+      ],
+      "application_note": "Autrichiens qualifie le nom « partenaires » : l’adjectif de nationalité garde la minuscule et s’accorde avec ce nom.",
+      "detail_id": "adjectif",
+      "display_answer": "autrichiens",
+      "family": "gentiles_majuscules",
+      "id": "hep-d1-20260813-0111",
+      "mechanism_id": "nom_peuple_adjectif_langue",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Les partenaires ___ financeront le programme.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "privilège"
+      ],
+      "application_note": "Le nom privilège s’écrit avec un seul l et un accent grave sur le second e.",
+      "detail_id": "core",
+      "display_answer": "privilège",
+      "family": "orthographe_lexicale",
+      "id": "hep-d1-20260813-0112",
+      "mechanism_id": "graphie_lexicale_usage",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Chaque personne conserve le ___ de refuser.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "à laquelle"
+      ],
+      "application_note": "Le service a recours à cette procédure : la forme attendue est à laquelle, accordée avec l’antécédent « procédure ».",
+      "detail_id": "core",
+      "display_answer": "à laquelle",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0113",
+      "mechanism_id": "regime_a_auquel",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "La procédure ___ le service a recours réduit les délais.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "dont"
+      ],
+      "application_note": "Les conclusions sont celles de l’étude : dont reprend ce complément en de et relie les deux propositions.",
+      "detail_id": "core",
+      "display_answer": "dont",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0114",
+      "mechanism_id": "possession_dont",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "L’étude ___ les conclusions font débat sera réévaluée.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "adhérentes"
+      ],
+      "application_note": "Adhérentes qualifie le nom « matières » : c’est l’adjectif verbal, dont la graphie propre doit être conservée et qui s’accorde avec ce nom.",
+      "detail_id": "adjectif",
+      "display_answer": "adhérentes",
+      "family": "adjectif_verbal_participe_present",
+      "id": "hep-d1-20260813-0115",
+      "mechanism_id": "accord_adjectif_invariabilite_participe",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Ces matières deviennent ___ (adhérer) sous l’effet de la chaleur.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "adhérant"
+      ],
+      "application_note": "Adhérant exprime une action du verbe adhérer et conserve un complément verbal : le participe présent garde sa graphie verbale et reste invariable.",
+      "detail_id": "participe",
+      "display_answer": "adhérant",
+      "family": "adjectif_verbal_participe_present",
+      "id": "hep-d1-20260813-0116",
+      "mechanism_id": "accord_adjectif_invariabilite_participe",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Les membres ___ (adhérer) à la nouvelle charte recevront une confirmation.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "Grecques"
+      ],
+      "application_note": "Grecques désigne ici une personne ou un groupe : ce nom d’habitant prend une majuscule et suit les indications de genre et de nombre données par « le déterminant des et le féminin ».",
+      "detail_id": "peuple",
+      "display_answer": "Grecques",
+      "family": "gentiles_majuscules",
+      "id": "hep-d1-20260813-0117",
+      "mechanism_id": "nom_peuple_adjectif_langue",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Ces athlètes sont des ___ venues pour la compétition.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "grecque"
+      ],
+      "application_note": "Grecque qualifie le nom « association » : l’adjectif de nationalité garde la minuscule et s’accorde avec ce nom.",
+      "detail_id": "adjectif",
+      "display_answer": "grecque",
+      "family": "gentiles_majuscules",
+      "id": "hep-d1-20260813-0118",
+      "mechanism_id": "nom_peuple_adjectif_langue",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Une association ___ organise cette rencontre.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "parallèle"
+      ],
+      "application_note": "Le nom parallèle s’écrit para- puis -llèle, avec deux l consécutifs et un accent grave.",
+      "detail_id": "core",
+      "display_answer": "parallèle",
+      "family": "orthographe_lexicale",
+      "id": "hep-d1-20260813-0119",
+      "mechanism_id": "graphie_lexicale_usage",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Les deux enquêtes ont été menées en ___.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "auxquels"
+      ],
+      "application_note": "Nous nous référons à ces principes : la forme attendue est auxquels, accordée avec l’antécédent « principes ».",
+      "detail_id": "core",
+      "display_answer": "auxquels",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0120",
+      "mechanism_id": "regime_a_auquel",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Les principes ___ nous nous référons sont inscrits dans la charte.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "dont"
+      ],
+      "application_note": "Les traditions sont celles du village : dont reprend ce complément en de et relie les deux propositions.",
+      "detail_id": "core",
+      "display_answer": "dont",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0121",
+      "mechanism_id": "possession_dont",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Le village ___ les traditions demeurent vivantes organise une fête annuelle.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "bienveillance"
+      ],
+      "application_note": "Le nom bienveillance conserve la suite -veill- et se termine par -ance.",
+      "detail_id": "core",
+      "display_answer": "bienveillance",
+      "family": "orthographe_lexicale",
+      "id": "hep-d1-20260813-0122",
+      "mechanism_id": "graphie_lexicale_usage",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "La responsable a répondu avec ___.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "auxquelles"
+      ],
+      "application_note": "L’aide est accordée à ces conditions : la forme attendue est auxquelles, accordée avec l’antécédent « conditions ».",
+      "detail_id": "core",
+      "display_answer": "auxquelles",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0123",
+      "mechanism_id": "regime_a_auquel",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Les conditions ___ l’aide est accordée seront réexaminées.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "dont"
+      ],
+      "application_note": "Les salles sont celles de l’école : dont reprend ce complément en de et relie les deux propositions.",
+      "detail_id": "core",
+      "display_answer": "dont",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0124",
+      "mechanism_id": "possession_dont",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "L’école ___ les salles ont été rénovées accueillera davantage d’élèves.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "maintenance"
+      ],
+      "application_note": "Le nom maintenance se termine par -enance puis -ance, conformément à sa graphie française.",
+      "detail_id": "core",
+      "display_answer": "maintenance",
+      "family": "orthographe_lexicale",
+      "id": "hep-d1-20260813-0125",
+      "mechanism_id": "graphie_lexicale_usage",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "La ___ du système aura lieu vendredi.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "auquel"
+      ],
+      "application_note": "L’avocate a renoncé à ce recours : la forme attendue est auquel, accordée avec l’antécédent « recours ».",
+      "detail_id": "core",
+      "display_answer": "auquel",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0126",
+      "mechanism_id": "regime_a_auquel",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Le recours ___ l’avocate a renoncé aurait retardé la procédure.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "dont"
+      ],
+      "application_note": "L’hypothèse est celle de la chercheuse : dont reprend ce complément en de et relie les deux propositions.",
+      "detail_id": "core",
+      "display_answer": "dont",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0127",
+      "mechanism_id": "possession_dont",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "La chercheuse ___ l’hypothèse a été confirmée présentera ses données.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "récurrence"
+      ],
+      "application_note": "Récurrence s’écrit avec deux r et deux c, puis la terminaison -ence.",
+      "detail_id": "core",
+      "display_answer": "récurrence",
+      "family": "orthographe_lexicale",
+      "id": "hep-d1-20260813-0128",
+      "mechanism_id": "graphie_lexicale_usage",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "La ___ de ces incidents préoccupe la direction.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "à laquelle"
+      ],
+      "application_note": "Le groupe est parvenu à cette solution : la forme attendue est à laquelle, accordée avec l’antécédent « solution ».",
+      "detail_id": "core",
+      "display_answer": "à laquelle",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0129",
+      "mechanism_id": "regime_a_auquel",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "La solution ___ le groupe est parvenu semble durable.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "dont"
+      ],
+      "application_note": "Les clauses sont celles du traité : dont reprend ce complément en de et relie les deux propositions.",
+      "detail_id": "core",
+      "display_answer": "dont",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0130",
+      "mechanism_id": "possession_dont",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Le traité ___ les clauses restent contestées doit être renégocié.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "succinct"
+      ],
+      "application_note": "L’adjectif succinct s’écrit avec deux c après su-, puis un c devant le t final.",
+      "detail_id": "core",
+      "display_answer": "succinct",
+      "family": "orthographe_lexicale",
+      "id": "hep-d1-20260813-0131",
+      "mechanism_id": "graphie_lexicale_usage",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Le résumé doit rester ___.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "auxquels"
+      ],
+      "application_note": "Le personnel doit s’adapter à ces changements : la forme attendue est auxquels, accordée avec l’antécédent « changements ».",
+      "detail_id": "core",
+      "display_answer": "auxquels",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0132",
+      "mechanism_id": "regime_a_auquel",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Les changements ___ le personnel doit s’adapter seront progressifs.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "dont"
+      ],
+      "application_note": "Les employés sont ceux de la société : dont reprend ce complément en de et relie les deux propositions.",
+      "detail_id": "core",
+      "display_answer": "dont",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0133",
+      "mechanism_id": "possession_dont",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "La société ___ les employés ont été consultés modifiera son organisation.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "vraisemblance"
+      ],
+      "application_note": "Le nom vraisemblance se forme sur vraisemblable et conserve un seul s entre vrai et semblance.",
+      "detail_id": "core",
+      "display_answer": "vraisemblance",
+      "family": "orthographe_lexicale",
+      "id": "hep-d1-20260813-0134",
+      "mechanism_id": "graphie_lexicale_usage",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "La ___ de son récit a convaincu le jury.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "auxquelles"
+      ],
+      "application_note": "L’association demeure fidèle à ces valeurs : la forme attendue est auxquelles, accordée avec l’antécédent « valeurs ».",
+      "detail_id": "core",
+      "display_answer": "auxquelles",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0135",
+      "mechanism_id": "regime_a_auquel",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Les valeurs ___ l’association demeure fidèle guident ses actions.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "dont"
+      ],
+      "application_note": "La fin est celle du roman : dont reprend ce complément en de et relie les deux propositions.",
+      "detail_id": "core",
+      "display_answer": "dont",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0136",
+      "mechanism_id": "possession_dont",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Le roman ___ la fin surprend les lecteurs sera adapté au cinéma.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "acquittement"
+      ],
+      "application_note": "Acquittement se forme sur acquitter et conserve les deux t avant -ement.",
+      "detail_id": "core",
+      "display_answer": "acquittement",
+      "family": "orthographe_lexicale",
+      "id": "hep-d1-20260813-0137",
+      "mechanism_id": "graphie_lexicale_usage",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "L’___ de la facture met fin au litige.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "auquel"
+      ],
+      "application_note": "Tous les partenaires se sont ralliés à ce calendrier : la forme attendue est auquel, accordée avec l’antécédent « calendrier ».",
+      "detail_id": "core",
+      "display_answer": "auquel",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0138",
+      "mechanism_id": "regime_a_auquel",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Le calendrier ___ tous les partenaires se sont ralliés sera maintenu.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "dont"
+      ],
+      "application_note": "Les symptômes sont ceux du patient : dont reprend ce complément en de et relie les deux propositions.",
+      "detail_id": "core",
+      "display_answer": "dont",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0139",
+      "mechanism_id": "possession_dont",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Le patient ___ les symptômes persistent sera revu demain.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "exceptionnel"
+      ],
+      "application_note": "L’adjectif exceptionnel conserve le c de exception et les deux n de la terminaison -onnel.",
+      "detail_id": "core",
+      "display_answer": "exceptionnel",
+      "family": "orthographe_lexicale",
+      "id": "hep-d1-20260813-0140",
+      "mechanism_id": "graphie_lexicale_usage",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Le service a fourni un soutien ___.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "à laquelle"
+      ],
+      "application_note": "Le comité réfléchit à cette proposition : la forme attendue est à laquelle, accordée avec l’antécédent « proposition ».",
+      "detail_id": "core",
+      "display_answer": "à laquelle",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0141",
+      "mechanism_id": "regime_a_auquel",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "La proposition ___ le comité réfléchit sera précisée demain.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "dont"
+      ],
+      "application_note": "Le programme est celui du festival : dont reprend ce complément en de et relie les deux propositions.",
+      "detail_id": "core",
+      "display_answer": "dont",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0142",
+      "mechanism_id": "possession_dont",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Le festival ___ le programme vient de paraître débutera en juin.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "indépendamment"
+      ],
+      "application_note": "L’adverbe indépendamment se forme sur indépendant et prend la terminaison -amment.",
+      "detail_id": "core",
+      "display_answer": "indépendamment",
+      "family": "orthographe_lexicale",
+      "id": "hep-d1-20260813-0143",
+      "mechanism_id": "graphie_lexicale_usage",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Les deux dossiers seront examinés ___.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "auxquels"
+      ],
+      "application_note": "La fondation participe à ces projets : la forme attendue est auxquels, accordée avec l’antécédent « projets ».",
+      "detail_id": "core",
+      "display_answer": "auxquels",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0144",
+      "mechanism_id": "regime_a_auquel",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Les projets ___ la fondation participe concernent la formation.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "dont"
+      ],
+      "application_note": "L’habitat est celui de l’espèce : dont reprend ce complément en de et relie les deux propositions.",
+      "detail_id": "core",
+      "display_answer": "dont",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0145",
+      "mechanism_id": "possession_dont",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "L’espèce ___ l’habitat se réduit fait l’objet d’un suivi.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "intelligemment"
+      ],
+      "application_note": "L’adverbe intelligemment se forme sur intelligent et prend la terminaison -emment.",
+      "detail_id": "core",
+      "display_answer": "intelligemment",
+      "family": "orthographe_lexicale",
+      "id": "hep-d1-20260813-0146",
+      "mechanism_id": "graphie_lexicale_usage",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Elle a ___ résumé les enjeux.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "auxquelles"
+      ],
+      "application_note": "Ces spécialistes aspirent à ces fonctions : la forme attendue est auxquelles, accordée avec l’antécédent « fonctions ».",
+      "detail_id": "core",
+      "display_answer": "auxquelles",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0147",
+      "mechanism_id": "regime_a_auquel",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Les fonctions ___ ces spécialistes aspirent exigent une solide expérience.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    },
+    {
+      "accepted_answers": [
+        "dont"
+      ],
+      "application_note": "Les documents sont ceux du fonds d’archives : dont reprend ce complément en de et relie les deux propositions.",
+      "detail_id": "core",
+      "display_answer": "dont",
+      "family": "pronoms_relatifs",
+      "id": "hep-d1-20260813-0148",
+      "mechanism_id": "possession_dont",
+      "pedagogy_dict_version": "hep-pedagogy-dict/2.0",
+      "prompt": "Le fonds d’archives ___ les documents ont été numérisés est désormais accessible.",
+      "schema_version": "hep-drill/1.0",
+      "source_batch_id": "hep-db1-20260813-0001",
+      "tense_id": null
+    }
+  ],
+  "model": "gpt-5.6-sol",
+  "reasoning": "high",
+  "schema_version": "hep-drill-production-candidates/1.0",
+  "source_batch_id": "hep-db1-20260813-0001",
+  "source_plan_fingerprint": "64df803cf6592259f43db10afe217bbe6240d6edbf682dcdc2f8238e3bcd0241"
+}

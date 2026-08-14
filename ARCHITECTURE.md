@@ -5,7 +5,7 @@
 ```text
 historique QCM local ───────────────┐
 feedback QCM Drive → agrégateur HEP ├─→ bridge de besoins ─→ mini-planificateur
-                                    │                         │
+demande manuelle de règle ──────────┤                         │
 feedback drills Drive → agrégateur ─┘                         ▼
                                                    génération de drills
                                                              │
@@ -87,8 +87,9 @@ rend un autre nom clairement meilleur. Ne pas multiplier les fichiers.
 - importe les séances de réponse libre ;
 - calcule une maîtrise séparée ;
 - combine des signaux déjà agrégés ;
+- conserve séparément les demandes volontaires de règles à revoir ;
 - génère et contrôle des exercices courts ;
-- publie uniquement `drills.js` et la page dédiée.
+- publie uniquement `bank.js` et la page dédiée.
 
 ## Navigateur et stockage
 

@@ -1,0 +1,29 @@
+{
+  "schema_version": "hep-choice-production-checker-review/1.0",
+  "source_report": "data/production_checker_report.json",
+  "mode": "REPORT_ONLY",
+  "state": "COMPLETE",
+  "summary": {
+    "sentences_checked": 100,
+    "raw_findings": 2,
+    "accepted_changes": 0,
+    "allowed_false_positives": 2,
+    "unresolved": 0
+  },
+  "decisions": [
+    {
+      "drill_id": "hep-d1-20260813-0068",
+      "engine": "languagetool",
+      "rule_id": "CONVAINCANT_CONVAINQUANT",
+      "classification": "ALLOWED_FALSE_POSITIVE",
+      "decision": "La forme « négligeant » exprime une action et régit le complément direct « plusieurs avertissements » ; le participe présent est donc requis et reste invariable."
+    },
+    {
+      "drill_id": "hep-d1-20260813-0107",
+      "engine": "languagetool",
+      "rule_id": "A_ACCENT",
+      "classification": "ALLOWED_FALSE_POSITIVE",
+      "decision": "Dans « le service a recours », « a » est la troisième personne du singulier du verbe avoir ; aucun accent grave n’est requis."
+    }
+  ]
+}

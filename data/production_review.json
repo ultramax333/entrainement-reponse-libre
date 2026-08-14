@@ -1,0 +1,152 @@
+{
+  "batches": [
+    {
+      "batch_id": "hep-cbatch1-01",
+      "defects": [],
+      "publishable": true,
+      "schema_version": "hep-choice-production-audit/1.0",
+      "summary": {
+        "assembled": 10,
+        "candidates": 10,
+        "lint_pass": 10,
+        "planned": 10
+      }
+    },
+    {
+      "batch_id": "hep-cbatch1-02",
+      "defects": [],
+      "publishable": true,
+      "schema_version": "hep-choice-production-audit/1.0",
+      "summary": {
+        "assembled": 10,
+        "candidates": 10,
+        "lint_pass": 10,
+        "planned": 10
+      }
+    },
+    {
+      "batch_id": "hep-cbatch1-03",
+      "defects": [],
+      "publishable": true,
+      "schema_version": "hep-choice-production-audit/1.0",
+      "summary": {
+        "assembled": 10,
+        "candidates": 10,
+        "lint_pass": 10,
+        "planned": 10
+      }
+    },
+    {
+      "batch_id": "hep-cbatch1-04",
+      "defects": [],
+      "publishable": true,
+      "schema_version": "hep-choice-production-audit/1.0",
+      "summary": {
+        "assembled": 10,
+        "candidates": 10,
+        "lint_pass": 10,
+        "planned": 10
+      }
+    },
+    {
+      "batch_id": "hep-cbatch1-05",
+      "defects": [],
+      "publishable": true,
+      "schema_version": "hep-choice-production-audit/1.0",
+      "summary": {
+        "assembled": 10,
+        "candidates": 10,
+        "lint_pass": 10,
+        "planned": 10
+      }
+    },
+    {
+      "batch_id": "hep-cbatch1-06",
+      "defects": [],
+      "publishable": true,
+      "schema_version": "hep-choice-production-audit/1.0",
+      "summary": {
+        "assembled": 10,
+        "candidates": 10,
+        "lint_pass": 10,
+        "planned": 10
+      }
+    },
+    {
+      "batch_id": "hep-cbatch1-07",
+      "defects": [],
+      "publishable": true,
+      "schema_version": "hep-choice-production-audit/1.0",
+      "summary": {
+        "assembled": 10,
+        "candidates": 10,
+        "lint_pass": 10,
+        "planned": 10
+      }
+    },
+    {
+      "batch_id": "hep-cbatch1-08",
+      "defects": [],
+      "publishable": true,
+      "schema_version": "hep-choice-production-audit/1.0",
+      "summary": {
+        "assembled": 10,
+        "candidates": 10,
+        "lint_pass": 10,
+        "planned": 10
+      }
+    },
+    {
+      "batch_id": "hep-cbatch1-09",
+      "defects": [],
+      "publishable": true,
+      "schema_version": "hep-choice-production-audit/1.0",
+      "summary": {
+        "assembled": 10,
+        "candidates": 10,
+        "lint_pass": 10,
+        "planned": 10
+      }
+    },
+    {
+      "batch_id": "hep-cbatch1-10",
+      "defects": [],
+      "publishable": true,
+      "schema_version": "hep-choice-production-audit/1.0",
+      "summary": {
+        "assembled": 10,
+        "candidates": 10,
+        "lint_pass": 10,
+        "planned": 10
+      }
+    },
+    {
+      "batch_id": "hep-cbatch1-11",
+      "defects": [],
+      "publishable": true,
+      "schema_version": "hep-choice-production-audit/1.0",
+      "summary": {
+        "assembled": 6,
+        "candidates": 6,
+        "lint_pass": 6,
+        "planned": 6
+      }
+    }
+  ],
+  "defects": [],
+  "model": "gpt-5.6-sol",
+  "plan_fingerprint": "64df803cf6592259f43db10afe217bbe6240d6edbf682dcdc2f8238e3bcd0241",
+  "publishable": true,
+  "reasoning": "high",
+  "review_mode": "exhaustive",
+  "schema_version": "hep-choice-production-review/1.0",
+  "summary": {
+    "batches_passed": 11,
+    "batches_total": 11,
+    "candidates": 106,
+    "corrections": 106,
+    "lint_pass": 106,
+    "options": 106,
+    "planned": 106
+  }
+}

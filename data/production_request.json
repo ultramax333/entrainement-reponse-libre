@@ -1,0 +1,70 @@
+{
+  "schema_version": "hep-choice-production-request/1.0",
+  "request_id": "hep-cpr1-20260813-0001",
+  "source_batch_id": "hep-db1-20260813-0001",
+  "count": 106,
+  "batch_size": 10,
+  "first_sequence": 43,
+  "level": "bac",
+  "target_choice_count": 4,
+  "review_mode": "exhaustive",
+  "quotas": [
+    {
+      "family": "orthographe_lexicale",
+      "mechanism_id": "graphie_lexicale_usage",
+      "detail_id": "core",
+      "tense_id": null,
+      "count": 20
+    },
+    {
+      "family": "pronoms_relatifs",
+      "mechanism_id": "regime_a_auquel",
+      "detail_id": "core",
+      "tense_id": null,
+      "count": 20
+    },
+    {
+      "family": "pronoms_relatifs",
+      "mechanism_id": "possession_dont",
+      "detail_id": "core",
+      "tense_id": null,
+      "count": 20
+    },
+    {
+      "family": "adjectif_verbal_participe_present",
+      "mechanism_id": "accord_adjectif_invariabilite_participe",
+      "detail_id": "adjectif",
+      "tense_id": null,
+      "count": 10
+    },
+    {
+      "family": "adjectif_verbal_participe_present",
+      "mechanism_id": "accord_adjectif_invariabilite_participe",
+      "detail_id": "participe",
+      "tense_id": null,
+      "count": 10
+    },
+    {
+      "family": "gentiles_majuscules",
+      "mechanism_id": "nom_peuple_adjectif_langue",
+      "detail_id": "peuple",
+      "tense_id": null,
+      "count": 10
+    },
+    {
+      "family": "gentiles_majuscules",
+      "mechanism_id": "nom_peuple_adjectif_langue",
+      "detail_id": "adjectif",
+      "tense_id": null,
+      "count": 10
+    },
+    {
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "ou_ou",
+      "detail_id": "core",
+      "tense_id": null,
+      "count": 6,
+      "target_choice_count": 2
+    }
+  ]
+}

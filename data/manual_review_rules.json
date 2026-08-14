@@ -1,0 +1,12 @@
+{
+  "schema_version": "hep-manual-review-rules/1.0",
+  "rules": [
+    {
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "ou_ou",
+      "detail_id": "core",
+      "tense_id": null,
+      "reason": "Demande explicite de révision : distinguer ou de où."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": "hep-choice-production-checker-review/1.0",
+  "source_report": "data/ou_ou_checker_report.json",
+  "mode": "REPORT_ONLY",
+  "state": "COMPLETE",
+  "summary": {
+    "sentences_checked": 6,
+    "raw_findings": 2,
+    "accepted_changes": 0,
+    "allowed_false_positives": 2,
+    "unresolved": 0
+  },
+  "decisions": [
+    {
+      "drill_id": "hep-d1-20260813-0074",
+      "engine": "languagetool",
+      "rule_id": "OU_LEQUEL",
+      "classification": "ALLOWED_FALSE_POSITIVE",
+      "decision": "Dans « la salle où se tiendra la réunion », où est un pronom relatif de lieu correct. La variante « dans laquelle » est possible, mais elle ne rend pas où fautif."
+    },
+    {
+      "drill_id": "hep-d1-20260813-0090",
+      "engine": "languagetool",
+      "rule_id": "OU_LEQUEL",
+      "classification": "ALLOWED_FALSE_POSITIVE",
+      "decision": "Dans « le stade où une nouvelle décision s’impose », où reprend une étape envisagée comme une situation ou un moment. Les variantes proposées relèvent du style et non d’une correction obligatoire."
+    }
+  ]
+}

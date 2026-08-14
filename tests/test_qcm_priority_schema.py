@@ -33,3 +33,13 @@ def test_qcm_priority_schema_rejects_answers_and_question_text() -> None:
     leaking = deepcopy(example)
     leaking["priorities"][0]["question"] = "texte interdit"
     assert list(validator.iter_errors(leaking))
+
+
+def test_manual_review_rules_match_closed_schema() -> None:
+    schema = json.loads(
+        (ROOT / "schemas" / "hep-manual-review-rules.schema.json").read_text(encoding="utf-8")
+    )
+    document = json.loads(
+        (ROOT / "data" / "manual_review_rules.json").read_text(encoding="utf-8")
+    )
+    Draft202012Validator(schema).validate(document)

@@ -25,6 +25,7 @@ ROOT = Path(__file__).resolve().parent
 DEFAULT_CANDIDATES = ROOT / "data" / "pilot_candidates.json"
 DEFAULT_OPTIONS = ROOT / "data" / "pilot_choice_options.json"
 DEFAULT_CORRECTIONS = ROOT / "data" / "pilot_choice_corrections.json"
+DEFAULT_MANIFEST = ROOT / "data" / "bank_manifest.json"
 DEFAULT_ERROR_MECHANISMS = ROOT / "data" / "error_mechanisms.json"
 DEFAULT_OUTPUT = ROOT / "bank.js"
 
@@ -220,6 +221,69 @@ def build_choice_bank(
     }
 
 
+def combine_choice_banks(banks: list[dict[str, Any]]) -> dict[str, Any]:
+    """Combine des lots déjà validés sans modifier leurs questions."""
+    if not banks:
+        raise ChoiceBankError("Aucun lot à publier.")
+    questions: list[dict[str, Any]] = []
+    seen_ids: set[str] = set()
+    for bank in banks:
+        if bank.get("schema_version") != "hep-choice-bank/1.0":
+            raise ChoiceBankError("Version de banque intermédiaire invalide.")
+        rows = bank.get("questions")
+        if not isinstance(rows, list) or not rows:
+            raise ChoiceBankError("Un lot intermédiaire ne contient aucune question.")
+        for question in rows:
+            drill_id = question.get("id") if isinstance(question, dict) else None
+            if not isinstance(drill_id, str) or not drill_id:
+                raise ChoiceBankError("Une question publiée ne possède pas d’identifiant.")
+            if drill_id in seen_ids:
+                raise ChoiceBankError(f"Question dupliquée entre les lots : {drill_id}.")
+            seen_ids.add(drill_id)
+            questions.append(question)
+    compact = json.dumps(questions, ensure_ascii=False, separators=(",", ":"))
+    digest = hashlib.sha256(compact.encode("utf-8")).hexdigest()[:8]
+    return {
+        "schema_version": "hep-choice-bank/1.0",
+        "release": f"choices-{date.today():%Y%m%d}-{digest}",
+        "questions": questions,
+    }
+
+
+def build_choice_bank_from_manifest(
+    manifest: dict[str, Any], error_mechanisms: dict[str, Any]
+) -> dict[str, Any]:
+    if set(manifest) != {"schema_version", "batches"}:
+        raise ChoiceBankError("Le manifeste de publication contient des champs invalides.")
+    if manifest.get("schema_version") != "hep-choice-bank-manifest/1.0":
+        raise ChoiceBankError("Version du manifeste de publication invalide.")
+    batches = manifest.get("batches")
+    if not isinstance(batches, list) or not batches:
+        raise ChoiceBankError("Le manifeste de publication ne contient aucun lot.")
+
+    banks = []
+    required = {"candidates", "options", "corrections"}
+    for index, batch in enumerate(batches, 1):
+        if not isinstance(batch, dict) or set(batch) != required:
+            raise ChoiceBankError(f"Lot {index} invalide dans le manifeste.")
+        paths = {}
+        for field in required:
+            value = batch[field]
+            if not isinstance(value, str) or not value.strip():
+                raise ChoiceBankError(f"Lot {index} : chemin {field} invalide.")
+            path = (ROOT / value).resolve()
+            if path != ROOT and ROOT not in path.parents:
+                raise ChoiceBankError(f"Lot {index} : chemin {field} hors du sous-projet.")
+            paths[field] = path
+        banks.append(build_choice_bank(
+            load_json(paths["candidates"]),
+            load_json(paths["options"]),
+            load_json(paths["corrections"]),
+            error_mechanisms,
+        ))
+    return combine_choice_banks(banks)
+
+
 def write_bank(bank: dict[str, Any], output: Path) -> None:
     resolved = output.resolve()
     payload = (
@@ -242,19 +306,30 @@ def write_bank(bank: dict[str, Any], output: Path) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--candidates", type=Path, default=DEFAULT_CANDIDATES)
-    parser.add_argument("--options", type=Path, default=DEFAULT_OPTIONS)
-    parser.add_argument("--corrections", type=Path, default=DEFAULT_CORRECTIONS)
+    parser.add_argument("--manifest", type=Path, default=DEFAULT_MANIFEST)
+    parser.add_argument("--candidates", type=Path)
+    parser.add_argument("--options", type=Path)
+    parser.add_argument("--corrections", type=Path)
     parser.add_argument("--error-mechanisms", type=Path, default=DEFAULT_ERROR_MECHANISMS)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     args = parser.parse_args()
     try:
-        bank = build_choice_bank(
-            load_json(args.candidates),
-            load_json(args.options),
-            load_json(args.corrections),
-            load_json(args.error_mechanisms),
-        )
+        explicit_sources = (args.candidates, args.options, args.corrections)
+        if any(explicit_sources):
+            if not all(explicit_sources):
+                raise ChoiceBankError(
+                    "--candidates, --options et --corrections doivent être fournis ensemble."
+                )
+            bank = build_choice_bank(
+                load_json(args.candidates),
+                load_json(args.options),
+                load_json(args.corrections),
+                load_json(args.error_mechanisms),
+            )
+        else:
+            bank = build_choice_bank_from_manifest(
+                load_json(args.manifest), load_json(args.error_mechanisms)
+            )
         write_bank(bank, args.output)
     except (DrillContractError, ChoiceBankError) as exc:
         raise SystemExit(f"ERREUR: {exc}") from exc

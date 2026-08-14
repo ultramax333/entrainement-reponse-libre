@@ -20,6 +20,7 @@ from typing import Any, Iterable
 from bridge_priorities import (
     ANALYSE_DIR,
     DEFAULT_EXAM_EVIDENCE,
+    DEFAULT_MANUAL_RULES,
     DEFAULT_QCM_PRIORITIES,
     DEFAULT_STORE,
     BridgeError,
@@ -29,6 +30,7 @@ from bridge_priorities import (
     build_bridge,
     import_sessions,
     load_bridge_config,
+    load_manual_review_rules,
     load_store,
     parse_qcm_priorities,
 )
@@ -90,10 +92,11 @@ def build_current_bridge(bank: list[dict[str, Any]] | None = None) -> dict[str, 
     qcm = parse_qcm_priorities()
     evidence = load_json(DEFAULT_EXAM_EVIDENCE)
     config = load_bridge_config()
+    requested = load_manual_review_rules()
     unseen, distances = _stock_and_spacing(bank or [], store["sessions"])
     rows = build_bridge(
         mastery, qcm, evidence, unseen_stock=unseen,
-        distance_since_seen=distances, config=config,
+        distance_since_seen=distances, requested_paths=requested, config=config,
     )
     return bridge_audit(
         mastery, rows,
@@ -101,6 +104,7 @@ def build_current_bridge(bank: list[dict[str, Any]] | None = None) -> dict[str, 
             "qcm_priorities": DEFAULT_QCM_PRIORITIES,
             "exam_evidence": DEFAULT_EXAM_EVIDENCE,
             "drill_observations": DEFAULT_STORE,
+            "manual_review_rules": DEFAULT_MANUAL_RULES,
         },
         config=config,
     )

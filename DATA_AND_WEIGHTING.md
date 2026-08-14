@@ -188,7 +188,7 @@ generation_weight =
 
 - priorité QCM active ; ou
 - signal drill actif ; ou
-- demande utilisateur explicite.
+- demande utilisateur explicite conservée dans `data/manual_review_rules.json`.
 
 Une règle sans preuve d’examen peut rester accessible par erreur personnelle ou
 demande explicite, mais ne reçoit pas artificiellement une forte importance.

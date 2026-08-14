@@ -1,0 +1,948 @@
+{
+  "options": [
+    {
+      "choices": [
+        "pérennité",
+        "pérennitée",
+        "pérenité",
+        "pérenniter"
+      ],
+      "drill_id": "hep-d1-20260813-0043"
+    },
+    {
+      "choices": [
+        "auquel",
+        "auxquels",
+        "au quel",
+        "à lequel"
+      ],
+      "drill_id": "hep-d1-20260813-0044"
+    },
+    {
+      "choices": [
+        "dont",
+        "donc",
+        "d’on",
+        "don"
+      ],
+      "drill_id": "hep-d1-20260813-0045"
+    },
+    {
+      "choices": [
+        "provocantes",
+        "provoquantes",
+        "provocants",
+        "provocante"
+      ],
+      "drill_id": "hep-d1-20260813-0046"
+    },
+    {
+      "choices": [
+        "provoquant",
+        "provocant",
+        "provoquante",
+        "provoquants"
+      ],
+      "drill_id": "hep-d1-20260813-0047"
+    },
+    {
+      "choices": [
+        "Canadienne",
+        "canadienne",
+        "Canadien",
+        "Canadiennes"
+      ],
+      "drill_id": "hep-d1-20260813-0048"
+    },
+    {
+      "choices": [
+        "canadienne",
+        "Canadienne",
+        "canadien",
+        "canadiennes"
+      ],
+      "drill_id": "hep-d1-20260813-0049"
+    },
+    {
+      "choices": [
+        "ou",
+        "où"
+      ],
+      "drill_id": "hep-d1-20260813-0050"
+    },
+    {
+      "choices": [
+        "nécessairement",
+        "nécéssairement",
+        "nécesserement",
+        "nécessairemant"
+      ],
+      "drill_id": "hep-d1-20260813-0051"
+    },
+    {
+      "choices": [
+        "à laquelle",
+        "auquel",
+        "à la quelle",
+        "auxquelles"
+      ],
+      "drill_id": "hep-d1-20260813-0052"
+    },
+    {
+      "choices": [
+        "dont",
+        "donc",
+        "d’on",
+        "don"
+      ],
+      "drill_id": "hep-d1-20260813-0053"
+    },
+    {
+      "choices": [
+        "fatigantes",
+        "fatiguantes",
+        "fatigants",
+        "fatigante"
+      ],
+      "drill_id": "hep-d1-20260813-0054"
+    },
+    {
+      "choices": [
+        "fatiguant",
+        "fatigant",
+        "fatiguante",
+        "fatiguants"
+      ],
+      "drill_id": "hep-d1-20260813-0055"
+    },
+    {
+      "choices": [
+        "Italiens",
+        "italiens",
+        "Italiennes",
+        "Italien"
+      ],
+      "drill_id": "hep-d1-20260813-0056"
+    },
+    {
+      "choices": [
+        "italiennes",
+        "Italiennes",
+        "italiens",
+        "italienne"
+      ],
+      "drill_id": "hep-d1-20260813-0057"
+    },
+    {
+      "choices": [
+        "ou",
+        "où"
+      ],
+      "drill_id": "hep-d1-20260813-0058"
+    },
+    {
+      "choices": [
+        "occurrence",
+        "occurence",
+        "ocurrence",
+        "occurrance"
+      ],
+      "drill_id": "hep-d1-20260813-0059"
+    },
+    {
+      "choices": [
+        "auxquels",
+        "auxquelles",
+        "auquel",
+        "aux quels"
+      ],
+      "drill_id": "hep-d1-20260813-0060"
+    },
+    {
+      "choices": [
+        "dont",
+        "donc",
+        "d’on",
+        "don"
+      ],
+      "drill_id": "hep-d1-20260813-0061"
+    },
+    {
+      "choices": [
+        "convaincantes",
+        "convainquantes",
+        "convaincants",
+        "convaincante"
+      ],
+      "drill_id": "hep-d1-20260813-0062"
+    },
+    {
+      "choices": [
+        "convainquant",
+        "convaincant",
+        "convainquante",
+        "convainquants"
+      ],
+      "drill_id": "hep-d1-20260813-0063"
+    },
+    {
+      "choices": [
+        "Allemand",
+        "allemand",
+        "Allemande",
+        "Allemands"
+      ],
+      "drill_id": "hep-d1-20260813-0064"
+    },
+    {
+      "choices": [
+        "allemand",
+        "Allemand",
+        "allemande",
+        "allemands"
+      ],
+      "drill_id": "hep-d1-20260813-0065"
+    },
+    {
+      "choices": [
+        "ou",
+        "où"
+      ],
+      "drill_id": "hep-d1-20260813-0066"
+    },
+    {
+      "choices": [
+        "dilemme",
+        "dilemne",
+        "dilème",
+        "dillemme"
+      ],
+      "drill_id": "hep-d1-20260813-0067"
+    },
+    {
+      "choices": [
+        "auxquelles",
+        "auxquels",
+        "à lesquelles",
+        "aux quelles"
+      ],
+      "drill_id": "hep-d1-20260813-0068"
+    },
+    {
+      "choices": [
+        "dont",
+        "donc",
+        "d’on",
+        "don"
+      ],
+      "drill_id": "hep-d1-20260813-0069"
+    },
+    {
+      "choices": [
+        "négligentes",
+        "négligeantes",
+        "négligents",
+        "négligente"
+      ],
+      "drill_id": "hep-d1-20260813-0070"
+    },
+    {
+      "choices": [
+        "négligeant",
+        "négligent",
+        "négligeante",
+        "négligeants"
+      ],
+      "drill_id": "hep-d1-20260813-0071"
+    },
+    {
+      "choices": [
+        "Française",
+        "française",
+        "Français",
+        "Françaises"
+      ],
+      "drill_id": "hep-d1-20260813-0072"
+    },
+    {
+      "choices": [
+        "françaises",
+        "Françaises",
+        "français",
+        "française"
+      ],
+      "drill_id": "hep-d1-20260813-0073"
+    },
+    {
+      "choices": [
+        "où",
+        "ou"
+      ],
+      "drill_id": "hep-d1-20260813-0074"
+    },
+    {
+      "choices": [
+        "accueil",
+        "acceuil",
+        "aceuil",
+        "acueil"
+      ],
+      "drill_id": "hep-d1-20260813-0075"
+    },
+    {
+      "choices": [
+        "auquel",
+        "auxquels",
+        "au quel",
+        "à lequel"
+      ],
+      "drill_id": "hep-d1-20260813-0076"
+    },
+    {
+      "choices": [
+        "dont",
+        "donc",
+        "d’on",
+        "don"
+      ],
+      "drill_id": "hep-d1-20260813-0077"
+    },
+    {
+      "choices": [
+        "divergentes",
+        "divergeantes",
+        "divergents",
+        "divergente"
+      ],
+      "drill_id": "hep-d1-20260813-0078"
+    },
+    {
+      "choices": [
+        "divergeant",
+        "divergent",
+        "divergeante",
+        "divergeants"
+      ],
+      "drill_id": "hep-d1-20260813-0079"
+    },
+    {
+      "choices": [
+        "Espagnoles",
+        "espagnoles",
+        "Espagnols",
+        "Espagnole"
+      ],
+      "drill_id": "hep-d1-20260813-0080"
+    },
+    {
+      "choices": [
+        "espagnole",
+        "Espagnole",
+        "espagnol",
+        "espagnoles"
+      ],
+      "drill_id": "hep-d1-20260813-0081"
+    },
+    {
+      "choices": [
+        "où",
+        "ou"
+      ],
+      "drill_id": "hep-d1-20260813-0082"
+    },
+    {
+      "choices": [
+        "rémunération",
+        "rénumération",
+        "remunération",
+        "rémunèration"
+      ],
+      "drill_id": "hep-d1-20260813-0083"
+    },
+    {
+      "choices": [
+        "à laquelle",
+        "auquel",
+        "à la quelle",
+        "auxquelles"
+      ],
+      "drill_id": "hep-d1-20260813-0084"
+    },
+    {
+      "choices": [
+        "dont",
+        "donc",
+        "d’on",
+        "don"
+      ],
+      "drill_id": "hep-d1-20260813-0085"
+    },
+    {
+      "choices": [
+        "convergentes",
+        "convergeantes",
+        "convergents",
+        "convergente"
+      ],
+      "drill_id": "hep-d1-20260813-0086"
+    },
+    {
+      "choices": [
+        "convergeant",
+        "convergent",
+        "convergeante",
+        "convergeants"
+      ],
+      "drill_id": "hep-d1-20260813-0087"
+    },
+    {
+      "choices": [
+        "Portugaises",
+        "portugaises",
+        "Portugais",
+        "Portugaise"
+      ],
+      "drill_id": "hep-d1-20260813-0088"
+    },
+    {
+      "choices": [
+        "portugaise",
+        "Portugaise",
+        "portugais",
+        "portugaises"
+      ],
+      "drill_id": "hep-d1-20260813-0089"
+    },
+    {
+      "choices": [
+        "où",
+        "ou"
+      ],
+      "drill_id": "hep-d1-20260813-0090"
+    },
+    {
+      "choices": [
+        "développement",
+        "dévelopement",
+        "dévelloppement",
+        "développemment"
+      ],
+      "drill_id": "hep-d1-20260813-0091"
+    },
+    {
+      "choices": [
+        "auxquels",
+        "auxquelles",
+        "auquel",
+        "aux quels"
+      ],
+      "drill_id": "hep-d1-20260813-0092"
+    },
+    {
+      "choices": [
+        "dont",
+        "donc",
+        "d’on",
+        "don"
+      ],
+      "drill_id": "hep-d1-20260813-0093"
+    },
+    {
+      "choices": [
+        "influentes",
+        "influantes",
+        "influents",
+        "influente"
+      ],
+      "drill_id": "hep-d1-20260813-0094"
+    },
+    {
+      "choices": [
+        "influant",
+        "influent",
+        "influante",
+        "influants"
+      ],
+      "drill_id": "hep-d1-20260813-0095"
+    },
+    {
+      "choices": [
+        "Brésilienne",
+        "brésilienne",
+        "Brésilien",
+        "Brésiliennes"
+      ],
+      "drill_id": "hep-d1-20260813-0096"
+    },
+    {
+      "choices": [
+        "brésilienne",
+        "Brésilienne",
+        "brésilien",
+        "brésiliennes"
+      ],
+      "drill_id": "hep-d1-20260813-0097"
+    },
+    {
+      "choices": [
+        "connexion",
+        "connection",
+        "connextion",
+        "connecion"
+      ],
+      "drill_id": "hep-d1-20260813-0098"
+    },
+    {
+      "choices": [
+        "auxquelles",
+        "auxquels",
+        "à lesquelles",
+        "aux quelles"
+      ],
+      "drill_id": "hep-d1-20260813-0099"
+    },
+    {
+      "choices": [
+        "dont",
+        "donc",
+        "d’on",
+        "don"
+      ],
+      "drill_id": "hep-d1-20260813-0100"
+    },
+    {
+      "choices": [
+        "précédentes",
+        "précédantes",
+        "précédents",
+        "précédente"
+      ],
+      "drill_id": "hep-d1-20260813-0101"
+    },
+    {
+      "choices": [
+        "précédant",
+        "précédent",
+        "précédante",
+        "précédants"
+      ],
+      "drill_id": "hep-d1-20260813-0102"
+    },
+    {
+      "choices": [
+        "Norvégiens",
+        "norvégiens",
+        "Norvégiennes",
+        "Norvégien"
+      ],
+      "drill_id": "hep-d1-20260813-0103"
+    },
+    {
+      "choices": [
+        "norvégiennes",
+        "Norvégiennes",
+        "norvégiens",
+        "norvégienne"
+      ],
+      "drill_id": "hep-d1-20260813-0104"
+    },
+    {
+      "choices": [
+        "professionnalisme",
+        "professionalisme",
+        "professionnallisme",
+        "profesionnalisme"
+      ],
+      "drill_id": "hep-d1-20260813-0105"
+    },
+    {
+      "choices": [
+        "auquel",
+        "auxquels",
+        "au quel",
+        "à lequel"
+      ],
+      "drill_id": "hep-d1-20260813-0106"
+    },
+    {
+      "choices": [
+        "dont",
+        "donc",
+        "d’on",
+        "don"
+      ],
+      "drill_id": "hep-d1-20260813-0107"
+    },
+    {
+      "choices": [
+        "communicantes",
+        "communiquantes",
+        "communicants",
+        "communicante"
+      ],
+      "drill_id": "hep-d1-20260813-0108"
+    },
+    {
+      "choices": [
+        "communiquant",
+        "communicant",
+        "communiquante",
+        "communiquants"
+      ],
+      "drill_id": "hep-d1-20260813-0109"
+    },
+    {
+      "choices": [
+        "Autrichien",
+        "autrichien",
+        "Autrichienne",
+        "Autrichiens"
+      ],
+      "drill_id": "hep-d1-20260813-0110"
+    },
+    {
+      "choices": [
+        "autrichiens",
+        "Autrichiens",
+        "autrichiennes",
+        "autrichien"
+      ],
+      "drill_id": "hep-d1-20260813-0111"
+    },
+    {
+      "choices": [
+        "privilège",
+        "privilége",
+        "privillège",
+        "privilègee"
+      ],
+      "drill_id": "hep-d1-20260813-0112"
+    },
+    {
+      "choices": [
+        "à laquelle",
+        "auquel",
+        "à la quelle",
+        "auxquelles"
+      ],
+      "drill_id": "hep-d1-20260813-0113"
+    },
+    {
+      "choices": [
+        "dont",
+        "donc",
+        "d’on",
+        "don"
+      ],
+      "drill_id": "hep-d1-20260813-0114"
+    },
+    {
+      "choices": [
+        "adhérentes",
+        "adhérantes",
+        "adhérents",
+        "adhérente"
+      ],
+      "drill_id": "hep-d1-20260813-0115"
+    },
+    {
+      "choices": [
+        "adhérant",
+        "adhérent",
+        "adhérante",
+        "adhérants"
+      ],
+      "drill_id": "hep-d1-20260813-0116"
+    },
+    {
+      "choices": [
+        "Grecques",
+        "grecques",
+        "Grecs",
+        "Grecque"
+      ],
+      "drill_id": "hep-d1-20260813-0117"
+    },
+    {
+      "choices": [
+        "grecque",
+        "Grecque",
+        "grec",
+        "grecques"
+      ],
+      "drill_id": "hep-d1-20260813-0118"
+    },
+    {
+      "choices": [
+        "parallèle",
+        "paralèle",
+        "paralléle",
+        "parallèlel"
+      ],
+      "drill_id": "hep-d1-20260813-0119"
+    },
+    {
+      "choices": [
+        "auxquels",
+        "auxquelles",
+        "auquel",
+        "aux quels"
+      ],
+      "drill_id": "hep-d1-20260813-0120"
+    },
+    {
+      "choices": [
+        "dont",
+        "donc",
+        "d’on",
+        "don"
+      ],
+      "drill_id": "hep-d1-20260813-0121"
+    },
+    {
+      "choices": [
+        "bienveillance",
+        "bienveillence",
+        "bienvaillance",
+        "bienveilance"
+      ],
+      "drill_id": "hep-d1-20260813-0122"
+    },
+    {
+      "choices": [
+        "auxquelles",
+        "auxquels",
+        "à lesquelles",
+        "aux quelles"
+      ],
+      "drill_id": "hep-d1-20260813-0123"
+    },
+    {
+      "choices": [
+        "dont",
+        "donc",
+        "d’on",
+        "don"
+      ],
+      "drill_id": "hep-d1-20260813-0124"
+    },
+    {
+      "choices": [
+        "maintenance",
+        "maintenence",
+        "maintainance",
+        "maintennance"
+      ],
+      "drill_id": "hep-d1-20260813-0125"
+    },
+    {
+      "choices": [
+        "auquel",
+        "auxquels",
+        "au quel",
+        "à lequel"
+      ],
+      "drill_id": "hep-d1-20260813-0126"
+    },
+    {
+      "choices": [
+        "dont",
+        "donc",
+        "d’on",
+        "don"
+      ],
+      "drill_id": "hep-d1-20260813-0127"
+    },
+    {
+      "choices": [
+        "récurrence",
+        "récurence",
+        "récurrrence",
+        "récurrance"
+      ],
+      "drill_id": "hep-d1-20260813-0128"
+    },
+    {
+      "choices": [
+        "à laquelle",
+        "auquel",
+        "à la quelle",
+        "auxquelles"
+      ],
+      "drill_id": "hep-d1-20260813-0129"
+    },
+    {
+      "choices": [
+        "dont",
+        "donc",
+        "d’on",
+        "don"
+      ],
+      "drill_id": "hep-d1-20260813-0130"
+    },
+    {
+      "choices": [
+        "succinct",
+        "succint",
+        "sussinct",
+        "succintt"
+      ],
+      "drill_id": "hep-d1-20260813-0131"
+    },
+    {
+      "choices": [
+        "auxquels",
+        "auxquelles",
+        "auquel",
+        "aux quels"
+      ],
+      "drill_id": "hep-d1-20260813-0132"
+    },
+    {
+      "choices": [
+        "dont",
+        "donc",
+        "d’on",
+        "don"
+      ],
+      "drill_id": "hep-d1-20260813-0133"
+    },
+    {
+      "choices": [
+        "vraisemblance",
+        "vraissemblance",
+        "vraisemblence",
+        "vraisemblanse"
+      ],
+      "drill_id": "hep-d1-20260813-0134"
+    },
+    {
+      "choices": [
+        "auxquelles",
+        "auxquels",
+        "à lesquelles",
+        "aux quelles"
+      ],
+      "drill_id": "hep-d1-20260813-0135"
+    },
+    {
+      "choices": [
+        "dont",
+        "donc",
+        "d’on",
+        "don"
+      ],
+      "drill_id": "hep-d1-20260813-0136"
+    },
+    {
+      "choices": [
+        "acquittement",
+        "aquitement",
+        "acquitement",
+        "acquittemment"
+      ],
+      "drill_id": "hep-d1-20260813-0137"
+    },
+    {
+      "choices": [
+        "auquel",
+        "auxquels",
+        "au quel",
+        "à lequel"
+      ],
+      "drill_id": "hep-d1-20260813-0138"
+    },
+    {
+      "choices": [
+        "dont",
+        "donc",
+        "d’on",
+        "don"
+      ],
+      "drill_id": "hep-d1-20260813-0139"
+    },
+    {
+      "choices": [
+        "exceptionnel",
+        "exceptionel",
+        "exeptionnel",
+        "excepionnel"
+      ],
+      "drill_id": "hep-d1-20260813-0140"
+    },
+    {
+      "choices": [
+        "à laquelle",
+        "auquel",
+        "à la quelle",
+        "auxquelles"
+      ],
+      "drill_id": "hep-d1-20260813-0141"
+    },
+    {
+      "choices": [
+        "dont",
+        "donc",
+        "d’on",
+        "don"
+      ],
+      "drill_id": "hep-d1-20260813-0142"
+    },
+    {
+      "choices": [
+        "indépendamment",
+        "indépendament",
+        "indépendemment",
+        "indépendammente"
+      ],
+      "drill_id": "hep-d1-20260813-0143"
+    },
+    {
+      "choices": [
+        "auxquels",
+        "auxquelles",
+        "auquel",
+        "aux quels"
+      ],
+      "drill_id": "hep-d1-20260813-0144"
+    },
+    {
+      "choices": [
+        "dont",
+        "donc",
+        "d’on",
+        "don"
+      ],
+      "drill_id": "hep-d1-20260813-0145"
+    },
+    {
+      "choices": [
+        "intelligemment",
+        "intelligement",
+        "intelligeamment",
+        "intelligemmentt"
+      ],
+      "drill_id": "hep-d1-20260813-0146"
+    },
+    {
+      "choices": [
+        "auxquelles",
+        "auxquels",
+        "à lesquelles",
+        "aux quelles"
+      ],
+      "drill_id": "hep-d1-20260813-0147"
+    },
+    {
+      "choices": [
+        "dont",
+        "donc",
+        "d’on",
+        "don"
+      ],
+      "drill_id": "hep-d1-20260813-0148"
+    }
+  ],
+  "schema_version": "hep-drill-choice-options/1.0",
+  "source_batch_id": "hep-db1-20260813-0001"
+}

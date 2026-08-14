@@ -1,0 +1,15 @@
+{
+  "schema_version": "hep-choice-bank-manifest/1.0",
+  "batches": [
+    {
+      "candidates": "data/pilot_candidates.json",
+      "options": "data/pilot_choice_options.json",
+      "corrections": "data/pilot_choice_corrections.json"
+    },
+    {
+      "candidates": "data/production_candidates.json",
+      "options": "data/production_choice_options.json",
+      "corrections": "data/production_choice_corrections.json"
+    }
+  ]
+}

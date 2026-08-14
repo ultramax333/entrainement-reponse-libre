@@ -57,6 +57,18 @@ Tester au minimum :
 - comparaison avec signatures drills et QCM ;
 - `questions.js` inchangé après publication de drills.
 
+### Production de 106 questions
+
+- demande fermée validée par schéma ;
+- somme des quotas exactement égale à 106 ;
+- dix lots de dix, un lot de six et 106 identifiants réservés sans collision ;
+- chaque chemin résolu dans la pédagogie HEP avant génération ;
+- quatre choix et trois diagnostics pour les 100 exercices initiaux ; deux choix
+  et un diagnostic pour chacun des six exercices `ou/où` ;
+- comparaison aux signatures QCM et aux 42 exercices existants ;
+- revue indépendante exhaustive des 106 exercices ;
+- fusion refusée tant qu’un lot contient `REVISE`, `REJECT` ou un contrôle partiel.
+
 Sous Windows, exécuter Pytest avec un `--basetemp` placé dans le projet si le
 temporaire utilisateur privé est inaccessible. Une permission du dossier temporaire
 ne doit pas être présentée comme un échec fonctionnel du code.
@@ -89,10 +101,10 @@ Pour chaque réponse admise :
 3. conserver les alertes de chaque moteur ;
 4. distinguer erreur, alerte acceptable, indisponibilité et indétermination.
 
-## Banque de 42 exercices
+## Banque de 148 exercices
 
-Le pilote initial et son extension alimentent la banque autonome `bank.js`,
-générée après validation des choix orthographiques.
+Le pilote initial, son extension et la production contrôlée alimentent la banque
+autonome `bank.js` par le manifeste `data/bank_manifest.json`.
 
 Critères individuels :
 
